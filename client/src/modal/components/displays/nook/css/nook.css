@@ -1,0 +1,77 @@
+.workarea-padding {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+div.starthere-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div.top-padding-starthere {
+  padding-top: 10px;
+}
+
+div.fixedsize-starthere-pic {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+  max-height: 300px;
+}
+
+div.demofixedsize {
+  height: 370px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+}
+
+div.fixedsizeC {
+  height: 550px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  max-height: 550px;
+}
+
+.modal-body-zz {
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.text-position2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 650px;
+  margin-top: -325px; /* Half the height */
+  margin-left: -500px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+div.fixedsizeM {
+  height: 650px;
+  width: 100%;
+  background-color: gray;
+  overflow: auto;
+  max-height: 650px;
+}
+
+.img-div-style {
+  height: 650px;
+  width: 100%;
+}
+
+.font-size-modal-note {
+  font-size: 1.15em;
+  color: #152133;
+  font-style: georgia;
+}

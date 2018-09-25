@@ -1,0 +1,14 @@
+.DottedBox {
+  width: 250px;
+  padding-top: 20px;
+  margin: none;
+  border: 1px black;
+}
+
+.selectWidth {
+  width: 190px;
+}
+
+.slider-text-paddig {
+  padding-top: 15px;
+}

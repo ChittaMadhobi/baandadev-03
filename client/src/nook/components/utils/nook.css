@@ -1,0 +1,139 @@
+.DottedBox {
+  width: 250px;
+  padding-top: 20px;
+  margin: none;
+  border: 1px black;
+}
+
+.selectWidth {
+  width: 190px;
+}
+
+.checkbox-font-iot {
+  font-size: 16px;
+  color: #2c7248;
+}
+
+.slider-text-paddig {
+  padding-top: 15px;
+}
+
+.journal-background {
+  background-color: #fff;
+}
+
+.custom_button4 {
+  background-color: #6554af;
+  width: 110px;
+  height: 35px;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.custom_button3 {
+  background-color: #687758;
+  width: 180px;
+  height: 35px;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* These are buttons used in FiveFactorDirect.js  */
+.custom_button-top5 {
+  background-color: #5b749b;
+  width: 100%;
+  height: 35px;
+  border: 2px solid #aeb7c4;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  font-family: Georgia, serif;
+  margin-top: 0;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 0;
+}
+
+.speech-button {
+  background-color: #34435b;
+  width: 130px;
+  height: 30px;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.editor-height {
+  height: 300px;
+}
+
+.text-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Tooltip custom button */
+.tooltip-top5 {
+  background-color: none;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+/* central adjustment in top-5 comments */
+.top-text-adjust {
+  margin-bottom: 1px;
+  margin-top: -5px;
+  padding-bottom: 0;
+  padding-top: 0;
+  color: #5b749b;
+}
+
+.card-top5-slider-body {
+  background-color: #e3e8ed;
+  height: 60px;
+  padding-top: 5px;
+}
+
+.card-top5-slider-header {
+  background-color: whitesmoke;
+  height: 110px;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  padding-top: 2px;
+}
+
+.self-eval-head-padding {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 0px;
+}
+
+.testq-padding {
+  padding: 0;
+  margin: 0;
+}

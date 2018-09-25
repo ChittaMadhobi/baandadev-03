@@ -1,0 +1,25 @@
+.DottedBox {
+  width: 250px;
+  padding-top: 20px;
+  margin: none;
+  border: 1px black;
+}
+
+.selectWidth {
+  width: 190px;
+}
+
+.slider-text-paddig {
+  padding-top: 15px;
+}
+
+.masktalk-text {
+  font-size: 1.5em;
+  font-family: Georgia, sans-serif;
+}
+
+.masktalk-text-note {
+  font-size: 1em;
+  font-family: Georgia, sans-serif;
+  color: #506484;
+}
