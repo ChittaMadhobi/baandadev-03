@@ -18,7 +18,7 @@ const defaultInviteNote =
   ' If you are already a Baanda, then this would be in your Lobby -> Nook -> Social Circle -> Connect with social circle';
 
 const defaultTextNote =
-  'I have invited you to my social circle. If you are a Baanda, it is in your Nook-Messages else in your email box.';
+  'I am inviting you to my social circle. Once you register as a Baanda, the invite will be in your nook->Social Circle->Connect with your social circle box.';
 
 class CreateSocialCircle extends Component {
   constructor(props) {
@@ -34,8 +34,7 @@ class CreateSocialCircle extends Component {
       emailAddr: '',
       textInvite: false,
       mobileNumber: '',
-      textNote: '',
-      defaultTextNote: '',
+      textNote: defaultTextNote,
 
       errors: {}
     };
@@ -126,7 +125,7 @@ class CreateSocialCircle extends Component {
                 <TextFieldGroup
                   name="connectionName"
                   placeholder="Enter your connection's name ..."
-                  value={this.state.defaultTextNote}
+                  value={this.state.textNote}
                   onChange={this.onChange}
                   error={errors.connectionName}
                   info="Name of the person who you want in your circle :: "

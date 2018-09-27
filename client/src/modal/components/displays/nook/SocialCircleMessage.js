@@ -39,18 +39,19 @@ class SocialCircleMessage extends Component {
   render() {
     //console.log('CarouselManual XXXXX props :' + JSON.stringify(this.props.message));
     //const { title, message, messageText } = this.props;
-    const { user } = this.props.auth;
+    // const { user } = this.props.auth;
     //console.log('user:' + JSON.stringify(user));
-    const { title, message } = this.props;
+    //const { title, message } = this.props;
+    const { message } = this.props;
 
-    console.log(
-      'title :' +
-        title +
-        ' | message:' +
-        JSON.stringify(message) +
-        '  user:' +
-        user
-    );
+    // console.log(
+    //   'title :' +
+    //     title +
+    //     ' | message:' +
+    //     JSON.stringify(message) +
+    //     '  user:' +
+    //     user
+    // );
     return (
       <div className="container">
         <div className="modal-content-z">
@@ -76,8 +77,8 @@ class SocialCircleMessage extends Component {
           <div className="footer">
             <div className="row">
               <div className="col-6 float-left font-size-modal-note">
-                &nbsp;&nbsp;&nbsp;&nbsp; <b>Note:</b> Use angle-brackets to
-                slide to next or previous panels.{' '}
+                &nbsp;&nbsp;&nbsp;&nbsp; <b>Note:</b> Respond wisely. Close to
+                respond later.{' '}
               </div>
               <div className="col-6">
                 <div className="float-right">

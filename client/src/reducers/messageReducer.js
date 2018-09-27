@@ -13,7 +13,7 @@ const INITIAL_DATA = [
     invite: true
   },
   {
-    id: 2,
+    id: 1,
     Title: 'How are things in life',
     message:
       'Hey Babs, Did not hear from you for a while. I am getting a kick out of this Baanda thingy. Thanks for roping me in.',
@@ -22,13 +22,40 @@ const INITIAL_DATA = [
     invite: false
   },
   {
-    id: 3,
+    id: 2,
     Title: 'Values of human bonding and time',
     message:
-      'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. Now ... I wrote that then but I will not now. What do you think?',
+      'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. Now ... I wrote that then but I will not now. Would a single woman with good fortune marry? What do you think?',
     from: 'Jane Austen',
     startDate: moment(),
     invite: false
+  },
+  {
+    id: 3,
+    Title: 'Three kinds of humans',
+    message:
+      'There are three classes of people: those who can see, those who can see when they are shown, and those who do not see. Where do you belong?',
+    from: 'Leonardo de Vinci',
+    startDate: moment(),
+    invite: false
+  },
+  {
+    id: 4,
+    Title: 'Art of War',
+    message:
+      'The greatest victory is that which requires no battle. In the midst of chaos, there is also opportunity. Do you think life if battle-field or play-ground?',
+    from: 'Sun Tzu',
+    startDate: moment(),
+    invite: false
+  },
+  {
+    id: 5,
+    Title: 'Inviting you in my Baanda circle',
+    message:
+      'I wonder, when minds see things when no one has and hears words that are yet to come, and it is difficult to convey that message to others. Do you know  what they should do? Join and lets think it together.',
+    from: 'Jit',
+    startDate: moment(),
+    invite: true
   }
 ];
 //const INITIAL_DATA = [];

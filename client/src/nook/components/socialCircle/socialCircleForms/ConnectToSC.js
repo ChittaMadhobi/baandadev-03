@@ -26,10 +26,12 @@ class ConnectToSC extends Component {
   }
 
   popupFunction = id => {
-    // let msg2 =
-    //   this.props.messages[id].invite === true ? 'Message' : 'Invite';
     let msgType =
       this.props.messages[id].invite === true ? 'Invite' : 'Message';
+
+    console.log('ConnectToSC props:' + JSON.stringify(this.props));
+    console.log('ConnectToSC id: ' + id);
+
     const msgObj = {
       id: this.props.messages[id].id,
       from: this.props.messages[id].from,
@@ -40,20 +42,10 @@ class ConnectToSC extends Component {
     };
     // alert(JSON.stringify(msgObj));
     this.openAlertModal(msgObj);
-    //return <Redirect to="/" />;
-    //this.props.history.push('/login');
   };
 
   openAlertModal = param => {
-    console.log('ConnectToSC openAlertModal param: ' + JSON.stringify(param));
-
-    //const modalProps = param;
-    // const modalProps = {
-    //   open: true,
-    //   title: 'Alert - Start Here Header',
-    //   message: 'xxxx',
-    //   closeModal: this.closeModal
-    // };
+    //console.log('ConnectToSC openAlertModal param: ' + JSON.stringify(param));
 
     const modalProps = {
       open: true,
@@ -71,7 +63,7 @@ class ConnectToSC extends Component {
   };
 
   render() {
-    console.log('ConnectToSC props:' + JSON.stringify(this.props));
+    //console.log('ConnectToSC props:' + JSON.stringify(this.props));
 
     return (
       <div children="container">
@@ -128,11 +120,6 @@ class ConnectToSC extends Component {
                 {this.props.messages.map(message => (
                   <tr key={message.id}>
                     <td
-                      // style={{
-                      //   textDecoration: message.completed
-                      //     ? 'line-through'
-                      //     : 'none'
-                      // }}
                       style={{
                         color: message.invite ? 'blue' : 'green'
                       }}
@@ -142,13 +129,12 @@ class ConnectToSC extends Component {
                         {message.from}
                       </b>{' '}
                       &nbsp;&nbsp;:&nbsp;
-                      {message.Title}
+                      {message.Title} &nbsp; id: {message.id}
                     </td>
                     <td className="bg-blue text-center">
                       <span
                         className="fas fa-search-plus"
                         onClick={() => this.popupFunction(message.id)}
-                        //onClick={this.routeChange}
                         style={{
                           color: 'white',
                           fontSize: '20pt',
