@@ -7,7 +7,8 @@ import { default as modalTypes } from './index';
 
 const MODAL_TYPES = {
   alert: modalTypes.alertModalRcc,
-  carouselMan: modalTypes.carouselMan
+  carouselMan: modalTypes.carouselMan,
+  socialMessage: modalTypes.socialMessage
 };
 
 const mapStateToProps = state => ({
@@ -40,7 +41,7 @@ class ModalContainer extends React.Component {
       return null;
     }
     const SpecifiedModal = MODAL_TYPES[this.props.modalType];
-    console.log('SpecifiedModal(props):' + JSON.stringify(this.props));
+    // console.log('SpecifiedModal(props):' + JSON.stringify(this.props));
     return (
       <div>
         <ReactModal

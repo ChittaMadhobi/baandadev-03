@@ -36,7 +36,7 @@ class TaskTable extends Component {
             <button
               type="button"
               onClick={() => this.props.setVisibilityFilter(SHOW_ALL)}
-              className="btn btn-secondary custom_button1 btn-sm"
+              className="btn btn-secondary custom_button1 btn-sm btn-size-rows"
             >
               All
             </button>
@@ -44,7 +44,7 @@ class TaskTable extends Component {
             <button
               type="button"
               onClick={() => this.props.setVisibilityFilter(SHOW_COMPLETED)}
-              className="btn btn-secondary custom_button1 btn-sm"
+              className="btn btn-secondary custom_button1 btn-sm btn-size-rows"
             >
               Completed
             </button>
@@ -52,15 +52,15 @@ class TaskTable extends Component {
             <button
               type="button"
               onClick={() => this.props.setVisibilityFilter(SHOW_ACTIVE)}
-              className="btn btn-secondary custom_button1 btn-sm"
+              className="btn btn-secondary custom_button1 btn-sm btn-size-rows"
             >
               Active
             </button>
           </div>
           <div className="float-right">
-            <i class="fas fa-minus-circle">: Delete</i> &nbsp;&nbsp;
-            <i class="fas fa-search-plus">: Details</i> &nbsp;&nbsp;
-            <i class="fas fa-check-circle">: Done</i>
+            <i className="fas fa-minus-circle">: Delete</i> &nbsp;&nbsp;
+            <i className="fas fa-search-plus">: Details</i> &nbsp;&nbsp;
+            <i className="fas fa-check-circle">: Done</i>
           </div>
         </nav>
         {this.props.todos.length !== 0 ? (

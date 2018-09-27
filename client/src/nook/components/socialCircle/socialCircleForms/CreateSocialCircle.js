@@ -34,7 +34,8 @@ class CreateSocialCircle extends Component {
       emailAddr: '',
       textInvite: false,
       mobileNumber: '',
-      textNote: defaultTextNote,
+      textNote: '',
+      defaultTextNote: '',
 
       errors: {}
     };
@@ -200,8 +201,8 @@ class CreateSocialCircle extends Component {
                       <br />
                       Describe the strength of your relation as you feel{' '}
                       <b>today</b> with the person you are inviting. For strong
-                      positive then score closer to 10. For very negative then
-                      score close to 0 (zero). 5 should be avoided for that
+                      positive feelings score closer to 10. For very negative
+                      then score close to 0 (zero). 5 should be avoided for that
                       marks it indifferent. That relation should not be in your
                       close circle.
                     </div>
@@ -268,7 +269,7 @@ class CreateSocialCircle extends Component {
                   onChange={this.handleTextInvite}
                 />{' '}
                 <font color="green">
-                  Check if you want to go to work from a different location.
+                  Check if you want send a text to highlight your invite.
                 </font>
               </label>
             </div>
@@ -282,8 +283,8 @@ class CreateSocialCircle extends Component {
                     will not appear in your social circle. In the 'Assess and
                     Get Reflection' from the drop down, you can change the
                     strength of, or drop off, a relation at any time. There
-                    would be at max 15 person in your circle (reason explaned in
-                    About tab).
+                    would be at max <b>15 person</b> in your circle (reason
+                    explaned in About tab).
                   </font>
                 </h6>
               </div>
@@ -291,7 +292,7 @@ class CreateSocialCircle extends Component {
             <div className="textspaceTop" />
             <div className="float-right">
               <button
-                className="btn shadow border border-white btn-primary btn-sm button-pad-top"
+                className="btn btn-primary btn-sm btn-size-same"
                 onClick={this.handleSaveClick}
               >
                 Save &nbsp;

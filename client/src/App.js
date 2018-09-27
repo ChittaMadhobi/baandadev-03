@@ -23,6 +23,7 @@ import Blockchain from './blockchain/components/BlockchainServices';
 import Cooperation from './cooperation/components/CooperativeLife';
 import Marketing from './marketing/components/Marketing';
 //import StartHereModal from './modal/components/ModalTest';
+//import Test from './nook/components/socialCircle/socialCircleForms/Test';
 
 import './App.css';
 
@@ -66,6 +67,7 @@ class App extends Component {
               <Route exact path="/blockchain" component={Blockchain} />
               <Route exact path="/cooperation" component={Cooperation} />
               <Route exact path="/marketing" component={Marketing} />
+
               {/* <Route exact path="/startheremodal" component={StartHereModal} /> */}
               <Route
                 exact

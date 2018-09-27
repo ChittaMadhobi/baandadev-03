@@ -42,7 +42,7 @@ class TaskJournal extends Component {
                 className="btn speech-button"
                 onClick={this.handleSpeechToText}
               >
-                <i class="fas fa-microphone-alt">&nbsp;Speech to Text</i>{' '}
+                <i className="fas fa-microphone-alt">&nbsp;Speech to Text</i>{' '}
               </button>
               &nbsp;&nbsp;
             </p>
@@ -68,7 +68,7 @@ class TaskJournal extends Component {
                           })
                         }
                         style={{ marginTop: '25px', marginRight: '15px' }}
-                        className="btn btn-info btn-sm custom_button4"
+                        className="btn btn-info btn-sm custom_button4 btn-size-same"
                       >
                         Searcah-View
                       </button>
@@ -77,10 +77,10 @@ class TaskJournal extends Component {
                       <button
                         type="button"
                         style={{ marginTop: '25px' }}
-                        className="btn btn-success btn-sm custom_button3"
+                        className="btn btn-success btn-sm custom_button3 btn-size-same"
                         onClick={this.handleUpdateDiary}
                       >
-                        Save & Exit Task - Diary
+                        Save & Exit
                       </button>
                     </div>
                   </div>

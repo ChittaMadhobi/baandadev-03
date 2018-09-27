@@ -153,7 +153,7 @@ class AddTasks extends Component {
                     })
                   }
                   style={{ marginTop: '25px', marginRight: '15px' }}
-                  className="btn btn-danger btn-sm custom_button1"
+                  className="btn btn-danger btn-sm btn-size-same"
                 >
                   Cancel
                 </button>
@@ -170,7 +170,7 @@ class AddTasks extends Component {
                     });
                   }}
                   style={{ marginTop: '25px' }}
-                  className="btn btn-success btn-sm custom_button1"
+                  className="btn btn-success btn-sm btn-size-same"
                 >
                   Add Task
                 </button>

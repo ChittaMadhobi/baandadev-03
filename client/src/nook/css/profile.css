@@ -23,3 +23,19 @@
   font-family: Georgia, sans-serif;
   color: #506484;
 }
+
+.thead-blue {
+  background-color: #506484;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #506484;
+  color: white;
+}
+
+.btn-size-rows {
+  width: 85px;
+  box-shadow: 2px 3px #707b8c;
+  background-color: #37455b;
+}

@@ -110,9 +110,9 @@ class Lobby extends Component {
                   type="button"
                   onClick={this.openAlertModal(ans)}
                 >
-                  Baanda Map
+                  Site Map
                   <div className="float-right">
-                    <i class="fas fa-map" />
+                    <i className="fas fa-map" />
                   </div>
                 </button>
               </div>

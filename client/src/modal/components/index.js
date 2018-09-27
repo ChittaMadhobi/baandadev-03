@@ -5,6 +5,7 @@
 //import alertModalRcc from './AlertModalRCC';
 import alertModalRcc from './displays/entrance/StartHereModal';
 import carouselMan from './displays/nook/CarouselManual';
+import socialMessage from './displays/nook/SocialCircleMessage';
 
 // const modalTypes = {
 //   alertModal,
@@ -16,7 +17,8 @@ import carouselMan from './displays/nook/CarouselManual';
 
 const modalTypes = {
   alertModalRcc,
-  carouselMan
+  carouselMan,
+  socialMessage
 };
 
 export default modalTypes;

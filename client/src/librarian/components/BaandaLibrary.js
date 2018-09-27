@@ -290,9 +290,9 @@ class BaandaLibrary extends Component {
       libContext = (
         <div className="fixedsize">
           <div className="workarea-padding">
-            <p className="text-center">
+            <div className="text-center">
               <h5>Baanda Systems Usage & Reporting</h5>
-            </p>
+            </div>
             <p>
               Baanda is expected to become a cooperation oriented global market
               place. A user may, or would, need direction. Every section will

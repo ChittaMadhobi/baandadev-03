@@ -33,20 +33,6 @@ class TheMaskTalk extends Component {
     );
   };
 
-  openAutoModal = param => e => {
-    console.log('param : ' + param);
-    //let msg = 'This could be Jit ID: ' + param;
-    // this.props.showModal(
-    //   {
-    //     open: true,
-    //     title: 'Alert - Start Here Header',
-    //     message: msg,
-    //     closeModal: this.closeModal
-    //   },
-    //   'carouselMan'
-    // );
-  };
-
   openHoloModal = param => e => {
     console.log('param : ' + param);
     //let msg = 'This could be Jit ID: ' + param;
@@ -141,7 +127,7 @@ class TheMaskTalk extends Component {
                   devices will enable in future.
                 </li>
               </ul>
-              <p className="text-center masktalk-text-note">
+              <div className="text-center masktalk-text-note">
                 <b>
                   Note: Baanda is not about holographic hardwire and/or devices.
                   It will depend on devices to come commercially. Baanda is
@@ -152,7 +138,7 @@ class TheMaskTalk extends Component {
                     Slider may not work in sx (mobile phone).
                   </font>
                 </p>
-              </p>
+              </div>
               <div className="textspaceTop" />
               <div className="textspaceTop" />
             </div>

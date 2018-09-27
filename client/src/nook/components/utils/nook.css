@@ -137,3 +137,8 @@
   padding: 0;
   margin: 0;
 }
+
+.btn-size-same {
+  width: 85px;
+  box-shadow: 2px 3px #707b8c;
+}

@@ -27,6 +27,13 @@ const INITIAL_DATA = [
     priority: 'medium',
     tasknotes: '',
     startDate: moment()
+  },
+  {
+    id: 2,
+    todotext: 'This is a stupid task of doing nothing. You can delete this.',
+    priority: 'low',
+    tasknotes: '',
+    startDate: moment()
   }
 ];
 //const INITIAL_DATA = [];

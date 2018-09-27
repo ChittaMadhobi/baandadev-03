@@ -7,10 +7,10 @@ import { hideModal } from '../../../../actions/modalActions';
 import '../../../css/localModal.css';
 import './css/nook.css';
 
-import CarouselManualBody from './CarouselManualBody';
+import SCMessageBody from './SCMessageBody';
 
 // class StartHereModal extends Component {
-class CarouselManual extends Component {
+class SocialCircleMessage extends Component {
   constructor(props) {
     super(props);
 
@@ -37,13 +37,20 @@ class CarouselManual extends Component {
   }
 
   render() {
-    console.log('CarouselManual props :' + JSON.stringify(this.props));
+    //console.log('CarouselManual XXXXX props :' + JSON.stringify(this.props.message));
     //const { title, message, messageText } = this.props;
     const { user } = this.props.auth;
-    console.log('user:' + JSON.stringify(user));
+    //console.log('user:' + JSON.stringify(user));
     const { title, message } = this.props;
 
-    console.log('title :' + title + ' | message:' + message);
+    console.log(
+      'title :' +
+        title +
+        ' | message:' +
+        JSON.stringify(message) +
+        '  user:' +
+        user
+    );
     return (
       <div className="container">
         <div className="modal-content-z">
@@ -51,7 +58,7 @@ class CarouselManual extends Component {
             <div className="modal-header">
               <h4>
                 <font color="#0e5b2e">
-                  <b>HUMANOID TALK - CAROUSEL OVERVIEW</b>
+                  <b>Details of Message and Invites </b>
                 </font>
               </h4>
             </div>
@@ -60,7 +67,7 @@ class CarouselManual extends Component {
           <div className="modal-body-zz">
             <div className="row">
               <div className="col-12">
-                <CarouselManualBody />
+                <SCMessageBody inputd={message} />
               </div>
             </div>
           </div>
@@ -95,7 +102,7 @@ class CarouselManual extends Component {
   }
 }
 
-CarouselManual.propTypes = {
+SocialCircleMessage.propTypes = {
   hideModal: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
@@ -107,4 +114,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { hideModal }
-)(CarouselManual);
+)(SocialCircleMessage);

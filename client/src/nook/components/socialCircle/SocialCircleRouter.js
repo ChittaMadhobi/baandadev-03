@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 import DefaultMessage from './DefaultMessage';
 import CreateSocialCircle from './socialCircleForms/CreateSocialCircle';
-import ConnectToSocialCircle from './socialCircleForms/ConnectToSocialCircle';
+//import ConnectToSocialCircle from './socialCircleForms/ConnectToSocialCircle';
+import ConnectToSocialCircle from './socialCircleForms/ConnectToSC';
+
 import AssessAndReflection from './socialCircleForms/AssessAndReflection';
 
 //import TheMaskTalk from './profileInputForms/TheMaskTalk';
