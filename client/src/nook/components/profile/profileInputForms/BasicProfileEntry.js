@@ -347,6 +347,7 @@ class BasicProfileEntry extends Component {
                 placeholder="A little snippet of your life (in 100 words or less). An interesting story for a friend."
                 name="lifeSnippet"
                 value={this.state.lifeSnippet}
+                rows={4}
                 onChange={this.onChange}
                 error={errors.lifeSnippet}
                 info="Tell something interesting. You can return and tell me more later ... like you tell stuff to your friend."

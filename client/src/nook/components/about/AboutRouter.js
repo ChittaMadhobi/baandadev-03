@@ -6,6 +6,7 @@ import NookAboutProfile from './NookAboutProfile';
 import NookAboutTaskDiary from './NookAboutTaskDiary';
 import NookAboutSocialCircle from './NookAboutSocialCircle';
 import NookAboutBudgeting from './NookAboutBudgeting';
+import NookAboutHumanoid from './NookAboutHumanoid';
 
 class AboutRouter extends Component {
   render() {
@@ -56,6 +57,14 @@ class AboutRouter extends Component {
       output = (
         <div>
           <NookAboutBudgeting />
+        </div>
+      );
+    }
+
+    if (selectValue === 'humanoid') {
+      output = (
+        <div>
+          <NookAboutHumanoid />
         </div>
       );
     }

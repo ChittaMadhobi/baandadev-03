@@ -33,7 +33,7 @@ class CarouselManualBody extends PureComponent {
     const errors = this.state;
 
     //console.log('SCMessage props GGGGGGGGGGGGG: ' + JSON.stringify(this.props));
-    let xx = '10/20/2018';
+
     let {
       //id,
       from,
@@ -70,14 +70,13 @@ class CarouselManualBody extends PureComponent {
               </div>
             </div>
           </div>
-          <form>
+          <form onSubmit={this.onSubmit}>
             <div className="row">
               <div className="col">
                 <TextAreaFieldGroup
                   placeholder="Text note ..."
                   name="textNote"
                   value={this.state.toMessage}
-                  rows={5}
                   onChange={this.onChange}
                   error={errors.toMessage}
                   info="If you want, change default note to text :: "
@@ -129,7 +128,6 @@ class CarouselManualBody extends PureComponent {
                   placeholder="Text note ..."
                   name="Send a message either way ... "
                   value={this.state.toMessage}
-                  rows={5}
                   onChange={this.onChange}
                   error={errors.toMessage}
                   info="If you want, change default note to text :: "

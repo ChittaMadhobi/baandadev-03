@@ -24,7 +24,7 @@ class SocialCircleMessage extends Component {
 
   closeModal(e) {
     e.preventDefault();
-    console.log('closeModal.func : ' + this.state.messageText);
+    //console.log('closeModal.func : ' + this.state.messageText);
     const modTask = {
       messageText: this.state.messageText
     };

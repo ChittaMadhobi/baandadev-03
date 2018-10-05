@@ -188,14 +188,12 @@ class FiveFactorDirect extends Component {
               className="btn btn-success btn-sm custom_button3"
               onClick={this.handleSelfEval}
             >
-              Save & Exit Self-Eval
+              Save the evaluation
             </button>
           </div>
           <div className="text-center">
-            Note: This is your own perception of your 'self.' In the next
-            section (drop down), a test will evaluate the same parameters from
-            your answer. The difference is an interesting parameter for Baanda
-            to aid you in your life-activities.
+            Note: Please honestly fill the assessment; yours or of someone from
+            your circle.
           </div>
         </div>
       </div>

@@ -62,7 +62,7 @@ class CreateSocialCircle extends Component {
   };
 
   onChangePhone = value => {
-    console.log('phone:' + value);
+    // console.log('phone:' + value);
     // this.setState({
     //   mobileNumber: value
     // });
@@ -125,7 +125,7 @@ class CreateSocialCircle extends Component {
                 <TextFieldGroup
                   name="connectionName"
                   placeholder="Enter your connection's name ..."
-                  value={this.state.textNote}
+                  value={this.state.connectionName}
                   onChange={this.onChange}
                   error={errors.connectionName}
                   info="Name of the person who you want in your circle :: "
@@ -248,7 +248,7 @@ class CreateSocialCircle extends Component {
               <div className="col-12">
                 <TextAreaFieldGroup
                   placeholder="Your note of invite"
-                  name="lifeSnippet"
+                  name="inviteNote"
                   value={this.state.inviteNote}
                   rows={5}
                   onChange={this.onChange}

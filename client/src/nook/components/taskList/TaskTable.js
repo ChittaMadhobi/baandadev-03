@@ -12,9 +12,10 @@ import { bindActionCreators } from 'redux';
 class TaskTable extends Component {
   popupFunction = id => {
     alert(
-      'Here you would see a popup with details of the task along with some opportunity to work on them if possible - like send a message to a friend. Task is:' +
+      'Here you would see a popup with details of the task along with some opportunity to ' +
+        ' work on them if possible - like send a message to a friend. >>>> TASK YOU CLICKED IS: #' +
         (this.props.todos[id].id + 1) +
-        ' ' +
+        ' --- WITH DESCRIPTION: ' +
         this.props.todos[id].todotext
     );
   };

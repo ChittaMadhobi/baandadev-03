@@ -9,8 +9,8 @@ import TheMask from './mask/TheMaskTalk';
 
 import ProfileContainer from './profile/ProfileContainer';
 import SocialCircle from './socialCircle/SocialCircleContainer';
-//import nookFriendFamily from '../img/nookFriendFamily.png';
-import nookBudget from '../img/nookBudget.png';
+
+import Budgeting from './budget/BudgetContainer';
 
 class Nook extends Component {
   constructor() {
@@ -82,11 +82,7 @@ class Nook extends Component {
     if (this.state.budgetInYourLife) {
       nookMainFunctionalPanel = (
         <div className="fixedsize">
-          <div className="workarea-padding">
-            <div className="pictures">
-              <img src={nookBudget} width="100%" height="100%" alt="..." />
-            </div>
-          </div>
+          <Budgeting />
         </div>
       );
     }

@@ -7,6 +7,7 @@ export const showModal = (modalProps, modalType) => dispatch => {
       ' modalType:' +
       modalType
   );
+
   dispatch({
     type: ActionTypes.SHOW_MODAL,
     modalProps,

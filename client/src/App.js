@@ -8,7 +8,7 @@ import store from './store';
 
 import Navbar from './entrance/components/layout/Navbar';
 import Footer from './entrance/components/layout/Footer';
-//import Landing from './entrance/components/layout/Landing';
+
 import Lobby from './entrance/components/layout/Lobby';
 
 import Login from './entrance/components/auth/Login';

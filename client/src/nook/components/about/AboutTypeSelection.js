@@ -30,6 +30,9 @@ class AboutTypeSelection extends Component {
                 <option value="budgetingQuestion">
                   Budgeting: Q&A - art and science of budgeting (User's guide)
                 </option>
+                <option value="humanoid">
+                  Humanoid Conversation: Q&A - Nuances of the Mask
+                </option>
               </select>
             </div>
           </div>

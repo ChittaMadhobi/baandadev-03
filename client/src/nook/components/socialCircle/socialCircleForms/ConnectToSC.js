@@ -29,8 +29,8 @@ class ConnectToSC extends Component {
     let msgType =
       this.props.messages[id].invite === true ? 'Invite' : 'Message';
 
-    console.log('ConnectToSC props:' + JSON.stringify(this.props));
-    console.log('ConnectToSC id: ' + id);
+    //console.log('ConnectToSC props:' + JSON.stringify(this.props));
+    //console.log('ConnectToSC id: ' + id);
 
     const msgObj = {
       id: this.props.messages[id].id,

@@ -43,7 +43,7 @@ const INITIAL_DATA = [
     id: 4,
     Title: 'Art of War',
     message:
-      'The greatest victory is that which requires no battle. In the midst of chaos, there is also opportunity. Do you think life if battle-field or play-ground?',
+      'The greatest victory is that which requires no battle. In the midst of chaos, there is also opportunity. Do you think life is a battle-field or a play-ground?',
     from: 'Sun Tzu',
     startDate: moment(),
     invite: false
@@ -69,7 +69,7 @@ const messageReducer = (state = INITIAL_DATA, action) => {
       //     '|| priority:' +
       //     action.text.priority
       // );
-      if (action.text.messageText.trim()) {
+      if (action.text.messageText) {
         return [
           ...state,
           {

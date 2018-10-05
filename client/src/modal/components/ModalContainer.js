@@ -8,7 +8,9 @@ import { default as modalTypes } from './index';
 const MODAL_TYPES = {
   alert: modalTypes.alertModalRcc,
   carouselMan: modalTypes.carouselMan,
-  socialMessage: modalTypes.socialMessage
+  socialMessage: modalTypes.socialMessage,
+  socialMirror: modalTypes.socialMirror,
+  financialMirror: modalTypes.financialMirror
 };
 
 const mapStateToProps = state => ({

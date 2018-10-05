@@ -11,8 +11,8 @@ import HM5 from './img/humanoidManual-5.png';
 import HM6 from './img/humanoidManual-6.png';
 import HM7 from './img/humanoidManual-7.png';
 
-const Bigbunny =
-  'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+// const Bigbunny =
+//   'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
 // const ElephantsDream =
 //   'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
 // const ForBiggerBlaze =
@@ -89,7 +89,7 @@ class CarouselManualBody extends PureComponent {
               <div className="img-div-style">
                 <img className="text-position2" src={HM7} alt="..." />
               </div>
-              <div className="img-div-style">
+              {/* <div className="img-div-style">
                 <video
                   className="carousel-center"
                   controls
@@ -98,7 +98,7 @@ class CarouselManualBody extends PureComponent {
                 >
                   <source src={Bigbunny} type="video/mp4" />
                 </video>
-              </div>
+              </div> */}
             </RBCarousel>
             {/* </div> */}
           </div>
