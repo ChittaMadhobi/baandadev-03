@@ -41,10 +41,10 @@ mongoose
   .then(() => console.log(`Logged into MLab URI = ${db}`))
   .catch(err => console.log('Error Mongo : ' + err));
 
-app.get('/', (req, res) => {
-  console.log('reached here 0');
-  res.send('hello');
-});
+// app.get('/', (req, res) => {
+//   console.log('reached here 0');
+//   res.send('hello');
+// });
 
 // ================= PASSPORT MIDDLEWARE ========================
 app.use(passport.initialize());
