@@ -13,6 +13,7 @@ const path = require('path');
 // Load user model (for registration & auth)
 require('./models/common/User');
 
+// Adding a comment to test heroku load
 // Load Routes
 const users = require('./routes/api/users');
 const finance = require('./routes/api/finance');
