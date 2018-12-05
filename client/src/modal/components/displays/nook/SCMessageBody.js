@@ -30,7 +30,7 @@ class CarouselManualBody extends PureComponent {
   }
 
   render() {
-    const errors = this.state;
+    //const errors = this.state;
 
     //console.log('SCMessage props GGGGGGGGGGGGG: ' + JSON.stringify(this.props));
 
@@ -75,10 +75,10 @@ class CarouselManualBody extends PureComponent {
               <div className="col">
                 <TextAreaFieldGroup
                   placeholder="Text note ..."
-                  name="textNote"
+                  name="toMessage"
                   value={this.state.toMessage}
                   onChange={this.onChange}
-                  error={errors.toMessage}
+                  // error={errors.toMessage}
                   info="If you want, change default note to text :: "
                 />
               </div>
@@ -126,10 +126,10 @@ class CarouselManualBody extends PureComponent {
               <div className="col">
                 <TextAreaFieldGroup
                   placeholder="Text note ..."
-                  name="Send a message either way ... "
+                  name="toMessage"
                   value={this.state.toMessage}
                   onChange={this.onChange}
-                  error={errors.toMessage}
+                  //error={errors.toMessage}
                   info="If you want, change default note to text :: "
                 />
               </div>

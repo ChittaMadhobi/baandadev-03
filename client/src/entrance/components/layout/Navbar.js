@@ -31,10 +31,9 @@ class Navbar extends Component {
           </Link>
         </li>
         <li className="nav-item">
-          <a
-            href=""
+          <button
             onClick={this.onLogoutClick.bind(this)}
-            className="nav-link"
+            className="btn btn-dark mtn-md navbar-logout-button nav-link"
           >
             {user.name} &nbsp;&nbsp;
             <img
@@ -45,7 +44,7 @@ class Navbar extends Component {
               title="You email should be Gravitar"
             />{' '}
             Logout
-          </a>
+          </button>
         </li>
       </ul>
     );

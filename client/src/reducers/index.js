@@ -5,6 +5,9 @@ import authReducer from './authReducer';
 import errorReducer from './errorReducer';
 import todos from './TodoReducer';
 import messages from './messageReducer';
+import pursuits from './sxPursuitReducer';
+import sxMessages from './sxMessageReducer';
+import sxProject from './sxProjectReducer';
 
 //import { uiReducer } from './reducer-ui';
 import visibilityFilter from './visibilityFilter';
@@ -17,6 +20,9 @@ export default combineReducers({
   //ui: uiReducer,
   todos,
   messages,
+  pursuits,
+  sxMessages,
+  sxProject,
   visibilityFilter,
   modal
 });

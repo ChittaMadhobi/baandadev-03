@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { loginUser, googleLoginUser } from '../../../actions/authActions';
 
 class Login extends Component {
@@ -107,24 +107,24 @@ class Login extends Component {
                 </div>
               )}
               <div className="text-center">
-                <span>
+                {/* <span>
                   <h4 className="mb-3 mt-3">
                     <strong> OR </strong>{' '}
                   </h4>{' '}
-                </span>
-                <button
+                </span> */}
+                {/* <button
                   className="btn btn-secondary btn-block mt-4"
                   onClick={this.onClickGoogle.bind(this)}
                 >
                   Login with Google <i className="fa fa-globe extraClass" />
-                </button>
+                </button> */}
                 {/*<font color="red">
                   Google Auth is deactivated (to be activated soon).
                 </font> */}
               </div>
 
               <div className="textspaceTop" />
-              <div>
+              {/* <div>
                 <Link
                   to="/baandaReception"
                   className="btn btn-outline-primary btn-block"
@@ -134,7 +134,7 @@ class Login extends Component {
               </div>
               <p className="text-center">
                 <i>Login / Signup / Browse listings </i>
-              </p>
+              </p> */}
               <div className="textspaceTop" />
             </div>
           </div>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Slider from 'react-rangeslider';
 import 'react-rangeslider/lib/index.css';
 
+import './nook.css';
+
 class Conscientiousness extends Component {
   constructor(props) {
     super(props);
@@ -77,7 +79,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns1 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-top5-slider-header">
+            <div className="card-header shadow card-header-baanda">
               <div className="text-center">
                 <strong>
                   Self-efficacy &nbsp; || &nbsp; Use slider to mark your score:
@@ -113,7 +115,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns2 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-top5-slider-header">
+            <div className="card-body shadow card-header-baanda">
               <div className="text-center">
                 <strong>
                   Orderliness &nbsp; || &nbsp; Use slider to mark your scoree:
@@ -149,7 +151,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns3 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-top5-slider-header">
+            <div className="card-body shadow card-header-baanda">
               <div className="text-center">
                 <strong>
                   Dutifulness &nbsp; || &nbsp; Use slider to mark your score:
@@ -185,7 +187,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns4 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-top5-slider-header">
+            <div className="card-body shadow card-header-baanda">
               <div className="text-center">
                 <strong>
                   Achievement-striving &nbsp; || &nbsp; Use slider to mark your
@@ -227,7 +229,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns5 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-top5-slider-header">
+            <div className="card-body shadow card-header-baanda">
               <div className="text-center">
                 <strong>
                   Self-discipline &nbsp; || &nbsp; Use slider to mark your
@@ -265,7 +267,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns6 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-top5-slider-header">
+            <div className="card-body shadow card-header-baanda">
               <div className="text-center">
                 <strong>
                   Cautiousness &nbsp; || &nbsp; Use slider to mark your score:

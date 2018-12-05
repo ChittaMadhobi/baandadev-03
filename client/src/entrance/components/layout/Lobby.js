@@ -59,7 +59,7 @@ class Lobby extends Component {
             <div className="col-12">
               <div className="headerpic headerpicLeftPad">
                 <span className="align-baseline-left">
-                  <h1>The Lobby</h1>
+                  <h1>The Baanda Lobby</h1>
                 </span>
               </div>
             </div>
@@ -135,20 +135,24 @@ class Lobby extends Component {
                           <li className="list-inline-item">
                             {' '}
                             <i className="fa fa-check" />
-                            &nbsp; Setup profile
+                            &nbsp; Persona
                           </li>
 
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
-                            &nbsp; Handle tasks
+                            &nbsp; Tasks Mgmt.
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
-                            &nbsp; Family & friends
+                            &nbsp; Social Circle
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
-                            &nbsp; Personal Budget
+                            &nbsp; Budget
+                          </li>
+                          <li className="list-inline-item">
+                            <i className="fa fa-check" />
+                            &nbsp; Reflections
                           </li>
                         </ul>
                       </div>
@@ -223,7 +227,7 @@ class Lobby extends Component {
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="textspaceTop" />
               <div className="text-center">
-                <div>
+                {/* <div>
                   <Link
                     to="/baandalibrary"
                     className="btn btn-outline-primary btn-block"
@@ -233,7 +237,7 @@ class Lobby extends Component {
                       <i className="fas fa-broadcast-tower" />
                     </div>
                   </Link>{' '}
-                </div>
+                </div> */}
                 <div className="textspaceTop" />
 
                 <div>
@@ -253,7 +257,7 @@ class Lobby extends Component {
                     to="/marketing"
                     className="btn btn-outline-primary btn-block"
                   >
-                    <strong>Connect</strong>
+                    <strong>Influence</strong>
                     <div className="float-right">
                       <i className="fas fa-envelope" />
                     </div>
@@ -277,7 +281,7 @@ class Lobby extends Component {
                     to="/blockchain"
                     className="btn btn-outline-primary btn-block"
                   >
-                    <strong>Blockchain</strong>
+                    <strong>Agreement</strong>
                     <div className="float-right">
                       <i className="fas fa-link" />
                     </div>

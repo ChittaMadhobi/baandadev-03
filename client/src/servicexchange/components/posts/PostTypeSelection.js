@@ -14,6 +14,9 @@ class SelectionBox extends Component {
                 onChange={this.props.handleOnChange}
               >
                 <option value="none">Select your Post Type</option>
+                <option value="whoruInSx">
+                  Introduce your 'self' for SX to assist you
+                </option>
                 <option value="srvRequestor">
                   Service Requester (Help Wanted / Job Posting)
                 </option>
@@ -25,6 +28,9 @@ class SelectionBox extends Component {
                 </option>
                 <option value="internForMaster">
                   Apprentice seeking Master to learn and assist{' '}
+                </option>
+                <option value="formCoOp">
+                  Initiate a co-op with a destiny{' '}
                 </option>
               </select>
             </div>

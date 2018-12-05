@@ -10,7 +10,10 @@ const MODAL_TYPES = {
   carouselMan: modalTypes.carouselMan,
   socialMessage: modalTypes.socialMessage,
   socialMirror: modalTypes.socialMirror,
-  financialMirror: modalTypes.financialMirror
+  financialMirror: modalTypes.financialMirror,
+  sxPursuits: modalTypes.sxPursuits,
+  sxMessage: modalTypes.sxMessage,
+  sxProject: modalTypes.sxProject
 };
 
 const mapStateToProps = state => ({

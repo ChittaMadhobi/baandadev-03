@@ -26,7 +26,8 @@ const TextAreaFieldGroup = ({
         onChange={onChange}
       />
       {info && (
-        <small className="form-text text-muted">
+        // <small className="form-text text-muted">
+        <small className="form-text">
           {info}
           {must}
         </small>

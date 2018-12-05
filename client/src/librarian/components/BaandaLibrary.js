@@ -238,6 +238,14 @@ class BaandaLibrary extends Component {
               width="100%"
               height="480px"
             />
+            {/* <ReactPlayer
+              url="https://s3-us-west-2.amazonaws.com/baandadev1/videoMsg4.webm"
+              className="react-player"
+              playing="true"
+              controls="true"
+              width="100%"
+              height="480px"
+            /> */}
           </div>
         </div>
       );

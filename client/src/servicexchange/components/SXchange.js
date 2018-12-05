@@ -4,10 +4,13 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 //import serviceExchangeInfo from '../img/serviceExchangeInfo.png';
 
-import sxDashboard from '../img/sxDashboard.png';
-import HelpWantedMatch from '../components/matches/HelpWantedMatch';
+//import sxDashboard from '../img/sxDashboard.png';
+import SXDashboard from './dashboard/SXDashContainer';
+
+//import HelpWantedMatch from '../components/matches/HelpWantedMatch';
 import SxPost from './posts/PostContainer';
 import SxAbout from './about/AboutContainer';
+import SXBrowse from './browse/SXBrowse';
 
 class SXchange extends Component {
   constructor(props) {
@@ -20,7 +23,6 @@ class SXchange extends Component {
       defaultSXInfo: true,
       createManageProfile: false,
       yourDashboard: false,
-      coWorkMatch: false,
       coWorkBrowse: false
     };
 
@@ -28,7 +30,7 @@ class SXchange extends Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount()');
+    //console.log('componentDidMount()');
     if (this.props.auth.isAuthenticated) {
       this.setState({ name: this.props.auth.user.name });
     } else {
@@ -49,7 +51,7 @@ class SXchange extends Component {
             <SxAbout />
           </div>
         </div>
-      ); 
+      );
     }
 
     if (this.state.createManageProfile) {
@@ -67,35 +69,16 @@ class SXchange extends Component {
     if (this.state.yourDashboard) {
       SXContext = (
         <div className="fixedsize">
-          <div className="workarea-padding">
-            <div className="pictures">
-              <img src={sxDashboard} width="100" height="650" alt="..." />
-            </div>
-          </div>
+          <SXDashboard />
         </div>
       );
     }
 
-    if (this.state.coWorkMatch) {
-      SXContext = (
-        <div className="fixedsize">
-          <div>
-            <div className="pictures">
-              <HelpWantedMatch />
-            </div>
-          </div>
-        </div>
-      );
-    }
-
+ 
     if (this.state.coWorkBrowse) {
       SXContext = (
-        <div className="fixedsize">
-          <div>
-            <div className="pictures">
-              <h3>CoWork Browse</h3>
-            </div>
-          </div>
+        <div>
+          <SXBrowse propsForward={this.props} />
         </div>
       );
     }
@@ -119,7 +102,6 @@ class SXchange extends Component {
                       defaultSXInfo: true,
                       createManageProfile: false,
                       yourDashboard: false,
-                      coWorkMatch: false,
                       coWorkBrowse: false
                     }));
                   }}
@@ -140,7 +122,6 @@ class SXchange extends Component {
                       defaultSXInfo: false,
                       createManageProfile: true,
                       yourDashboard: false,
-                      coWorkMatch: false,
                       coWorkBrowse: false
                     }));
                   }}
@@ -161,7 +142,6 @@ class SXchange extends Component {
                       defaultSXInfo: false,
                       createManageProfile: false,
                       yourDashboard: true,
-                      coWorkMatch: false,
                       coWorkBrowse: false
                     }));
                   }}
@@ -172,6 +152,7 @@ class SXchange extends Component {
                   Dashboard
                 </button>
               </div>
+
               <div className="demobuttons">
                 <button
                   className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
@@ -181,27 +162,6 @@ class SXchange extends Component {
                       defaultSXInfo: false,
                       createManageProfile: false,
                       yourDashboard: false,
-                      coWorkMatch: true,
-                      coWorkBrowse: false
-                    }));
-                  }}
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="Engage in service exchange process."
-                >
-                  Matches
-                </button>
-              </div>
-              <div className="demobuttons">
-                <button
-                  className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
-                  type="button"
-                  onClick={() => {
-                    this.setState(preState => ({
-                      defaultSXInfo: false,
-                      createManageProfile: false,
-                      yourDashboard: false,
-                      coWorkMatch: false,
                       coWorkBrowse: true
                     }));
                   }}

@@ -8,6 +8,9 @@ import carouselMan from './displays/nook/CarouselManual';
 import socialMessage from './displays/nook/SocialCircleMessage';
 import socialMirror from './displays/nook/SCMirrorModal';
 import financialMirror from './displays/nook/FinanceMirrorModal';
+import sxPursuits from './displays/servicexchange/SXPursuitModal';
+import sxMessage from './displays/servicexchange/SXMessageModal';
+import sxProject from './displays/servicexchange/SXProjectModal';
 
 // const modalTypes = {
 //   alertModal,
@@ -22,7 +25,10 @@ const modalTypes = {
   carouselMan,
   socialMessage,
   socialMirror,
-  financialMirror
+  financialMirror,
+  sxPursuits,
+  sxMessage,
+  sxProject
 };
 
 export default modalTypes;

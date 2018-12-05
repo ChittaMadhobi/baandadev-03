@@ -23,6 +23,9 @@ class AboutTypeSelection extends Component {
                 <option value="dashboardQuestion">
                   Questions about Dashboard (Details, like a manual)
                 </option>
+                <option value="browseQuestion">
+                  Questions about Browsing (Details, like a manual)
+                </option>
               </select>
             </div>
           </div>

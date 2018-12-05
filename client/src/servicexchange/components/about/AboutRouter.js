@@ -24,21 +24,29 @@ class AboutRouter extends Component {
       );
     }
 
-    // if (selectValue === 'srvProvider') {
-    //   output = (
-    //     <div>
-    //       <ServiceProvider />
-    //     </div>
-    //   );
-    // }
+    if (selectValue === 'postQuestions') {
+      output = (
+        <div>
+          Posting related questions
+        </div>
+      );
+    }
 
-    // if (selectValue === 'masterForIntern') {
-    //   output = (
-    //     <div>
-    //       <MasterForApprentice />
-    //     </div>
-    //   );
-    // }
+    if (selectValue === 'dashboardQuestion') {
+      output = (
+        <div>
+          Dashboard Questions
+        </div>
+      );
+    }
+
+    if (selectValue === 'browseQuestion') {
+      output = (
+        <div>
+          How to browse
+        </div>
+      );
+    }
 
     return (
       <div className="col-lg-12 col-md-8 col-sm-6">

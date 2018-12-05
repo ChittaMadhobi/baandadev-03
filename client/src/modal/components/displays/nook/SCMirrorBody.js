@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import moment from 'moment';
+import React, { Component } from "react";
+import moment from "moment";
 // import ComparitiveRadarChart from '../../../../nook/components/charts/ComparitiveRadarChart';
 // import SentimentGaugeChart1 from '../../../../nook/components/charts/SentimentGaugeChart1';
 // import SentimentGaugeChart2 from '../../../../nook/components/charts/SentimentGaugeChart2';
 
-import ComparitiveRadarChart from '../../../../nook/components/charts/socialcircle/ComparitiveRadarChart';
-import SentimentGaugeChart1 from '../../../../nook/components/charts/socialcircle/SentimentGaugeChart1';
-import SentimentGaugeChart2 from '../../../../nook/components/charts/socialcircle/SentimentGaugeChart2';
+import ComparitiveRadarChart from "../../../../nook/components/charts/socialcircle/ComparitiveRadarChart";
+import SentimentGaugeChart1 from "../../../../nook/components/charts/socialcircle/SentimentGaugeChart1";
+import SentimentGaugeChart2 from "../../../../nook/components/charts/socialcircle/SentimentGaugeChart2";
 
-import './css/nook.css';
+import "./css/nook.css";
 
 class SCMirrorBody extends Component {
   constructor(props) {
@@ -16,7 +16,8 @@ class SCMirrorBody extends Component {
 
     this.state = {
       comparitive: false,
-      sentiment: true
+      sentiment: true,
+      socialCircle: false
     };
 
     this.switchToComparitive = this.switchToComparitive.bind(this);
@@ -26,27 +27,38 @@ class SCMirrorBody extends Component {
 
   showDetailMsg = () => {
     alert(
-      'In production, this would lead to deeper level comparison of how you perceive yourself and how your circle perceived you.'
+      "In production, this would lead to deeper level comparison of how you perceive yourself and how your circle perceived you."
     );
   };
 
   switchToComparitive = () => {
     this.setState({
       comparitive: true,
-      sentiment: false
+      sentiment: false,
+      socialCircle: false
     });
   };
 
   switchToSentiment = () => {
     this.setState({
       comparitive: false,
-      sentiment: true
+      sentiment: true,
+      socialCircle: false
+    });
+  };
+
+  switchToSocialCircle = () => {
+    this.setState({
+      comparitive: false,
+      sentiment: false,
+      socialCircle: true
     });
   };
 
   render() {
     let sentimentout;
     let comparitiveout;
+    let socialcircleout;
 
     // Show today's data as the time of the chart ----
     // let today = new Date();
@@ -62,7 +74,7 @@ class SCMirrorBody extends Component {
     // let prtoday = mm + '/' + dd + '/' + yyyy;
     var exdate = moment();
     // var signDate = exdate.format('YYYY-MM-DD HH:mm A');
-    var signDate = exdate.format('dddd, MMMM Do YYYY, h:mm:ss a');
+    var signDate = exdate.format("dddd, MMMM Do YYYY, h:mm:ss a");
     // -----------------------------------------------
 
     if (this.state.sentiment) {
@@ -96,6 +108,15 @@ class SCMirrorBody extends Component {
                 >
                   Show Comparitive Chart &nbsp;
                   <i className="fa fa-check" />
+                </button>
+              </div>
+              <div className="float-right">
+                <button
+                  className="btn btn-primary btn-sm shadow"
+                  onClick={this.switchToSocialCircle}
+                >
+                  Show My Social Circle &nbsp;
+                  <i class="far fa-dot-circle" />
                 </button>
               </div>
             </div>
@@ -229,16 +250,67 @@ class SCMirrorBody extends Component {
               <i class="fas fa-check" />
             </button>
           </div>
+          <div className="float-right">
+            <button
+              className="btn btn-primary btn-sm shadow"
+              onClick={this.switchToSocialCircle}
+            >
+              Show My Social Circle &nbsp;
+              <i class="far fa-dot-circle" />
+            </button>
+          </div>
         </div>
       );
     } else {
       comparitiveout = null;
     }
 
+    // ---------------------------- Social Circle below
+    if (this.state.socialCircle) {
+      socialcircleout = (
+        <div className="text-center">
+          <h3>
+            <font color="#4f6277">Your Inner Social Circle Now</font>
+          </h3>
+          <strong>At: </strong>
+          <font color="blue">{signDate}</font>
+          <div className="row">
+            <div className="col">
+              <div className="fixedsize-social-circle">Here will be the 3D stuff</div>
+            </div>
+          </div>
+          <div className="textspaceTop" />
+          <div className="float-right">
+            <button
+              className="btn btn-primary btn-sm shadow"
+              onClick={this.switchToSentiment}
+            >
+              Show Sentiment Gauge&nbsp;
+              <i class="fas fa-check" />
+            </button>
+          </div>
+          <div className="float-right">
+            <button
+              className="btn btn-primary btn-sm shadow"
+              onClick={this.switchToComparitive}
+            >
+              Show Comparitive Chart &nbsp;
+              <i className="fa fa-check" />
+            </button>
+          </div>
+        </div>
+      );
+    } else {
+      socialcircleout = null;
+    }
+
+    // -----------------------------------------------
+
     return (
       <div>
         <div>{sentimentout}</div>
         <div>{comparitiveout}</div>
+        <div>{socialcircleout}</div>
       </div>
     );
   }

@@ -9,6 +9,7 @@ const TextAreaFieldGroup = ({
   error,
   info,
   must,
+  rows,
   onChange
 }) => {
   return (
@@ -20,7 +21,8 @@ const TextAreaFieldGroup = ({
         placeholder={placeholder}
         name={name}
         value={value}
-        spellCheck={true}
+        rows={rows}
+        spellCheck={rows}
         onChange={onChange}
       />
       {info && (
@@ -40,6 +42,7 @@ TextAreaFieldGroup.propTypes = {
   value: PropTypes.string.isRequired,
   info: PropTypes.string,
   error: PropTypes.string,
+  rows: PropTypes.number,
   onChange: PropTypes.func.isRequired
 };
 

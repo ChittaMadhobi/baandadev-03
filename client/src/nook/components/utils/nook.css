@@ -125,10 +125,16 @@
 
 .card-top5-slider-header {
   background-color: whitesmoke;
-  height: 110px;
-  font-size: 17px;
+  height: 60px;
+  font-size: 14pt;
   font-family: Georgia, serif;
   padding-top: 2px;
+}
+
+.card-header-baanda {
+  background-color: #e0f1f1;
+  height: 120px;
+  font-size: 12pt;
 }
 
 .self-eval-head-padding {

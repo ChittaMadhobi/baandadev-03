@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import ProductRowAct from './ProductRowAct';
+import React, { Component } from "react";
+import ProductRowAct from "./ProductRowAct";
 
 class ProductTableAct extends Component {
   checkDecimal(inputtxt) {
@@ -21,7 +21,7 @@ class ProductTableAct extends Component {
     var product = this.props.products.map(function(product) {
       //console.log('ProductTable:' + JSON.stringify(product));
 
-      if (product.earnExpType === 'expense') {
+      if (product.earnExpType === "expense") {
         expenseTot = expenseTot + parseFloat(product.amount);
       } else {
         earningTot = earningTot + parseFloat(product.amount);
@@ -52,7 +52,7 @@ class ProductTableAct extends Component {
               <font color="green">
                 &nbsp;
                 {ernT}
-              </font>{' '}
+              </font>{" "}
               &nbsp;&nbsp;&nbsp;&nbsp; Total Expense $:
               <font color="red">
                 &nbsp;

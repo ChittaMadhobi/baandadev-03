@@ -115,6 +115,7 @@ class SRForm extends Component {
                 value={this.state.serviceDescription}
                 onChange={this.onChange}
                 error={errors.serviceDescription}
+                rows={5}
                 info="Describe your work for viewing ::"
                 must="Must Provide"
               />

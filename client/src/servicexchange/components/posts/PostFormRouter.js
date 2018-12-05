@@ -5,6 +5,8 @@ import ServiceRequestor from './postInputForms/SRForm';
 import ServiceProvider from './postInputForms/SPForm';
 import MasterForApprentice from './postInputForms/MasterForApprentice';
 import ApprenticeForMaster from './postInputForms/ApprenticeForMaster';
+import WhoRUinSX from './postInputForms/WhoRUinSX';
+import CoopPost from './postInputForms/CoopPost';
 
 class PostFormRouter extends Component {
   render() {
@@ -15,6 +17,14 @@ class PostFormRouter extends Component {
       output = (
         <div>
           <DefaultMessage />
+        </div>
+      );
+    }
+
+    if (selectValue === 'whoruInSx') {
+      output = (
+        <div>
+          <WhoRUinSX />
         </div>
       );
     }
@@ -47,6 +57,14 @@ class PostFormRouter extends Component {
       output = (
         <div>
           <ApprenticeForMaster />
+        </div>
+      );
+    }
+
+    if (selectValue === 'formCoOp') {
+      output = (
+        <div>
+          <CoopPost />
         </div>
       );
     }
