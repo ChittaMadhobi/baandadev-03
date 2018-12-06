@@ -2,7 +2,7 @@
   "name": "baandadev-03",
   "version": "1.0.3",
   "description": "baandadev for Dec-2018",
-  "engines" : { "node": "8.11.1" }, 
+  "engines" : { "node": "8.11.1", "npm": "6.4.1" }, 
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
