@@ -33,7 +33,7 @@ class TaskJournal extends Component {
               <br />
               <font color="#3f55c1">
                 <h3>
-                  <b>Your Diary / Journal </b>
+                  <b>Your Wiki Journal </b>
                 </h3>
               </font>
             </div>
