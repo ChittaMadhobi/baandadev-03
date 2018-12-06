@@ -31,7 +31,7 @@ class ProductsAct extends Component {
         id: 3,
         category: 'Housing',
         earnExpType: 'expense',
-        subcategory: 'Roommate-Rent',
+        subcategory: 'Rent',
         amount: 750.8
       },
       {
@@ -45,14 +45,14 @@ class ProductsAct extends Component {
         id: 6,
         category: 'Groceries',
         earnExpType: 'expense',
-        subcategory: 'This weeks food stuff',
+        subcategory: 'Food for the week',
         amount: 75.43
       },
       {
         id: 8,
         category: 'Transport',
         earnExpType: 'expense',
-        subcategory: 'Bought Metro-monthly',
+        subcategory: 'Monthly Metro pass',
         amount: 55.58
       },
       {

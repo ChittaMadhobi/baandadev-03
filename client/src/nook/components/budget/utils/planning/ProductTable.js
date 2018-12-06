@@ -48,12 +48,12 @@ class ProductTable extends Component {
         <div>
           <p>
             <b>
-              Total Earning $:
+              Total Earnings $:
               <font color="green">
                 &nbsp;
                 {ernT}
               </font>{' '}
-              &nbsp;&nbsp;&nbsp;&nbsp; Total Expense $:
+              &nbsp;&nbsp;&nbsp;&nbsp; Total Expenses $:
               <font color="red">
                 &nbsp;
                 {expT}
@@ -68,7 +68,7 @@ class ProductTable extends Component {
                 Type
               </th>
               <th width="30%" className="table-cell-head">
-                HL Category
+                Category
               </th>
               <th width="25%" className="table-cell-head">
                 Sub-category

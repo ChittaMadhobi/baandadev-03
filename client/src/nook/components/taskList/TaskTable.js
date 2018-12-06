@@ -71,7 +71,7 @@ class TaskTable extends Component {
           >
             <thead className="thead-dark">
               <tr>
-                <th scope="col">TO-DO Tasks </th>
+                <th scope="col">To-Do Tasks </th>
                 <th scope="col">Actions</th>
               </tr>
             </thead>
@@ -125,7 +125,7 @@ class TaskTable extends Component {
             className="col-lg-10 col-md-10 col-xs-12 col-sm-12 offset-lg-1"
           >
             <div className="alert alert-danger" role="alert">
-              Todo List is empty or Filter results show no results
+              To do List is empty or filter results show no results
             </div>
           </div>
         )}{' '}

@@ -86,7 +86,7 @@ class ConnectToSC extends Component {
                 onClick={() => this.props.setVisibilityFilter(SHOW_COMPLETED)}
                 className="btn btn-secondary custom_button1 btn-sm btn-size-rows"
               >
-                Invies
+                Invitations
               </button>
               <button
                 type="button"
@@ -110,7 +110,7 @@ class ConnectToSC extends Component {
                 <tr>
                   <th scope="col">
                     Social Circle <font color="lightgreen">Messages</font> &{' '}
-                    <font color="lightblue">Invites</font>{' '}
+                    <font color="lightblue">Invitations</font>{' '}
                   </th>
                   <th scope="col">Open</th>
                 </tr>
@@ -152,7 +152,7 @@ class ConnectToSC extends Component {
               className="col-lg-10 col-md-10 col-xs-12 col-sm-12 offset-lg-1"
             >
               <div className="alert alert-danger" role="alert">
-                No messages or invites
+                No messages or invitations
               </div>
             </div>
           )}{' '}

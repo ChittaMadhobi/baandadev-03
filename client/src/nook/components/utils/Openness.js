@@ -85,10 +85,9 @@ class Openness extends Component {
                   <font color="blue">{this.state.scaleValue1}</font>
                 </strong>
                 <br />
-                Can you picture something you have not seen before; or hear new
-                tunes; be in a story without reading; walked outside your known
-                world in your thoughts? Can you imagine your world with ma,
-                Baanda? More frequently you do that, more imaginative you are.
+                Can you picture something you have not seen before or hear music
+                that has never been played? Can you tell a story no one has ever 
+                heard? Have you walked outside your known world in your thoughts? 
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -116,15 +115,14 @@ class Openness extends Component {
             <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
-                  Artistic Interst &nbsp; || &nbsp; Use slider to mark your
+                  Artistic &nbsp; || &nbsp; Use slider to mark your
                   scoree: &nbsp;
                   <font color="blue">{this.state.scaleValue2}</font>
                 </strong>
                 <br />
-                Do you want to create something from your imaginary world to
-                share with others? May be, you painted, made sounds, or cook
-                something you from your thoughts If you do then your an artist.
-                (If you learn and perform then that is crafts)
+                Do you desire to create something from your imaginary world to
+                share with others? Do you paint, compose music, or cook
+                something you made up? If you do, then you're an artist.
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -158,9 +156,9 @@ class Openness extends Component {
                 </strong>
                 <br />
                 Do you react with strong emotionality to something ... like cry
-                in a movie, feel celebratory joy in beauty, and often overreact
-                to stressful or emotional situation. If you are calm and
-                self-assured in stress then you have low emotionality.
+                in a movie, feel celebratory joy in beauty, or overreact
+                to stressful or emotional situations? If you are calm and
+                self-assured in stress, then you have low emotionality.
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -188,15 +186,15 @@ class Openness extends Component {
             <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
-                  Adventerousness &nbsp; || &nbsp; Use slider to mark your
+                  Adventurousness &nbsp; || &nbsp; Use slider to mark your
                   score: &nbsp;
                   <font color="blue">{this.state.scaleValue4}</font>
                 </strong>
                 <br />
-                Do you get thrill on suddenly travel somewhere unknown; take on
-                tasks that you don't know; people often say you are audacious,
-                daredevil, daring, venturesome ... and often irresponsible from
-                practical points of view? If you do then you are adventerous.
+                Do you get a thrill when you have to travel somewhere unknown? 
+                Do you take on tasks that you don't know anything about? Do people call 
+                you audacious, daring, venturesome ... or irresponsible from
+                a practical point of view? If yes, then you are adventurous.
                 <strong>
                   {' '}
                   Scale Value: &nbsp;
@@ -235,9 +233,9 @@ class Openness extends Component {
                 </strong>
                 <div>
                   Intellect is the ability to reason and understand objectively,
-                  specially on academic matters. If you exercise intellect at
-                  the expense of emotion, or you get emotionally charged up by
-                  intellectual exercises then you are high on intellect.
+                  especially on academic matters. If you exercise intellect at
+                  the expense of emotion, or if you get emotionally charged up by
+                  intellectual exercises then score yourself high on intellect.
                 </div>
               </div>
             </div>
@@ -271,10 +269,10 @@ class Openness extends Component {
                   <font color="blue">{this.state.scaleValue6}</font>
                 </strong>
                 <div>
-                  Liberalism, in political doctrine, is to protect and enhance
-                  freedom of individual with government's job is to protect that
-                  individualism. In general, are you open to newness and have a
-                  liberated mind or are you traditional, or low liberalism.
+                  Liberalism, in political terms, is the belief that it is the 
+                  government's job to protect and enhance the freedom of individuals. 
+                  In general, liberals are open to newness and conservatives feel a 
+                  strong pull towards traditional and long-established ideas and beliefs.
                 </div>
               </div>
             </div>
@@ -329,7 +327,7 @@ class Openness extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              How much is your adventerous spirit?
+              How bold is your adventurous spirit?
             </button>
             {opennessAns4}
             <button

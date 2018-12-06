@@ -62,7 +62,7 @@ class AddTasks extends Component {
       <div className="container">
         <h4>
           <p className="text-center font-weight-bold">
-            <font color="#3f55c1">Everyday Tasks</font>
+            <font color="#3f55c1">To-Do List</font>
           </p>
         </h4>
         <form onSubmit={this.onSubmit}>
@@ -70,12 +70,12 @@ class AddTasks extends Component {
             <div className="col-md-6">
               <TextFieldGroup
                 name="todotext"
-                placeholder="Enter Posting name ..."
+                placeholder="Give your task a name"
                 value={this.state.todotext}
                 onChange={this.onChange}
                 error={errors.todotext}
-                info="Add a new task into your list "
-                must="Mandatory"
+                info="Add a new task to your list "
+                must=" - Mandatory"
               />
             </div>
             <div className="col-md-2">
@@ -98,10 +98,10 @@ class AddTasks extends Component {
                     this._select = ref;
                   }}
                 >
-                  <option value="high">High Priority</option>
+                  <option value="high">High</option>
                   <option value="medium">Medium</option>
-                  <option value="low">low</option>
-                  <option value="whatever">May be ... :)</option>
+                  <option value="low">Low</option>
+                  <option value="whatever">Later</option>
                 </select>
               </div>
             </div>
@@ -111,12 +111,12 @@ class AddTasks extends Component {
           <div className="row">
             <div className="col-12">
               <TextAreaFieldGroup
-                placeholder="Comments, reminders etc."
+                placeholder="Comments"
                 name="tasknotes"
                 value={this.state.tasknotes}
                 onChange={this.onChange}
                 error={errors.tasknotes}
-                info="Reminder, notes, etc. needed for the task."
+                info="Add details, reminders, notes, etc."
               />
             </div>
           </div>

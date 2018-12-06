@@ -51,7 +51,8 @@ class TheMaskTalk extends Component {
     const ans = 'wxyz';
 
     return (
-      <div className="thamasktalk">
+      // <div className="thamasktalk">
+      <div>
         <div className="container">
           <div className="textspaceTop" />
           <div className="row">

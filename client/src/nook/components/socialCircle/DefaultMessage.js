@@ -12,37 +12,37 @@ class DefaultMessage extends Component {
               <div className="card card-body bg-dark text_white">
                 <h5 className="card-title">
                   <strong>
-                    <font color="red">Select Social Circle Work Type</font>
+                    <font color="white">Social Circle</font>
                   </strong>
                 </h5>
                 <p className="card-test">
-                  Please select the Social Circle type for the the right
+                  Select the Social Circle type for the the right
                   operation
                 </p>
                 <p className="card-test">
-                  Request someone to be a part of your Social Circle
+                  Invite someone to be part of your Social Circle
                 </p>
                 <p className="card-test">
                   Beyond self-evaluations, personality-tests, and Baanda
-                  assessments, your social circle would provide vital reflection
+                  assessments, your social circle will provide a vital reflection
                   of you.
                 </p>
                 <p className="card-test">
-                  <font color="powderblue">
-                    ** You want to get a proper reflection from your friends and
+                  <font color="white">
+                    ** Get a relevent reflections from your friends and
                     adversaries{' '}
                   </font>
                 </p>
                 <p className="card-test">
-                  <font color="powderblue">
-                    ** The better the assessment, better is the probability of
-                    Baanda assisting you in your life journey.{' '}
+                  <font color="white">
+                    ** The better your assessments, the higher the probability that
+                    Baanda can assist you.{' '}
                   </font>
                 </p>
                 <p className="card-test">
-                  <font color="powderblue">
-                    ** None of this self-reflection is for anyone else but you.
-                    Select your Social Circle wisely.
+                  <font color="white">
+                    ** Self-reflection is for your eyes only.
+                    Choose your Social Circle wisely.
                   </font>
                 </p>
               </div>

@@ -21,7 +21,7 @@ class FiveFactorDirect extends Component {
 
   handleSelfEval() {
     alert(
-      'This, in production, will update your self-evaluation as of today (it will not be over-ridden of the one before). ' +
+      'In production, this will update your self-evaluation as of today (it will not be over-ridden of the one before). ' +
         'This change of self perception will tell Baanda how, or if at all, your self-perception is changing and what could be the reason. '
     );
   }
@@ -94,7 +94,7 @@ class FiveFactorDirect extends Component {
             <div className="col-md-8 col-sm-6">
               <div className="top-text-adjust">
                 Refers to intellect and imagination, and is a measure of
-                creativity, desire for knowledge, new experience.
+                creativity, desire for knowledge, new experiences.
               </div>
             </div>
           </div>
@@ -114,8 +114,8 @@ class FiveFactorDirect extends Component {
             <div className="col-md-8 col-sm-6">
               <div className="top-text-adjust">
                 This looks at the level of care that you take in your life and
-                work. More if you are thorough and organizaed; Less if casual
-                and que-sera-sera person.
+                work. More if you are thorough and organizaed; less if you are more 
+                casual.
               </div>
             </div>
           </div>
@@ -129,13 +129,13 @@ class FiveFactorDirect extends Component {
                 className="btn btn-outline-info btn-sm btn-block text-left custom_button-top5"
                 onClick={this.topFactorClick}
               >
-                Extro- or Intro-vertion
+                Extroversion or Introversion
               </button>
             </div>
             <div className="col-md-8 col-sm-6">
               <div className="top-text-adjust">
-                This measures your level of sociability. Outgoing (extro) or
-                quite (intro) type? Like crowd or feel drained in crowd?
+                This measures your level of sociability. Outgoing (extroverted) or
+                quiet (introverted)? Do social situations energize you or drain you?
               </div>
             </div>
           </div>
@@ -155,8 +155,7 @@ class FiveFactorDirect extends Component {
             <div className="col-md-8 col-sm-6">
               <div className="top-text-adjust">
                 Are you considerate, helpful and willing to compromise? Or do
-                you tend to put your needs before others, win and
-                uncompromising?
+                you tend to put your needs before others?
               </div>
             </div>
           </div>
@@ -174,8 +173,8 @@ class FiveFactorDirect extends Component {
             </div>
             <div className="col-md-8 col-sm-6">
               <div className="top-text-adjust">
-                Also called Emotional-Stability or natural reaction. Do you
-                worry about small things or are you relaxed in stress?
+                Also called 'emotional stability'. Do you
+                worry about small things or are you relaxed and less stressed?
               </div>
             </div>
           </div>
@@ -192,8 +191,7 @@ class FiveFactorDirect extends Component {
             </button>
           </div>
           <div className="text-center">
-            Note: Please honestly fill the assessment; yours or of someone from
-            your circle.
+            Note: Please fill out assessments honestly.
           </div>
         </div>
       </div>

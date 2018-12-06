@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 import NookAbout from './about/AboutContainer';
-import NookTasks from './taskList/TaskContainer';
+import NookTasks from './taskList/TaskDiaryContainer';
 import TheMask from './mask/TheMaskTalk';
 
 import ProfileContainer from './profile/ProfileContainer';

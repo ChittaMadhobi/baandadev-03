@@ -20,7 +20,7 @@ class FormBar extends Component {
 
   handleSaveClick() {
     alert(
-      'This is an UX or usability experience. Now, your entries are not being saved or validated. When released, the click of this button will save the data entered.'
+      'This is an UX or usability experience. Currently, your entries are not being saved or validated. When released, the click of this button will save the data entered.'
     );
   }
   handleEditClick() {
@@ -56,8 +56,8 @@ class FormBar extends Component {
               value={this.state.budgetName}
               onChange={this.onChange}
               error={errors.budgetName}
-              info="A name for your reference "
-              must="Mandatory"
+              info="Give your budget a name. "
+              must=" -- Mandatory"
             />
           </div>
           <div className="col-md-2">

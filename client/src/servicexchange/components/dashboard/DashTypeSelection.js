@@ -7,7 +7,7 @@ class DashTypeSelection extends Component {
         <div className="row">
           <div className="col-md-8 m-auto">
             <div className="form-group text-center">
-              <h5>Select SX dashboard options from the drop down</h5>
+              {/* <h5>Select SX dashboard options from the drop down</h5> */}
               <select
                 id="postType"
                 name="postType"

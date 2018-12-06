@@ -124,7 +124,7 @@ div.fixedsize-personality-radar {
 div.fixedsize-social-circle {
   height: 500px;
   width: 100%;
-  /*background-color: black; */
+  background-color: #092f6d; 
   color: black;
   overflow: hidden;
   max-height: 600px;
@@ -133,6 +133,7 @@ div.fixedsize-social-circle {
   border-color: 1px #c1ccc9;
   padding-bottom: 25px;
 }
+
 
 .square-lightblue {
   width: 100%;
@@ -177,3 +178,5 @@ div.fixedsize-social-circle {
   padding: 1px;
   margin: 1px;
 }
+
+

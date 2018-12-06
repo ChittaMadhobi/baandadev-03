@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Slider from 'react-rangeslider';
 import 'react-rangeslider/lib/index.css';
 
-import './nook.css';
-
 class Conscientiousness extends Component {
   constructor(props) {
     super(props);
@@ -79,7 +77,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns1 = (
         <div>
           <div className="card">
-            <div className="card-header shadow card-header-baanda">
+            <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
                   Self-efficacy &nbsp; || &nbsp; Use slider to mark your score:
@@ -87,10 +85,10 @@ class Conscientiousness extends Component {
                   <font color="blue">{this.state.scaleValue1}</font>
                 </strong>
                 <br />
-                Self-efficacy reflects confidence in the ability to exerts
+                Self-efficacy reflects confidence in the ability to exert
                 control over one's own motivation, behavior, and social
-                environment. Four factors are Performance-experience,
-                Observational-learning, Verbal-persuation, & Emotional-arousal.
+                environment. The four factors involved are performance-experience,
+                observational-learning, verbal-persuasion, & emotional-arousal.
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -115,7 +113,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns2 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-header-baanda">
+            <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
                   Orderliness &nbsp; || &nbsp; Use slider to mark your scoree:
@@ -123,9 +121,9 @@ class Conscientiousness extends Component {
                   <font color="blue">{this.state.scaleValue2}</font>
                 </strong>
                 <br />
-                Orderliness is associated with qualities as cleanliness and
+                Orderliness is associated with qualities such as cleanliness and
                 diligence, and the desire for order and symmetry; generally
-                considered as desirable quality. If excessive orderly then score
+                considered a desirable quality. If excessive orderliness, then score
                 low (indicates - obsessive compulsive disorder)
               </div>
             </div>
@@ -151,17 +149,17 @@ class Conscientiousness extends Component {
       conscientiousnessAns3 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-header-baanda">
+            <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
                   Dutifulness &nbsp; || &nbsp; Use slider to mark your score:
                   &nbsp;
                   <font color="blue">{this.state.scaleValue3}</font>
                 </strong>
-                <br />A dutiful person discharge their duty sincerely. They do
+                <br />A dutiful person discharges their duty sincerely. They do
                 what is expected of them, obey and respect whom, by duty, they
-                have to obey and respect. The dutiful describes obedient
-                children, servants, and soldiers etc. (willingly obey and feels
+                have to obey and respect. The dutiful describe obedient
+                children, servants, and soldiers etc. (people who willingly obey and feel
                 good about it).
               </div>
             </div>
@@ -187,7 +185,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns4 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-header-baanda">
+            <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
                   Achievement-striving &nbsp; || &nbsp; Use slider to mark your
@@ -195,11 +193,10 @@ class Conscientiousness extends Component {
                   <font color="blue">{this.state.scaleValue4}</font>
                 </strong>
                 <br />
-                Orderly (neat and organized to being messy and unorganized).
-                People who tend to be achievement striving meaning they are
-                hardworking and as well quite persistent (goal driven) and they
-                are self-disciplined. ... Someone who might be self-conscious or
-                feel vulnerable. Are you?
+                People who tend to be achievement striving are
+                hardworking and persistent (goal driven) and they
+                are self-disciplined. This refers to someone who might be self-conscious or
+                feels vulnerable. Are you?
                 <strong>
                   {' '}
                   Scale Value: &nbsp;
@@ -229,18 +226,18 @@ class Conscientiousness extends Component {
       conscientiousnessAns5 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-header-baanda">
+            <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
-                  Self-discipline &nbsp; || &nbsp; Use slider to mark your
+                  Self-disciplined &nbsp; || &nbsp; Use slider to mark your
                   score: &nbsp;
                   <font color="blue">{this.state.scaleValue5}</font>
                 </strong>
                 <div>
                   It is the ability to control one's feelings and overcome one's
-                  weaknesses; perseverance, restraint, endurance, thinking
-                  before acting, finishing what you start doing, & ability to
-                  carry out one's decisions and plans, in spite of
+                  weaknesses; perseverance, restraint, endurance, think
+                  before acting, finish what you start, & the ability to
+                  carry out one's decisions and plans in spite of
                   inconvenience, hardships or obstacles (grit).
                 </div>
               </div>
@@ -267,7 +264,7 @@ class Conscientiousness extends Component {
       conscientiousnessAns6 = (
         <div>
           <div className="card">
-            <div className="card-body shadow card-header-baanda">
+            <div className="card-body shadow card-top5-slider-header">
               <div className="text-center">
                 <strong>
                   Cautiousness &nbsp; || &nbsp; Use slider to mark your score:
@@ -275,10 +272,10 @@ class Conscientiousness extends Component {
                   <font color="blue">{this.state.scaleValue6}</font>
                 </strong>
                 <div>
-                  Associated with being cautious, circumspect, wary, chary mean
+                  Associated with being cautious, circumspect, wary, it means to be
                   prudently watchful and discreet in the face of danger or risk.
-                  cautious implies the exercise of forethought usually prompted
-                  by fear of danger (prudent, guarded, wary, chary, circumspect,
+                  Cautious implies the exercise of forethought usually prompted
+                  by fear of danger (prudent, guarded, wary, circumspect,
                   watchful, vigilant)
                 </div>
               </div>
@@ -309,8 +306,8 @@ class Conscientiousness extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Do posess high degree of self-efficacy? Are you performance
-              driven, learn from observation?
+              Do you possess a high degree of self-efficacy? Are you performance
+              driven, do you learn from observation?
             </button>
             {conscientiousnessAns1}
 
@@ -353,7 +350,7 @@ class Conscientiousness extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Are you a cautious personality? Do you think and careful before
+              Are you a cautious person? Do you think and be careful before
               you leap?
             </button>
             {conscientiousnessAns6}

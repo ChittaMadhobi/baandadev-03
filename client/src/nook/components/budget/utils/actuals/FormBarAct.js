@@ -28,12 +28,12 @@ class FormBar extends Component {
 
   handleSaveClick() {
     alert(
-      'This is an UX or usability experience. Now, your entries are not being saved or validated. When released, the click of this button will save the data entered.'
+      'This is a UX or usability experience. Currently, your entries are not being saved or validated. When released, the click of this button will save the data entered.'
     );
   }
   handleEditClick() {
     alert(
-      'This is an UX or usability experience. In production, this will load your budget-plan from database for you to edit.'
+      'This is a UX or usability experience. In production, this will load your budget-plan from database for you to edit.'
     );
   }
 
@@ -88,8 +88,8 @@ class FormBar extends Component {
                 onChange={this.handleChange}
                 className="selectWidth"
               >
-                <option value="domestic">Monthly-Domestic</option>
-                <option value="vacation">Vacation Budget Plan</option>\
+                <option value="domestic">Monthly Domestic</option>
+                <option value="vacation">Vacation Budget Plan</option>
                 <option value="special">Special Budget Plan</option>
               </select>
             </div>
@@ -99,7 +99,7 @@ class FormBar extends Component {
           <div className="col-md-6 col-sm-6">
             <p>
               <font color="#445570">
-                <strong>Note: Edit with date budget-type combo.</strong>
+                <strong>Note: Edit with date & budget-type combo.</strong>
               </font>
             </p>
           </div>

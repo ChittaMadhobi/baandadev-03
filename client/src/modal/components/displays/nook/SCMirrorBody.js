@@ -7,6 +7,7 @@ import moment from "moment";
 import ComparitiveRadarChart from "../../../../nook/components/charts/socialcircle/ComparitiveRadarChart";
 import SentimentGaugeChart1 from "../../../../nook/components/charts/socialcircle/SentimentGaugeChart1";
 import SentimentGaugeChart2 from "../../../../nook/components/charts/socialcircle/SentimentGaugeChart2";
+import SocialCircleImage from '../../../../nook/components/charts/socialcircle/SocialCircleImage';
 
 import "./css/nook.css";
 
@@ -116,7 +117,7 @@ class SCMirrorBody extends Component {
                   onClick={this.switchToSocialCircle}
                 >
                   Show My Social Circle &nbsp;
-                  <i class="far fa-dot-circle" />
+                  <i className="far fa-dot-circle" />
                 </button>
               </div>
             </div>
@@ -276,7 +277,7 @@ class SCMirrorBody extends Component {
           <font color="blue">{signDate}</font>
           <div className="row">
             <div className="col">
-              <div className="fixedsize-social-circle">Here will be the 3D stuff</div>
+              <div className="fixedsize-social-circle"><SocialCircleImage propfwd={this.props}/></div>
             </div>
           </div>
           <div className="textspaceTop" />
@@ -286,7 +287,7 @@ class SCMirrorBody extends Component {
               onClick={this.switchToSentiment}
             >
               Show Sentiment Gauge&nbsp;
-              <i class="fas fa-check" />
+              <i className="fas fa-check" />
             </button>
           </div>
           <div className="float-right">

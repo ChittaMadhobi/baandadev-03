@@ -33,7 +33,7 @@ class EditableCellAct extends Component {
           name={this.props.cellData.type}
           onChange={this.props.onProductTableUpdate}
         >
-          <option value="earning">Earning</option>
+          <option value="earning">Earnings</option>
           <option value="expense">Expense</option>
         </select>
       );
@@ -66,7 +66,7 @@ class EditableCellAct extends Component {
           <option value="otherincome">Other Income</option>
           <option value="saving">Savings</option>
           <option value="servxchange">Service Xchange</option>
-          <option value="transport">Transport</option>
+          <option value="transport">Transportation</option>
         </select>
       );
     } else {

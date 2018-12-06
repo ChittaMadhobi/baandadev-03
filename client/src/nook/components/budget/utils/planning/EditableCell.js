@@ -33,7 +33,7 @@ class EditableCell extends Component {
           name={this.props.cellData.type}
           onChange={this.props.onProductTableUpdate}
         >
-          <option value="earning">Earning</option>
+          <option value="earning">Earnings</option>
           <option value="expense">Expense</option>
         </select>
       );

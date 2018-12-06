@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 //const { Checkbox } = ReactBootstrap;
+import './dccs.css';
 
 class RequestDccs extends Component {
   constructor(props) {
@@ -35,12 +36,13 @@ class RequestDccs extends Component {
 
   render() {
     return (
-      <div className="dccsfixedsize">
+      <div className="dccsfixedsizeNew">
+      {/* <div> */}
         <div className="text-center">
           {' '}
           <h4>Mark DCCS Dimensions of your Request</h4>
         </div>
-        <div className="space-at-top" />
+        {/* <div className="space-at-top" /> */}
         <div className="row">
           <div className="col-md-12 col-sm-6">
             <div className="float-left">

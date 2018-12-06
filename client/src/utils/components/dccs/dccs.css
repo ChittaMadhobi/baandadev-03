@@ -115,9 +115,9 @@ fixed-height {
 }
 
 .speech-box-background {
-  height: 503px;
+  height: 500px;
   width: 100%;
-
+  /* background-color: black; */
   padding: 10px 10px 10px 10px;
 }
 
@@ -134,16 +134,34 @@ fixed-height {
   border: 1px solid black;
 }
 
-div.dccsfixedsize {
-  height: 500px;
+.dccsfixedsize {
+  height: 490px;
   width: 106%;
   background-color: black;
   color: lightblue;
-  overflow: auto;
-  margin-top: -6px;
+  /* overflow: auto; */
+  margin-top: 3px;
   margin-left: -20px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+}
+
+div.dccsfixedsizeNew {
+  height: 490px;
+  width: 106%;
+  background-color: black;
+  color: lightblue;
+  /* overflow: auto; */
+  /* margin-top: 3px; */
+  margin-left: -20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
 }
 
 div.dccs-graph-fixedsize {

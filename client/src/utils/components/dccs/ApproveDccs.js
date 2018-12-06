@@ -34,12 +34,12 @@ class ApproveDccs extends Component {
 
   render() {
     return (
-      <div className="dccsfixedsize">
+      <div className="dccsfixedsizeNew">
         <div className="text-center">
           {' '}
           <h4>Approve DCCS Dimensions per Request</h4>
         </div>
-        <div className="space-at-top" />
+        {/* <div className="space-at-top" /> */}
         <div className="row">
           <div className="col-md-12 col-sm-6">
             <div className="float-left">

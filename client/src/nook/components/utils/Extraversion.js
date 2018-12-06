@@ -87,7 +87,7 @@ class Extraversion extends Component {
                 <br />
                 Friendliness is taking an interest in other people, being warm
                 and courteous; make others feel welcome or to make a stranger
-                feel at home. (e.g. bonhomie, good nature, humor, warmth,
+                feel at home. (e.g. good natured, humor, warmth,
                 affection, demonstrativeness, joviality, companion, sociable,
                 gregarious, accessible, open, kind, benevolence etc.)
               </div>
@@ -122,9 +122,9 @@ class Extraversion extends Component {
                   <font color="blue">{this.state.scaleValue2}</font>
                 </strong>
                 <br />
-                Do you instinctively or temperamentally seeking and enjoying the
-                company of others; prefer flock, group, people over solitude. Do
-                you like to flirt, be chirming and that connection is important?
+                Do you instinctively or temperamentally seek and enjoying the
+                company of others; prefer a flock, group, people over solitude. Do
+                you like to flirt, be charming and feel that connection is important?
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -157,7 +157,7 @@ class Extraversion extends Component {
                   <font color="blue">{this.state.scaleValue3}</font>
                 </strong>
                 <br />
-                Forceful confiction, confident and assert the point of view. The
+                Forceful conviction, confident and assert one's point of view. Someone whose
                 personality is bold, decisive, self-assured, forthright,
                 empathic, firm, strong-willed, insistent, and commanding.
               </div>
@@ -194,9 +194,7 @@ class Extraversion extends Component {
                 <br />
                 Activity level (AL), also PAL (physical AL) is a way to express
                 a person's daily physical activity as a number, and is an
-                estimate of a person's energy bandwidth. Apple's Fitbit (IoT
-                device) is a social media AL indicating high/low sexul drive.
-                energy.
+                estimate of a person's energy bandwidth. 
                 <strong>
                   {' '}
                   Scale Value: &nbsp;
@@ -272,9 +270,9 @@ class Extraversion extends Component {
                 </strong>
                 <div>
                   It is the the quality or state of being noticeably happy and
-                  optimistic; promoting or inducing cheer; pleasant; bright life
-                  and is positive, humorous, 'life-of-the-party', make others
-                  feel nice, despite everything.
+                  optimistic; promoting or inducing cheer; pleasant; bright 
+                  and positive, humorous, 'life-of-the-party', make others
+                  feel good despite everything.
                 </div>
               </div>
             </div>
@@ -304,7 +302,7 @@ class Extraversion extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Are you friendly by nature or rather be by yourself?
+              Are you friendly by nature or would you rather be by yourself?
             </button>
             {extraversionAns1}
 
@@ -330,8 +328,7 @@ class Extraversion extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Do you have high or low activity level? This includes physical to
-              sexual activity.
+              Do you have high or low activity level? 
             </button>
             {extraversionAns4}
             <button
@@ -339,8 +336,8 @@ class Extraversion extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Are you an excitement seeker? Do you like to do stuff just for
-              experiencing?
+              Are you an excitement seeker? Do you like to do things just for
+              the experience?
             </button>
             {extraversionAns5}
             <button

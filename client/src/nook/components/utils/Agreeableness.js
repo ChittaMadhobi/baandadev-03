@@ -84,10 +84,10 @@ class Agreeableness extends Component {
                   <font color="blue">{this.state.scaleValue1}</font>
                 </strong>
                 <br />
-                Trust is a firm belief in the reliability, truth, ability, or
+                Trust is a firm belief in the reliability, truth or
                 strength of someone or something. It is a feeling, a rudimentary
-                ingredient for society. Do you trust someone, stranger or
-                otherwise, easily? Are you trust worthy?
+                ingredient for society. Do you trust people
+                easily? Are you trustworthy?
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -120,10 +120,9 @@ class Agreeableness extends Component {
                   <font color="blue">{this.state.scaleValue2}</font>
                 </strong>
                 <br />
-                Morality is the principles concerning the distinction between
-                right and wrong or good and bad behavior. Cultural Relativism -
-                Right/wrong (moral) is determined by the particular set of
-                principles or rules the relevant culture at a point of the time.
+                Morality points to the principles concerning the distinction between
+                right and wrong or good and bad behavior. Morals are determined by the particular set of
+                principles or rules of the relevant culture at a point of time.
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -156,10 +155,10 @@ class Agreeableness extends Component {
                   <font color="blue">{this.state.scaleValue3}</font>
                 </strong>
                 <br />
-                the belief in or practice of disinterested and selfless concern
-                for the well-being of others. E.g.: Some may choose to work with
-                vulnerable elderly people out of altruism. In zoology, behavior
-                of an animal that benefits another at its own expense.
+                Altruism is the belief or practice of disinterested and selfless concern
+                for the well-being of others. For example, someone may choose to work with
+                vulnerable elderly people out of altruism. In zoology, altrusitic behavior
+                is one that benefits another animal at its own expense.
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -232,10 +231,9 @@ class Agreeableness extends Component {
                   <font color="blue">{this.state.scaleValue5}</font>
                 </strong>
                 <div>
-                  It is behavior, manner, or appearance intended to avoid
+                  Modestly is a behavior, manner, or appearance intended to avoid
                   impropriety or indecency. Modesty is closely associated with
-                  humility and often to forbade sexual attraction to others.
-                  Rooted in Latin word 'modestus' (keeping within measure).
+                  humility and often to forbid sexual attraction to others.
                 </div>
               </div>
             </div>
@@ -269,10 +267,8 @@ class Agreeableness extends Component {
                   <font color="blue">{this.state.scaleValue6}</font>
                 </strong>
                 <div>
-                  Feeling bad for someone else's misfortune. 'Sympathy' is when
-                  you share the feelings of another; 'empathy' is understand the
-                  feelings of another but not necessarily share them. E.g.
-                  accomodate refugee at the cost one's own lifestyle.
+                  Sympathy is when you share the feelings of another; empathy is 
+                  understanding the feelings of others but not necessarily sharing them. 
                 </div>
               </div>
             </div>
@@ -302,7 +298,7 @@ class Agreeableness extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Can people trust you? Do you, by default trust a stranger or
+              Can people trust you? Do you trust strangers or
               others?
             </button>
             {agreeablenessAns1}
@@ -312,7 +308,7 @@ class Agreeableness extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Are you a moral person? Do you have distinction between good and
+              Are you a moral person? Do you distinguish between good and
               bad?
             </button>
             {agreeablenessAns2}
@@ -330,7 +326,7 @@ class Agreeableness extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Do you believe in life of cooperation or do you prefer
+              Do you believe in a life of cooperation or do you prefer
               competition?
             </button>
             {agreeablenessAns4}
@@ -340,7 +336,7 @@ class Agreeableness extends Component {
               onClick={this.handleOpenClick}
             >
               Do you think you are modest and humble? Do you think
-              self-advertisement is needed now?
+              self-advertisement is what you need now?
             </button>
             {agreeablenessAns5}
             <button
@@ -348,8 +344,7 @@ class Agreeableness extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Do you really feel sympathy/sad for other's misfortune? How about
-              immegrants or refugees adversely effecing your life-style?
+              Do you feel sympathy for other people's misfortune? 
             </button>
             {agreeablenessAns6}
           </div>

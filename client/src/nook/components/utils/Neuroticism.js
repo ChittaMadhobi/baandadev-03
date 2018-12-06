@@ -86,7 +86,7 @@ class Neuroticism extends Component {
                 <br />
                 It is a feeling of worry, nervousness, or unease, typically
                 about an imminent event or something with an uncertain outcome.
-                In extreme case, it is a disorder and may lead to panic attack.
+                In extreme cases, it is a disorder and may lead to panic attacks.
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -119,9 +119,9 @@ class Neuroticism extends Component {
                 </strong>
                 <br />
                 This is a strong feeling of annoyance, displeasure, or
-                hostility. It is an emotion of antagonism. An angree person
-                often feels a background feeling of antagonism towards life or
-                environment.
+                hostility. It is an emotion of antagonism. An angry person
+                often feels antagonism towards life or
+                his/her environment.
               </div>
             </div>
             <div className="card-body shadow card-top5-slider-body">
@@ -190,9 +190,9 @@ class Neuroticism extends Component {
                   <font color="blue">{this.state.scaleValue4}</font>
                 </strong>
                 <br />
-                It is a undue awareness of oneself, one's appearance, or one's
-                actions. This is generally attributed to uncomfortably conscious
-                of oneself as an object of the observation of others.
+                It is an undue awareness of oneself, one's appearance, or one's
+                actions; to be uncomfortably conscious of oneself as an object of 
+                the observation of others.
                 <strong>
                   {' '}
                   Scale Value: &nbsp;
@@ -269,8 +269,6 @@ class Neuroticism extends Component {
                 <div>
                   It is the quality or state of being exposed to the possibility
                   of being attacked or harmed, either physically or emotionally.
-                  E.g. Older people are especially vulnerable to cold
-                  temperatures even inside their homes.
                 </div>
               </div>
             </div>
@@ -300,8 +298,8 @@ class Neuroticism extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Are you an anxious person? Do you feel fear in (say) new job,
-              place, people etc.?
+              Are you an anxious person? Do you feel fearful in new situations,
+              places, people?
             </button>
             {neuroticismAns1}
 
@@ -310,7 +308,7 @@ class Neuroticism extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Do you feel anger easily? Do you have a back-of-the-mind strong
+              Do you feel anger easily? Do you have a constant 
               feeling of annoyance, displeasure, or hostility?
             </button>
             {neuroticismAns2}
@@ -320,7 +318,7 @@ class Neuroticism extends Component {
               onClick={this.handleOpenClick}
             >
               Do you feel depressed? Do you feel some degree of despondency and
-              dejection in life?
+              dejection?
             </button>
             {neuroticismAns3}
             <button
@@ -328,8 +326,8 @@ class Neuroticism extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Do you think your are self-conscious? Do you put undue awareness
-              of your appearence, ations etc.?
+              Do you think you are self-conscious? Do you have undue awareness
+              of your appearence, actions etc.?
             </button>
             {neuroticismAns4}
             <button
@@ -337,7 +335,7 @@ class Neuroticism extends Component {
               className="btn btn-outline-primary btn-sm btn-block text-left"
               onClick={this.handleOpenClick}
             >
-              Do you believe, or being told, that you lack in restraints and
+              Do you believe, or have you been told, that you lack restraint and
               often overindulge? Are you immoderate?
             </button>
             {neuroticismAns5}

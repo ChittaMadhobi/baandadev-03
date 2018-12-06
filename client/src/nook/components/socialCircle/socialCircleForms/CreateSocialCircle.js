@@ -9,16 +9,16 @@ import 'react-rangeslider/lib/index.css';
 import '../../utils/nook.css';
 
 const defaultInviteNote =
-  'I am sending you an invite to join my social circle in Baanda.' +
-  ' It is a great way or us to connect,' +
+  'I am sending you an invitation to join my social circle in Baanda.' +
+  ' It is a great way for us to connect,' +
   ' understand each-other, and stay connected. ' +
-  ' This would tell us (me) how people in general think about us (me).' +
-  ' That would enable me to fix my issues or stay nice something people like ...' +
-  ' If you are not a Baanda yet, check them out. Click on the link and you will reach there. ' +
-  ' If you are already a Baanda, then this would be in your Lobby -> Nook -> Social Circle -> Connect with social circle';
+  ' This will give me a better understanding of what people think about me in general.' +
+  ' That will enable me to improve myself' +
+  ' If you are not a Baanda yet, check them out by clicking on the link. ' +
+  ' If you are already a Baanda, then you will find this inviation in your Lobby -> Nook -> Social Circle -> Connect with social circle';
 
 const defaultTextNote =
-  'I am inviting you to my social circle. Once you register as a Baanda, the invite will be in your nook->Social Circle->Connect with your social circle box.';
+  'I am inviting you to my social circle. Once you register as a Baanda, the invitation will be in your nook->Social Circle->Connect with your social circle box.';
 
 class CreateSocialCircle extends Component {
   constructor(props) {
@@ -47,7 +47,7 @@ class CreateSocialCircle extends Component {
 
   handleSaveClick() {
     alert(
-      'This is an UX or usability experience. Now, your entries are not being saved or validated. When released, the click of this button will save the data entered.'
+      'This is a UX or usability experience. Currently, your entries are not being saved or validated. When released, the click of this button will save the data entered.'
     );
   }
 
@@ -116,7 +116,7 @@ class CreateSocialCircle extends Component {
       <div>
         <div className="container">
           <div className="text-center">
-            <h3>Request Connections</h3>
+            <h3>Request Connection</h3>
           </div>
           <br />
           <form onSubmit={this.onSubmit}>
@@ -135,7 +135,7 @@ class CreateSocialCircle extends Component {
               <div className="col-md-6">
                 <TextFieldGroup
                   name="youCallBy"
-                  placeholder="You call him/her by ..."
+                  placeholder="What you call him/her "
                   value={this.state.youCallBy}
                   onChange={this.onChange}
                   error={errors.youCallBy}
@@ -147,28 +147,28 @@ class CreateSocialCircle extends Component {
             <div className="row">
               <div className="col-md-2">
                 <label>
-                  <strong>Relation Name</strong>
+                  <strong>Relation Type</strong>
                 </label>
               </div>
               <div className="col-md-4">
                 <div className="selectWrapper form-control form-control-sm">
                   <select size="5" className="selectWidth">
                     <option value="friend">My Friend</option>
-                    <option value="coworker">My co-worker</option>
-                    <option value="father">My father</option>
+                    <option value="coworker">My Co-worker</option>
+                    <option value="father">My Father</option>
                     <option value="mother">My Mother</option>
-                    <option value="brother">My brother</option>
-                    <option value="sister">My sister</option>
-                    <option value="cousine">My cousine</option>
-                    <option value="mentor">My teacher/mentor</option>
+                    <option value="brother">My Brother</option>
+                    <option value="sister">My Sister</option>
+                    <option value="cousine">My Cousin</option>
+                    <option value="mentor">My Teacher/mentor</option>
                     <option value="uncle">My Uncle</option>
                     <option value="aunt">My Aunt</option>
                     <option value="companion">My Companion</option>
                     <option value="husband">My husband</option>
                     <option value="wife">My wife</option>
-                    <option value="partner">My partner</option>
-                    <option value="boyfriend">My boyfriend</option>
-                    <option value="girlfriend">My girlfriend</option>
+                    <option value="partner">My Partner</option>
+                    <option value="boyfriend">My Boyfriend</option>
+                    <option value="girlfriend">My Girlfriend</option>
                     <option value="lover">My lover</option>
                     <option value="other">Other</option>
                   </select>
@@ -177,11 +177,11 @@ class CreateSocialCircle extends Component {
               <div className="col-md-6">
                 <TextFieldGroup
                   name="youCallBy"
-                  placeholder="You call him/her by ..."
+                  placeholder="What is the relation type?"
                   value={this.state.youCallBy}
                   onChange={this.onChange}
                   error={errors.youCallBy}
-                  info="If other ... name the relation :: "
+                  info="If other ... describe the relation :: "
                   must="Mandatory (if other)"
                 />
               </div>
@@ -194,15 +194,15 @@ class CreateSocialCircle extends Component {
                     <div className="text-center">
                       <strong>
                         Relationship-strength &nbsp; || &nbsp; Use slider to
-                        mark your score: &nbsp;
+                        indicate your score: &nbsp;
                         <font color="blue">{this.state.relationStrength}</font>
                       </strong>
                       <br />
-                      Describe the strength of your relation as you feel{' '}
-                      <b>today</b> with the person you are inviting. For strong
-                      positive feelings score closer to 10. For very negative
-                      then score close to 0 (zero). 5 should be avoided for that
-                      marks it indifferent. That relation should not be in your
+                      Describe the strength of the relation with the person you are
+                      inviting as you feel{' '} <b>today</b> . For strong
+                      positive feelings, score closer to 10. For very negative feelings,
+                      score closer to 0 (zero). 5 should be avoided because that
+                      indicates indifference. That relation should not be in your
                       close circle.
                     </div>
                   </div>
@@ -228,14 +228,14 @@ class CreateSocialCircle extends Component {
                   value={this.state.hailNote}
                   onChange={this.onChange}
                   error={errors.hailNote}
-                  info="Hail the person you are inviting ... "
+                  info="Greet the person you are inviting ... "
                   must="Mandatory"
                 />
               </div>
               <div className="col-md-6">
                 <TextFieldGroup
                   name="youCallBy"
-                  placeholder="Email of the addressed .."
+                  placeholder="Email"
                   value={this.state.emailAddr}
                   onChange={this.onChange}
                   error={errors.emailAddr}
@@ -247,13 +247,13 @@ class CreateSocialCircle extends Component {
             <div className="row">
               <div className="col-12">
                 <TextAreaFieldGroup
-                  placeholder="Your note of invite"
+                  placeholder="Your invitation"
                   name="inviteNote"
                   value={this.state.inviteNote}
                   rows={5}
                   onChange={this.onChange}
                   error={errors.inviteNote}
-                  info="Edit or write a note. This would be send as an email to the invite you would send. The above is a default note."
+                  info="Edit or write a note. This will be sent as an email."
                 />
               </div>
             </div>
@@ -268,7 +268,7 @@ class CreateSocialCircle extends Component {
                   onChange={this.handleTextInvite}
                 />{' '}
                 <font color="green">
-                  Check if you want send a text to highlight your invite.
+                  Check if you want send an additional text notification to highlight your invitation.
                 </font>
               </label>
             </div>
@@ -278,12 +278,11 @@ class CreateSocialCircle extends Component {
               <div className="col-12">
                 <h6>
                   <font color="blue">
-                    <strong>Note:</strong> Until the invite is accepted, he/she
+                    <strong>Note:</strong> Until the invitation has been accepted, he/she
                     will not appear in your social circle. In the 'Assess and
-                    Get Reflection' from the drop down, you can change the
+                    Get Reflection' section, you can change the
                     strength of, or drop off, a relation at any time. There
-                    would be at max <b>15 person</b> in your circle (reason
-                    explaned in About tab).
+                    will be at max <b>15</b> people in your circle.
                   </font>
                 </h6>
               </div>

@@ -11,7 +11,7 @@ class SearchBar extends Component {
         <div className="row">
           <div className="col-md-4">
             <div className="float-right">
-              <strong>Category Filter : </strong> (case sensetive)
+              <strong>Category Filter : </strong> (case sensitive)
             </div>
           </div>
           <div className="col-md-4 float-left">

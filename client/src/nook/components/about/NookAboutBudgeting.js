@@ -35,7 +35,11 @@ class NookAboutBudgeting extends Component {
     if (btnClickNo === '1') {
       aboutAns1 = (
         <div>
-          <font color="blue">Ans 1: </font> This is the answer 1
+          <font color="blue">Ans 1: </font> It is a tool for managing your personal finances.
+          Also, it's a way for Baanda AI to learn about your priorities as to how you spend
+          your money and what you save for. If you save up for a vacation or something for a 
+          long time, that not only says something about how much you want that thing or that 
+          vacation, but it tells about your level of patience and determination.
           <div className="textspaceTop" />
         </div>
       );
@@ -44,8 +48,14 @@ class NookAboutBudgeting extends Component {
     if (btnClickNo === '2') {
       aboutAns2 = (
         <div>
-          <font color="blue">Ans 2: </font> It is a mechanism to live within
-          your means ...
+          <font color="blue">Ans 2: </font> Budgeting forces you to take a closer look at 
+          your spending habits. The core mission of Baanda is wellbeing for individuals.
+          Like it or not, your income, how you earn it and how you spend it plays a role in your
+          wellbeing. If Baanda AI can tap into that, it can help you maximize your earnings.
+          Additionally, overspending is often related to stress, boredom, loneliness, etc.
+          For example, in the not-too-distant future, Baanda will be able to stop you from
+          going on a shopping spree that you can't afford and redirect you to something
+          less expensive and more fulfilling like a project or a new friend.
           <div className="textspaceTop" />
         </div>
       );
@@ -54,7 +64,21 @@ class NookAboutBudgeting extends Component {
     if (btnClickNo === '3') {
       aboutAns3 = (
         <div>
-          <font color="blue">Ans 2: </font> This is the answer 3
+          <font color="blue">Ans 3: </font> In the UX, you can see that we have made it
+          as simple and as user friendly as possible. Right now, you can enter data, but it
+          will not be saved. In this way, you can get a sense of what the system will be capable of.
+          <p>
+            
+          </p>
+          <p>
+            
+            You can have more than one budget in Baanda. For example, you may have a monthly budget
+            and a vacation budget that you are saving up for. Give your budget a name so you can find 
+            it later if you want to edit it. Click on the green plus symbol to add a line for 
+            earnings or expenses. You can categorize your entry with high level categories as well as
+            sub categories. Click the x symbol to delete a line. Baanda will quickly add up your
+            expenses and income and give you a comparison.
+          </p>
           <div className="textspaceTop" />
         </div>
       );
@@ -62,7 +86,10 @@ class NookAboutBudgeting extends Component {
     if (btnClickNo === '4') {
       aboutAns4 = (
         <div>
-          <font color="blue">Ans 4: </font> This is the answer 4
+          <font color="blue">Ans 4: </font> Eventually, Baanda will be able to link to 
+          credit cards, bank statements, etc. We want Baanda to do as much of the work
+          as possible, but in the interim, you have to do it yourself. See the answer to
+          number 2 for more about why use Baanda.
           <div className="textspaceTop" />
         </div>
       );
@@ -117,7 +144,7 @@ class NookAboutBudgeting extends Component {
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
             >
-              2. What does budgeting mean?
+              2. Why would I use this?
             </button>
             {aboutAns2}
             <button
@@ -133,8 +160,8 @@ class NookAboutBudgeting extends Component {
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
             >
-              4. Isn't it too much work? If I use credit-cars, it already gives
-              me a break up. Why do it again?
+              4. Isn't it too much work? If I use credit cards, it already gives
+              me a break down. Why do it again?
             </button>
             {aboutAns4}
             <button

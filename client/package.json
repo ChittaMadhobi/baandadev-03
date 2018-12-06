@@ -30,6 +30,7 @@
     "react-datepicker": "^1.6.0",
     "react-dom": "^16.4.1",
     "react-draft-wysiwyg": "^1.12.13",
+    "react-force-graph": "^1.17.3",
     "react-fusioncharts": "^2.0.5",
     "react-modal": "^3.5.1",
     "react-moment": "^0.7.7",

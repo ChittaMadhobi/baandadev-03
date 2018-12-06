@@ -13,7 +13,7 @@ class SelfEvaluation extends Component {
             className="btn btn-outline-info btn-sm tooltip-top5"
             data-toggle="tooltip"
             data-placement="top"
-            title="Click on buttons and share what you think of your SELF in each dimension."
+            title="Click on buttons and share what you think of yourself in each dimension."
           >
             ?
           </button>

@@ -60,27 +60,27 @@ class FinancialIntel extends Component {
       direction = (
         <div className="text-center">
           <h4>
-            <font color="#2b5aa5">Pi Income and Expense distribution:</font>{' '}
-            Shows your present cumulative breakdown from begining of your annual
+            <font color="#2b5aa5">Pie Chart Income and Expense Distribution:</font>{' '}
+            Shows your present cumulative breakdown from the beginning of your annual
             period.{' '}
           </h4>
           <br />
           <h4>
-            <font color="#a52b58">Bar Budgeted to Real Income comparison:</font>{' '}
-            Month by month comparison snapshots.{' '}
+            <font color="#a52b58">Bar Chart Budgeted to Real Income Comparison:</font>{' '}
+            Month-by-month comparison snapshots.{' '}
           </h4>
           <br />
           <h4>
             <font color="#a5552b">
-              Bar Budgeted to Real Expense comparison:
+              Bar Chart Budgeted to Real Expense Comparison:
             </font>{' '}
-            Month by month comparison snapshots.{' '}
+            Month-by-month comparison snapshots.{' '}
           </h4>
 
           <br />
           <h4>
-            <font color="#a56c2b">Pi Income and Expense distribution:</font>{' '}
-            Shows your income, expense, and saving trend with analytics.{' '}
+            <font color="#a56c2b">Graph Income and Expense Distribution:</font>{' '}
+            Shows your income, expense and savings trends with analytics.{' '}
           </h4>
           <br />
         </div>

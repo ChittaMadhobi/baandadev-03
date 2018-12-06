@@ -1,23 +1,25 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import Select from 'react-select';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import Select from "react-select";
 
-import { setVisibilityFilter } from '../../../../actions/tasklistActionCreator';
-import { showModal } from '../../../../actions/socialActionTest';
+import { setVisibilityFilter } from "../../../../actions/tasklistActionCreator";
+import { showModal } from "../../../../actions/socialActionTest";
 //import { showModal } from '../../../../actions/modalActions';
 
 import {
   SHOW_ALL,
   SHOW_COMPLETED,
   SHOW_ACTIVE
-} from '../../../../actions/types';
-import '../../../css/dashboard.css';
-import ModalContainer from '../../../../modal/components/ModalContainer';
-import '../../../../modal/css/template.css';
-import '../../../../modal/css/localModal.css';
+} from "../../../../actions/types";
+import "../../../css/dashboard.css";
+import ModalContainer from "../../../../modal/components/ModalContainer";
+import "../../../../modal/css/template.css";
+import "../../../../modal/css/localModal.css";
+import "./messages.css"; // to be kept if this work
+
 // Target data for dropdown
-import { options } from './targetData';
+import { options } from "./targetData";
 
 class ManageMessages extends Component {
   constructor(props) {
@@ -47,7 +49,7 @@ class ManageMessages extends Component {
       };
       this.popupFunction(id, select);
     } else {
-      alert('Select a target to send to.');
+      alert("Select a target to send to.");
     }
   };
 
@@ -66,16 +68,16 @@ class ManageMessages extends Component {
       msgObj = {
         id: id, // the one passed in as input parameter
         senderPostCaptionName: select.caption,
-        readSate: '',
-        yourRefPostName: '',
-        description: '',
-        senderAddress: '',
-        skillList: '',
-        workLocationType: '',
-        workType: '',
-        datePosted: '',
-        contactType: '',
-        messageType: 'selectTarget'
+        readSate: "",
+        yourRefPostName: "",
+        description: "",
+        senderAddress: "",
+        skillList: "",
+        workLocationType: "",
+        workType: "",
+        datePosted: "",
+        contactType: "",
+        messageType: "selectTarget"
       };
     } else {
       msgObj = {
@@ -107,7 +109,7 @@ class ManageMessages extends Component {
       message: param,
       closeModal: this.closeModal
     };
-    const modalType = 'sxMessage';
+    const modalType = "sxMessage";
     this.props.showModal(modalProps, modalType);
   };
 
@@ -119,12 +121,14 @@ class ManageMessages extends Component {
         <div>
           <div className="row">
             <div className="col-md-5">
-              <Select
-                value={selectedOption}
-                onChange={this.handleChangeTarget}
-                options={options}
-                placeholder="Selelct a target (no default) "
-              />
+              <div >
+                <Select
+                  value={selectedOption}
+                  onChange={this.handleChangeTarget}
+                  options={options}
+                  placeholder="Selelct a target (no default) "
+                />
+              </div>
             </div>
             <div className="col-md-1">
               <div className="float-left">
@@ -177,21 +181,21 @@ class ManageMessages extends Component {
               </button>
             </div>
             <div className="float-right">
-              <i className="fas fa-search-plus">: Click for details</i>{' '}
+              <i className="fas fa-search-plus">: Click for details</i>{" "}
               &nbsp;&nbsp;
             </div>
           </nav>
           {this.props.sxMessages.length !== 0 ? (
             <table
-              style={{ marginTop: '10px' }}
+              style={{ marginTop: "10px" }}
               className="table table-hover table-info"
             >
               <thead className="thead-blue">
                 <tr>
                   <th scope="col">
-                    Your Messages: &nbsp;{' '}
-                    <font color="lightgreen">New Messages (green)</font> &{' '}
-                    <font color="#4cace8">Old Messages (blue)</font>{' '}
+                    Your Messages: &nbsp;{" "}
+                    <font color="lightgreen">New Messages (green)</font> &{" "}
+                    <font color="#4cace8">Old Messages (blue)</font>{" "}
                   </th>
                   <th scope="col">Open</th>
                 </tr>
@@ -202,16 +206,16 @@ class ManageMessages extends Component {
                   <tr key={message.id}>
                     <td
                       style={{
-                        color: message.readState ? 'blue' : 'green'
+                        color: message.readState ? "blue" : "green"
                       }}
                     >
-                      From&nbsp;{' '}
+                      From&nbsp;{" "}
                       <b>
                         {/* {message.invite ? 'Invite  ' : 'Message'} :{' '} */}
                         {message.senderPostCaptionName}
-                      </b>{' '}
+                      </b>{" "}
                       &nbsp;for your post&nbsp;
-                      <b>{message.yourRefPostName}</b> &nbsp;(Type:&nbsp;{' '}
+                      <b>{message.yourRefPostName}</b> &nbsp;(Type:&nbsp;{" "}
                       {message.messageType})
                     </td>
                     <td className="bg-blue text-center">
@@ -219,9 +223,9 @@ class ManageMessages extends Component {
                         className="fas fa-search-plus"
                         onClick={() => this.popupFunction(message.id)}
                         style={{
-                          color: 'white',
-                          fontSize: '20pt',
-                          marginRight: '20px'
+                          color: "white",
+                          fontSize: "20pt",
+                          marginRight: "20px"
                         }}
                       />
                     </td>
@@ -231,14 +235,14 @@ class ManageMessages extends Component {
             </table>
           ) : (
             <div
-              style={{ marginTop: '50px' }}
+              style={{ marginTop: "50px" }}
               className="col-lg-10 col-md-10 col-xs-12 col-sm-12 offset-lg-1"
             >
               <div className="alert alert-danger" role="alert">
                 No messages for you at this time (old or new)
               </div>
             </div>
-          )}{' '}
+          )}{" "}
         </div>
         <ModalContainer />
         <div className="footerspace" />
@@ -258,7 +262,7 @@ const getVisibleSXMessages = (sxMessages, filter) => {
     case SHOW_ACTIVE:
       return sxMessages.filter(t => !t.readState);
     default:
-      throw new Error('Unknown filter: ' + filter);
+      throw new Error("Unknown filter: " + filter);
   }
 };
 

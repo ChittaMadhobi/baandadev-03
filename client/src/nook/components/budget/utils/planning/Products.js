@@ -59,7 +59,7 @@ class Products extends Component {
         id: 7,
         category: 'Groceries',
         earnExpType: 'expense',
-        subcategory: 'Non-food stuff',
+        subcategory: 'Non-food staples',
         amount: 75.04
       },
       {
@@ -80,7 +80,7 @@ class Products extends Component {
         id: 10,
         category: 'Healthcare',
         earnExpType: 'expense',
-        subcategory: 'Gym and sports',
+        subcategory: 'Gym membership',
         amount: 35.59
       },
       {
@@ -108,7 +108,7 @@ class Products extends Component {
         id: 14,
         category: 'Saving',
         earnExpType: 'expense',
-        subcategory: 'Rainyday',
+        subcategory: 'Rainyday fund',
         amount: 150.05
       },
       {

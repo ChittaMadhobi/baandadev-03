@@ -75,13 +75,13 @@ class AssessAndReflection extends Component {
         <div className="text-center">
           <br />
           <br />
-          <h3>
-            Click 'Assess Someone from your circle' to assess / re-adjust
-            someone who has invited you. The people who invited you would be in
+          <h4>
+            Click 'Assess someone from your circle' to assess
+            someone who has invited you. The person who invited you will be in
             the dropdown. Select a name from the dropdown to assess. To see your
-            reflection from the Social Circle you have created, select the
+            reflection from the Social Circle you have created, select 
             'Mirror Mirror'.
-          </h3>
+          </h4>
         </div>
       );
     } else {
@@ -101,7 +101,7 @@ class AssessAndReflection extends Component {
                   onClick={this.handleSelectChange}
                 >
                   <option value="babs the friend">My Friend - Babs</option>
-                  <option value="Leonardo de Vinci">Leonardi De Vinci</option>
+                  <option value="Leonardo de Vinci">Leonardo da Vinci</option>
                   <option value="Sappho De Lesbos">Sappho de Lesbos</option>
                   <option value="San Tsu">General San Tsu</option>
                   <option value="brother-Liki">My brother Liki</option>
@@ -112,7 +112,7 @@ class AssessAndReflection extends Component {
             </div>
             <div className="col-md-6">
               Select the person you would like to assess. If this is the first
-              assessment, time please try to complete for a better reflection.
+              assessment, please try to complete it for a better result.
               <div>
                 <strong>
                   Selected: <font color="blue">{this.state.result}</font>
@@ -154,8 +154,7 @@ class AssessAndReflection extends Component {
                     }));
                   }}
                 >
-                  Assess someone from your cirle &nbsp;&nbsp;
-                  <i className="fas fa-clipboard-check" />
+                  Assess someone from your circle &nbsp;&nbsp;
                 </button>
               </div>
               <div className="float-right">
@@ -163,9 +162,8 @@ class AssessAndReflection extends Component {
                   className="btn btn-info btn-md btn-size-same-mirror"
                   onClick={() => this.modalReadyFunction('selfOnly')}
                 >
-                  Mirror Mirror (your reflection); &nbsp;&nbsp;
-                  <i className="fas fa-chart-area" />
-                </button>
+                  Mirror Mirror  &nbsp;&nbsp;
+                  </button>
               </div>
             </div>
           </div>

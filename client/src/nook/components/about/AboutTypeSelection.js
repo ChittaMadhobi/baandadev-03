@@ -7,31 +7,31 @@ class AboutTypeSelection extends Component {
         <div className="row">
           <div className="col-md-8 m-auto">
             <div className="form-group text-center">
-              <h5>Select your curiosity-path from the drop down</h5>
+              {/* <h5>Select area of curiosity</h5> */}
               <select
                 id="aboutType"
                 name="aboutType"
                 className="custom-select"
                 onChange={this.props.handleOnChange}
               >
-                <option value="none">Select your Curiosity Area Type</option>
+                <option value="none">Select </option>
                 <option value="overviewQuestions">
-                  Overview Q&A on your Nook (Conceptual)
+                  Nook Overview Q&A (Conceptual)
                 </option>
                 <option value="profileQuestions">
-                  Profile: Q&A on your profile (How-to, user's guide)
+                  Nook Profile: Q&A (How-to)
                 </option>
                 <option value="taskdiaryQuestion">
-                  Tasks: Q&A about Life's Tasks and Journals (User's guide)
+                  Nook Tasks Q&A (User's guide)
                 </option>
                 <option value="societyQuestion">
-                  Social Circle: Q&A about your social circle (User's guide)
+                  Nook Social Circle Q&A (User's guide)
                 </option>
                 <option value="budgetingQuestion">
-                  Budgeting: Q&A - art and science of budgeting (User's guide)
+                  Nook Budgeting Q&A (User's guide)
                 </option>
                 <option value="humanoid">
-                  Humanoid Conversation: Q&A - Nuances of the Mask
+                  Nook Humanoid Conversation Q&A - Nuances of the Mask
                 </option>
               </select>
             </div>

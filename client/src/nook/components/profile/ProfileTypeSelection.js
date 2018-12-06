@@ -7,16 +7,16 @@ class SelectionBox extends Component {
         <div className="row">
           <div className="col-md-8 m-auto">
             <div className="form-group text-center">
-              <h5>Select your ops-option from the drop down</h5>
+              {/* <h5>Select profile type from drop down</h5> */}
               <select
                 id="postType"
                 name="postType"
                 className="custom-select"
                 onChange={this.props.handleOnChange}
               >
-                <option value="none">Select your Post Type</option>
+                <option value="none">Select </option>
                 <option value="basicProfile">
-                  Basic profil:Mostly identity related entry (mandatory start)
+                  Basic profile: Identity related (mandatory to start)
                 </option>
                 <option value="selfEval">
                   Multidimensional self-evaluation & self-perception
