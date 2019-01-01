@@ -11,7 +11,7 @@ import "../../css/browse.css";
 const options = {
   paginationSize: 3,
   pageStartIndex: 0,
-  sizePerPage: 6,
+  sizePerPage: 5,
   hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
   firstPageText: "First",
   prePageText: "Back",
@@ -158,7 +158,7 @@ class BrowsePosts extends Component {
 
             <div className="row">
               <div className="col">
-                <div className="float-right">
+                <div className="float-right history-button-placement">
                   <button
                     className="show-btn-interest"
                     type="button"

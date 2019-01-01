@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
-import MediaCapturer from 'react-multimedia-capture';
+import React, { Component } from "react";
+import MediaCapturer from "react-multimedia-capture";
 
-import './vedio.css';
+import "./vedio.css";
 
 class VedioMessage extends Component {
   constructor() {
     super();
     this.state = {
       granted: false,
-      rejectedReason: '',
+      rejectedReason: "",
       recording: false,
       paused: false,
-      showurl: '',
-      showblob: ''
+      showurl: "",
+      showblob: "",
+      preview: false
     };
 
     this.handleGranted = this.handleGranted.bind(this);
@@ -29,7 +30,7 @@ class VedioMessage extends Component {
 
   handleSendClick() {
     alert(
-      'This is an UX or usability experience. At this point (by your click on Send button), your message would apear in ' +
+      "This is an UX or usability experience. At this point (by your click on Send button), your message would apear in " +
         "the receipient's message box. The quality of the video-mesage will depend on your camera, microphone, driers and browsers."
     );
   }
@@ -44,7 +45,8 @@ class VedioMessage extends Component {
   }
   handleStart(stream) {
     this.setState({
-      recording: true
+      recording: true,
+      preview: false
     });
 
     this.setStreamToVideo(stream);
@@ -52,7 +54,8 @@ class VedioMessage extends Component {
   }
   handleStop(blob) {
     this.setState({
-      recording: false
+      recording: false,
+      preview: false
     });
 
     this.releaseStreamFromVideo();
@@ -64,17 +67,21 @@ class VedioMessage extends Component {
   handleError(err) {
     console.log(err);
   }
-  setStreamToVideo(stream) {
-    let video = this.refs.app.querySelector('video');
 
-    if (window.URL) {
-      video.src = window.URL.createObjectURL(stream);
-    } else {
-      video.src = stream;
-    }
+  // If this is not needed, we need to remove it from the program ...
+  setStreamToVideo(stream) {
+    // We need to see if we need to setup the video.src as stream.
+    // let video = this.refs.app.querySelector("video");
+
+    // if (window.URL) {
+    //   video.src = window.URL.createObjectURL(stream);
+    // } else {
+    //   video.src = stream;
+    // }
+
   }
   releaseStreamFromVideo() {
-    this.refs.app.querySelector('video').src = '';
+    this.refs.app.querySelector("video").src = "";
   }
   downloadVideo(blob) {
     // console.log('in downloadVideo:');
@@ -82,21 +89,56 @@ class VedioMessage extends Component {
 
     this.setState({
       showurl: url,
-      showblob: blob
+      showblob: blob,
+      preview: false
     });
   }
 
   previewVideo() {
-    if (this.state.showurl !== '') {
-      var p = document.getElementById('yyy');
+    this.setState({
+      preview: true
+    });
+    if (this.state.showurl !== "") {
+      var p = document.getElementById("yyy");
       p.src = this.state.showurl;
     } else {
-      console.log('this.state.showurl is blank');
+      console.log("this.state.showurl is blank");
     }
   }
 
   render() {
     // console.log('this.proops:' + JSON.stringify(this.props));
+
+    let showVideMsg;
+    if (this.state.preview) {
+      showVideMsg = null;
+    } else {
+      showVideMsg = (
+        <div className="recording-msg text-center">
+          <div className="space-at-top" />
+          <font color="lightgreen">
+            <h4>Please look at the camera white recording</h4>
+          </font>
+          <div className="recording-msg-space" />
+          <font color="lightyellow" size="3">
+            <p>You are not seeing your vido while recording per design. </p>
+          </font>
+          <font color="white" size="2">
+            <p>
+              You need to look at the camera so the receipient experience that
+              you are looking at his/her eyes when receiveing your message. If
+              you saw your own video while recording then, per our tendency, we
+              would look at our video-eyes. Receipient will then see your video
+              as looking downwards and will have an awkward experienece because
+              we like to look at each others eyes while conversing. Imagine,
+              Baanda (someone) is recording you that you will send to the
+              target.
+            </p>
+          </font>
+        </div>
+      );
+    }
+
     const granted = this.state.granted;
     const rejectedReason = this.state.rejectedReason;
     const recording = this.state.recording;
@@ -129,7 +171,7 @@ class VedioMessage extends Component {
           <div>
             <b>Rejected:</b>
             &nbsp;&nbsp;
-            {rejectedReason === '' ? (
+            {rejectedReason === "" ? (
               <font color="lightgreen">
                 <b>No</b>
               </font>
@@ -161,7 +203,7 @@ class VedioMessage extends Component {
             <div className="float-right">
               <i className="far fa-play-circle" />
             </div>
-          </button>{' '}
+          </button>{" "}
         </div>
         <div className="space-between-buttons" />
         <div className="text-center">
@@ -204,7 +246,7 @@ class VedioMessage extends Component {
           <div className="col-1">&nbsp;</div>
           <div className="col-10">
             <div className="text-center vedio-msg">
-              Click <b>Start</b> then <b>Done</b>. &nbsp; Repeat till OK then{' '}
+              Click <b>Start</b> then <b>Done</b>. &nbsp; Repeat till OK then{" "}
               <b>Send</b>.
             </div>
           </div>
@@ -233,7 +275,8 @@ class VedioMessage extends Component {
                 />
               </div>
               <div className="col-md-8 col-sm-6">
-                <video className="fixed-height" id="yyy" autoPlay />{' '}
+                {showVideMsg}
+                <video className="fixed-height" id="yyy" autoPlay />{" "}
               </div>
             </div>
           </div>

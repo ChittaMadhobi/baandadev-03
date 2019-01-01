@@ -12,7 +12,7 @@ import "../../css/browse.css";
 const options = {
   paginationSize: 3,
   pageStartIndex: 0,
-  sizePerPage: 6,
+  sizePerPage: 5,
   hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
   firstPageText: "First",
   prePageText: "Back",
@@ -68,7 +68,8 @@ class BrowseHistoricProjects extends Component {
   buildFakeProject() {
     return {
       accountName: faker.company.companyName(),
-      imageBusiness: 'https://picsum.photos/200/300/?image=' + (this.randomBetweenInrerval(1, 999)).toString(),
+      imageBusiness: 'https://picsum.photos/200/200/?image=' + (this.randomBetweenInrerval(1, 999)).toString(),
+      //imageBusiness: faker.internet.avatar(),
       projectManager: faker.name.firstName() + ' ' + faker.name.lastName(),
       email: faker.internet.email(),
       projectDesc: faker.name.jobType(), 
@@ -148,7 +149,7 @@ class BrowseHistoricProjects extends Component {
 
             <div className="row">
               <div className="col">
-                <div className="float-right">
+                <div className="float-right history-button-placement">
                   <button
                     className="show-btn-interest"
                     type="button"

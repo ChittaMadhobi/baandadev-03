@@ -123,7 +123,7 @@ class TaskLog extends Component {
             </font>
           </div>
         </div>
-      )
+      );
     }
 
     let addlog;
@@ -190,14 +190,34 @@ class TaskLog extends Component {
 
     let output;
     if (this.state.addLog) {
-      output = addlog;
+      if (this.state.selectTask) {
+        output = addlog;
+      } else {
+        output = (
+          <div>
+            <font color="orange" size="3">
+              Please select a task to add log to.
+            </font>
+          </div>
+        );
+      }
     } else if (this.state.viewLog) {
-      output = (
-        <div className="view-log">
-          <h5>Log View</h5>
-          {viewlog}
-        </div>
-      );
+      if (this.state.selectTask) {
+        output = (
+          <div className="view-log">
+            <h5>Log View</h5>
+            {viewlog}
+          </div>
+        );
+      } else {
+        output = (
+          <div>
+            <font color="orange" size="3">
+              Please select a task to see log of.
+            </font>
+          </div>
+        );
+      }
     } else {
       output = null;
     }

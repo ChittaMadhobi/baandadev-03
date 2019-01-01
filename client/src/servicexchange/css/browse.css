@@ -14,7 +14,7 @@
 .show-btn-howto {
   width: 100px;
   height: 35px;
-  padding-top: 5px;
+  padding-top: 5px; 
   padding-bottom: 5px;
   margin-top: 2px;
   background-color: #57774c;
@@ -42,12 +42,13 @@
   /* border-color: black;
   border-style: solid;
   box-shadow: 3px 3px; */
+  padding-right: 15px;
   color: lightcyan;
   margin-top: -7px;
   padding-right: 2px;
   /* border-width: 1px; */
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .how-to-header-space {
@@ -87,7 +88,7 @@
 }
 
 .exp-bio {
-  height: 127px;
+  height: 110px;
   width: 100%;
   background-color: #36536b;
   border-color: black;
@@ -106,4 +107,12 @@
   overflow-x: hidden;
   overflow-y: auto;
   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+div.history-button-placement {
+  margin-top: -20px;
+}
+
+div.browse-select {
+  z-index: 10000;
 }

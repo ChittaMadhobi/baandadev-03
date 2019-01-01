@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
 const TextFieldGroup = ({
+  style,
   name,
   placeholder,
   value,
@@ -23,6 +24,7 @@ const TextFieldGroup = ({
           'is-invalid': error
         })}
         placeholder={placeholder}
+        style={style}
         name={name}
         value={value}
         onChange={onChange}

@@ -15,9 +15,9 @@ import Login from './entrance/components/auth/Login';
 import Register from './entrance/components/auth/Register';
 import BaandaLibrary from './librarian/components/BaandaLibrary';
 import ServiceExchange from './servicexchange/components/SXchange';
-import HealthCare from './healthcare/components/HealthCare';
+//import HealthCare from './healthcare/components/HealthCare';
 import BaandaReception from './entrance/components/reception/BaandaReception';
-import Finance from './fintech/components/Finance';
+// import Finance from './fintech/components/Finance';
 import Nook from './nook/components/Nook';
 import Blockchain from './blockchain/components/BlockchainServices';
 import Cooperation from './cooperation/components/CooperativeLife';
@@ -61,8 +61,8 @@ class App extends Component {
               <Route exact path="/lobby" component={Lobby} />
               <Route exact path="/baandalibrary" component={BaandaLibrary} />
               <Route exact path="/servicexchange" component={ServiceExchange} />
-              <Route exact path="/healthcare" component={HealthCare} />
-              <Route exact path="/finance" component={Finance} />
+              {/* <Route exact path="/healthcare" component={HealthCare} /> */}
+              {/* <Route exact path="/finance" component={Finance} /> */}
               <Route exact path="/nook" component={Nook} />
               <Route exact path="/blockchain" component={Blockchain} />
               <Route exact path="/cooperation" component={Cooperation} />

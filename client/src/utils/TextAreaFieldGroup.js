@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
 const TextAreaFieldGroup = ({
+  style,
   name,
   placeholder,
   value,
@@ -19,6 +20,8 @@ const TextAreaFieldGroup = ({
           'is-invalid': error
         })}
         placeholder={placeholder}
+        // style={{color: style}}
+        style={style}
         name={name}
         value={value}
         rows={rows}

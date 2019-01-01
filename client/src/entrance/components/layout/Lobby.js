@@ -227,17 +227,6 @@ class Lobby extends Component {
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="textspaceTop" />
               <div className="text-center">
-                {/* <div>
-                  <Link
-                    to="/baandalibrary"
-                    className="btn btn-outline-primary btn-block"
-                  >
-                    <strong>Browse </strong>
-                    <div className="float-right">
-                      <i className="fas fa-broadcast-tower" />
-                    </div>
-                  </Link>{' '}
-                </div> */}
                 <div className="textspaceTop" />
 
                 <div>
@@ -257,7 +246,7 @@ class Lobby extends Component {
                     to="/marketing"
                     className="btn btn-outline-primary btn-block"
                   >
-                    <strong>Influence</strong>
+                    <strong>Bazzar</strong>
                     <div className="float-right">
                       <i className="fas fa-envelope" />
                     </div>

@@ -4,8 +4,17 @@ import React, { Component } from "react";
 import ProjInitiate from "../../../../servicexchange/components/dashboard/projects/ProjInitiate";
 import EngagementStatus from "../../../../servicexchange/components/dashboard/projects/status/EngagementStatus";
 import TeamManagement from "../../../../servicexchange/components/dashboard/projects/teams/TeamManagement";
-import TaskManagement from "../../../../servicexchange/components/dashboard/projects/tasks/TaskManagement";
+import TaskManagement   from "../../../../servicexchange/components/dashboard/projects/tasks/TaskManagement";
+
+import UpdateManagement from '../../../../servicexchange/components/dashboard/projects/updates/UpdateManagement';
+import AssistanceMgmt   from '../../../../servicexchange/components/dashboard/projects/assistance/AssistanceMgmt';
+
 import ProjectingMgmt from "../../../../servicexchange/components/dashboard/projects/projecting/ProjectingMgmt";
+import FeedbackMgmt from '../../../../servicexchange/components/dashboard/projects/feedback/FeedbackMgmt';
+import ConflictMgmt from '../../../../servicexchange/components/dashboard/projects/conflict/ConflictMgmt';
+import DecisionMgmt from '../../../../servicexchange/components/dashboard/projects/decision/DecisionMgmt';
+import DioMgmt from '../../../../servicexchange/components/dashboard/projects/documentio/DioMgmt';
+import IotMgmt      from '../../../../servicexchange/components/dashboard/projects/iot/IotMgmt';
 
 import DefaultMsg from "../../../../servicexchange/components/dashboard/projects/ProjDefaultMsg";
 
@@ -416,10 +425,28 @@ class SXProjectBody extends Component {
     if (this.state.projTasks) {
       workArea = <TaskManagement thisProject={this.props} />;
     }
+    if (this.state.projUpdates) {
+      workArea = <UpdateManagement thisProject={this.props} />;
+    } 
+    if (this.state.geneAssistance) {
+      workArea = <AssistanceMgmt thisProject={this.props} />;
+    }
     if (this.state.projecting) {
       workArea = <ProjectingMgmt thisProject={this.props} />;
+    } 
+    if (this.state.geneFeedback) {
+      workArea = <FeedbackMgmt  thisProject={this.props} />;
     }
-
+    if (this.state.geneConflict) {
+      workArea = <ConflictMgmt  thisProject={this.props} />;
+    } if (this.state.geneDecisioning) {
+      workArea = <DecisionMgmt  thisProject={this.props} />;
+    } if (this.state.geneDocHandling) {
+      workArea = <DioMgmt  thisProject={this.props} />;
+    } if (this.state.geneIotFeed) {
+      workArea = <IotMgmt  thisProject={this.props} />;
+    }
+    
     return (
       <div className="container">
         <div className="message-panel-size text-center">{workArea}</div>

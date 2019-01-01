@@ -10,6 +10,10 @@
   height: 20px;
 }
 
+div.recording-msg-space {
+  height: 180px;
+}
+
 .space-between-buttons {
   height: 2px;
 }
@@ -87,4 +91,13 @@
   border: 1px solid black;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.recording-msg {
+  height: 500px;
+  width: 100%;
+  border-style: none;
+  background-color: black;
+  color: white;
+  padding: 50px;
 }

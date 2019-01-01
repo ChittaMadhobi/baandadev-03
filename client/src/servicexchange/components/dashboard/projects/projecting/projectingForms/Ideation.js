@@ -118,12 +118,27 @@ class Ideation extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              Ideation is a recurring & collaborative process though can be used
-              by one person and fine-tune it via evolution:
-              <br />
-              Enter a name of idea/project OR select one from drop-down to work
-              on it again.
-              <br />
+              <font color="yellow" size="3">
+                <p>
+                  A project, in any governance construct, is an individual’s or
+                  collective set of work to achieve a goal or an objective. It
+                  would be fantastic if the perfect ‘what-why-&-how’ of the
+                  objective, along with all the variable (who-when-&-where) of
+                  the process and future be known. In reality, a project starts
+                  with an IDEA. The evolution process from original IDEA into
+                  ‘what-why-how-who-when-&-where’ factors for manifesting the
+                  morphed-idea into reality become an integral part of the
+                  overall endeavor.
+                </p>
+                <p>
+                Endeavor Projection enable Baandas to take a hazy idea into reality through iterative steps of Ideation, discover, baselines, with effort estimations.     
+                </p>
+              </font>
+              <p>Ideation is a recurring & collaborative process to fine-tune it via iterative evolution:</p>
+              
+              <p>Enter a name of idea/project OR select one from drop-down to work
+              on it again later.</p>
+       
               Select the type of project ideation you are doing. Baanda will
               eventually guide you with domain specific intelligences.
               <ul>
@@ -223,7 +238,6 @@ class Ideation extends Component {
                 maxMenuHeight={150}
                 placeholder="Edit an existing idea or select new."
               />
-
             </font>
           </div>
         </div>
@@ -244,7 +258,6 @@ class Ideation extends Component {
                 maxMenuHeight={150}
                 placeholder="Select an idea type"
               />
-              
             </font>
           </div>
           <div className="col-md-6">{ideaTypeOther}</div>
@@ -263,7 +276,6 @@ class Ideation extends Component {
                 maxMenuHeight={150}
                 placeholder="Invite members for ideation"
               />
-              
             </font>
           </div>
           <div className="col-md-6">Show names if present team (if any)</div>
@@ -386,7 +398,7 @@ class Ideation extends Component {
     let ideaLogs = (
       <div>
         <div className="view-log">
-        <div className="space-outside-buttons" />
+          <div className="space-outside-buttons" />
           <div className="row">
             <div className="col">
               You would be seeing all the information, chronologically reveresed

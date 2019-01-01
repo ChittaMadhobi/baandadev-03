@@ -248,7 +248,7 @@ class SCMirrorBody extends Component {
               onClick={this.switchToSentiment}
             >
               Show Sentiment Gauge&nbsp;
-              <i class="fas fa-check" />
+              <i className="fas fa-check" />
             </button>
           </div>
           <div className="float-right">
@@ -257,7 +257,7 @@ class SCMirrorBody extends Component {
               onClick={this.switchToSocialCircle}
             >
               Show My Social Circle &nbsp;
-              <i class="far fa-dot-circle" />
+              <i className="far fa-dot-circle" />
             </button>
           </div>
         </div>

@@ -5,7 +5,7 @@ import "../../css/browse.css";
 import { browseTypes } from "./data/browseTypes";
 
 import BrowsePosts from "./BrowsePosts";
-import BrowseHistoricProjects from './BrowseHistoricProjects';
+import BrowseHistoricProjects from "./BrowseHistoricProjects";
 
 class SXBrowse extends Component {
   constructor(props) {
@@ -108,6 +108,14 @@ class SXBrowse extends Component {
     return (
       <div className="browse-header text-center">
         <div className="row">
+          <div className="col">
+            <div className="browse-body">
+              {browseProcess}
+              {output}
+            </div>
+          </div>
+        </div>
+        <div className="row">
           <div className="col-md-3">
             <div className="header-shadow">
               <b>
@@ -133,26 +141,28 @@ class SXBrowse extends Component {
             </div>
           </div>
           <div className="col-md-6">
-            <font color="#293087">
-              <Select
-                value={this.state.browseType}
-                options={browseTypes}
-                classNamePrefix="select"
-                onChange={this.selectBrowseDomain}
-                maxMenuHeight={150}
-                placeholder="Select browsing domain"
-              />
-            </font>
+            <div className="browse-select">
+              <font color="#293087">
+                <Select
+                  value={this.state.browseType}
+                  options={browseTypes}
+                  classNamePrefix="select"
+                  onChange={this.selectBrowseDomain}
+                  maxMenuHeight={150}
+                  placeholder="Select browsing domain"
+                />
+              </font>
+            </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col">
             <div className="browse-body">
               {browseProcess}
               {output}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

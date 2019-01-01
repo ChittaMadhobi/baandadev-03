@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { addTodo } from '../../../actions/tasklistActionCreator';
-import { bindActionCreators } from 'redux';
-import TextFieldGroup from '../../../utils/TextFieldGroup';
-import TextAreaFieldGroup from '../../../utils/TextAreaFieldGroup';
-import DatePicker from 'react-datepicker';
-import moment from 'moment';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { addTodo } from "../../../actions/tasklistActionCreator";
+import { bindActionCreators } from "redux";
+import TextFieldGroup from "../../../utils/TextFieldGroup";
+import TextAreaFieldGroup from "../../../utils/TextAreaFieldGroup";
+import DatePicker from "react-datepicker";
+import moment from "moment";
 
-import 'react-datepicker/dist/react-datepicker.css';
+import "react-datepicker/dist/react-datepicker.css";
 
 class AddTasks extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      formType: 'nooktasks',
-      todotext: '',
-      tasknotes: '',
-      priority: 'medium',
-      selectedDate: '2018-08-13',
+      formType: "nooktasks",
+      todotext: "",
+      tasknotes: "",
+      priority: "medium",
+      selectedDate: "2018-08-13",
       startDate: moment(),
       errors: {}
     };
@@ -106,20 +106,6 @@ class AddTasks extends Component {
               </div>
             </div>
           </div>
-
-          <div className="textspaceTop" />
-          <div className="row">
-            <div className="col-12">
-              <TextAreaFieldGroup
-                placeholder="Comments"
-                name="tasknotes"
-                value={this.state.tasknotes}
-                onChange={this.onChange}
-                error={errors.tasknotes}
-                info="Add details, reminders, notes, etc."
-              />
-            </div>
-          </div>
           <div className="row">
             <div className="col-2">
               <div className="float-right">
@@ -140,6 +126,20 @@ class AddTasks extends Component {
             </div>
             <div className="col-6">&nbsp;</div>
           </div>
+          <div className="textspaceTop" />
+          <div className="row">
+            <div className="col-12">
+              <TextAreaFieldGroup
+                placeholder="Comments"
+                name="tasknotes"
+                value={this.state.tasknotes}
+                onChange={this.onChange}
+                error={errors.tasknotes}
+                info="Add details, reminders, notes, etc."
+              />
+            </div>
+          </div>
+
           <div className="row">
             <div className="col-md-12">
               <div className="float-left ">
@@ -147,12 +147,12 @@ class AddTasks extends Component {
                   type="button"
                   onClick={() =>
                     this.setState({
-                      todotext: '',
-                      tasknotes: '',
-                      priority: 'medium'
+                      todotext: "",
+                      tasknotes: "",
+                      priority: "medium"
                     })
                   }
-                  style={{ marginTop: '25px', marginRight: '15px' }}
+                  style={{ marginTop: "25px", marginRight: "15px" }}
                   className="btn btn-danger btn-sm btn-size-same"
                 >
                   Cancel
@@ -164,12 +164,12 @@ class AddTasks extends Component {
                   onClick={() => {
                     this.props.addTodo(this.state);
                     this.setState({
-                      todotext: '',
-                      tasknotes: '',
-                      priority: 'medium'
+                      todotext: "",
+                      tasknotes: "",
+                      priority: "medium"
                     });
                   }}
-                  style={{ marginTop: '25px' }}
+                  style={{ marginTop: "25px" }}
                   className="btn btn-success btn-sm btn-size-same"
                 >
                   Add Task

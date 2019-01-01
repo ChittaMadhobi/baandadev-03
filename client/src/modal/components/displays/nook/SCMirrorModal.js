@@ -37,7 +37,7 @@ class SCMirrorModal extends Component {
   }
 
   render() {
-    console.log('In render SCMirrorModal props: ' + JSON.stringify(this.props));
+    //console.log('In render SCMirrorModal props: ' + JSON.stringify(this.props));
     return (
       <div className="container">
         <div className="modal-content-z">

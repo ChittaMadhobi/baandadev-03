@@ -10,6 +10,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { tasks } from "../data/tasks";
 import { teams } from "../data/teams";
 import { members } from "../data/members";
+import { taskCategories } from '../data/taskCategory'
 
 class EnableTasks extends Component {
   constructor(props) {
@@ -27,6 +28,8 @@ class EnableTasks extends Component {
       endDate: moment(),
       deliberable: "",
       acceptanceInspector: "",
+      taskCategory: "",
+      otherTaskCategory: '',
 
       errors: []
     };
@@ -34,6 +37,7 @@ class EnableTasks extends Component {
     this.gotoTaskCreatePanel = this.gotoTaskCreatePanel.bind(this);
     this.onChange = this.onChange.bind(this);
     this.handleParentTask = this.handleParentTask.bind(this);
+    this.handleTaskCategory = this.handleTaskCategory.bind(this);
     this.handleStartDate = this.handleStartDate.bind(this);
     this.handleEndDate = this.handleEndDate.bind(this);
     this.handleSaveClick = this.handleSaveClick.bind(this);
@@ -44,6 +48,12 @@ class EnableTasks extends Component {
       "Eventually -- When you click this, your work will be saved in database and right people notified. Once saved, authorized PM would be able to modify the tasks"
     );
   }
+
+  handleTaskCategory = (taskCategory, { action }) => {
+    this.setState({
+      taskCategory
+    });
+  };
 
   handleStartDate(date) {
     this.setState({
@@ -85,18 +95,6 @@ class EnableTasks extends Component {
   }
 
   gotoTaskCreatePanel = value => {
-    // console.log("got here :" + value);
-    // for (let name in this.state) {
-    //   if (name !== value) {
-    //     this.setState({
-    //       [name]: false
-    //     });
-    //   } else {
-    //     this.setState({
-    //       [name]: true
-    //     });
-    //   }
-    // }
     if (value === "createSteps") {
       this.setState({
         howToCreateTask: !this.state.howToCreateTask
@@ -112,8 +110,25 @@ class EnableTasks extends Component {
 
     const { errors } = this.state;
 
-    let createTaskBody;
+    let taskCategoryOtherPanel;
+    if (this.state.taskCategory.label === "Other") {
+      taskCategoryOtherPanel = (
+        <div>
+          <TextFieldGroup
+            name="otherTaskCategory"
+            placeholder="Enter a task name"
+            value={this.state.otherTaskCategory}
+            onChange={this.onChange}
+            error={errors.otherTaskCategory}
+            info="Enter a unique task Category for classification"
+          />
+        </div>
+      );
+    } else {
+      taskCategoryOtherPanel = null;
+    }
 
+    let createTaskBody;
     createTaskBody = (
       <div>
         <div className="row">
@@ -143,6 +158,26 @@ class EnableTasks extends Component {
             </font>
           </div>
         </div>
+        <div className="space-between-rows" />
+        <div className="row">
+          <div className="col-6">
+            <font color="#293087">
+              <Select
+                value={this.state.taskCategory}
+                //isMulti
+                options={taskCategories}
+                //className="basic-multi-select"
+                classNamePrefix="select task categories ..."
+                onChange={this.handleTaskCategory}
+                maxMenuHeight={150}
+                placeholder="Select a HL task category"
+              />
+            </font>
+          </div>
+          <div className="col-6">{taskCategoryOtherPanel}</div>
+        </div>
+        <div className="space-between-rows" />
+        <div className="space-between-rows" />
         <div className="space-between-rows" />
         <div className="row">
           <div className="col">
