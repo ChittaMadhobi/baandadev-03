@@ -30,3 +30,11 @@ div.demofixedsize {
   background-color: rgb(245, 245, 228);
   overflow: auto;
 }
+
+div.siteplan-fixedsize {
+  height: 550px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: hide;
+  max-height: 550px;
+}

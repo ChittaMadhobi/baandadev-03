@@ -1,21 +1,21 @@
 /*
-**  Author: Jit (Sarbojit Mukherjee)
-**  Desc:   Provides the basic landing for Baanda with two opetions ... to chat with Baanda
-**          or login / signin to get to the lobby
-**  Note:   Every program and aspects of Baanda_dev, as of this day, is being coded and handled by Jit
-**  Date:   July 9, 2018
-**  Version:0.01
-*/
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { PropTypes } from 'prop-types';
-import { connect } from 'react-redux';
+ **  Author: Jit (Sarbojit Mukherjee)
+ **  Desc:   Provides the basic landing for Baanda with two opetions ... to chat with Baanda
+ **          or login / signin to get to the lobby
+ **  Note:   Every program and aspects of Baanda_dev, as of this day, is being coded and handled by Jit
+ **  Date:   July 9, 2018
+ **  Version:0.01
+ */
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { PropTypes } from "prop-types";
+import { connect } from "react-redux";
 
 //import { Redirect } from 'react-router-dom';
-import ModalContainer from '../../../modal/components/ModalContainer';
-import { showModal, hideModal } from '../../../actions/modalActions';
-import '../../../modal/css/template.css';
-import '../../../modal/css/localModal.css';
+import ModalContainer from "../../../modal/components/ModalContainer";
+import { showModal, hideModal } from "../../../actions/modalActions";
+import "../../../modal/css/template.css";
+import "../../../modal/css/localModal.css";
 
 class Lobby extends Component {
   // If someone use URL host:port/login ... it should not take to login if already so
@@ -31,26 +31,40 @@ class Lobby extends Component {
 
   openAlertModal = param => e => {
     //console.log('param : ' + param);
-    let msg = 'This could be Jit ID: ' + param;
+    let msg = "This could be Jit ID: " + param;
     this.props.showModal(
       {
         open: true,
-        title: 'Alert - Start Here Header',
+        title: "Alert - Start Here Header",
         message: msg,
         closeModal: this.closeModal
       },
-      'alert'
+      "alert"
+    );
+  };
+
+  openSitePlanModal = param => e => {
+    //console.log('param : ' + param);
+    let msg = "This could be Jit ID: " + param;
+    this.props.showModal(
+      {
+        open: true,
+        title: "Alert - Start Here Header",
+        message: msg,
+        closeModal: this.closeModal
+      },
+      "siteplan"
     );
   };
 
   componentDidMount() {
     if (!this.props.auth.isAuthenticated) {
-      this.props.history.push('/login');
+      this.props.history.push("/login");
     }
   }
 
   render() {
-    const ans = 'abcd';
+    const ans = "abcd";
 
     return (
       <div className="lobby">
@@ -69,52 +83,56 @@ class Lobby extends Component {
         <div className="landing-inner text-dark">
           <div className="row">
             <div className="col-lg-2 col-md-4 col-sm-6">
-              <div className="text-center">
-                <p>
-                  <font color="blue">
-                    <b>
-                      Click Start-Here for an overview; Baanda-Map for
-                      direction; Library for detail information.
-                    </b>
-                  </font>
-                </p>
-              </div>
-
-              <div>
-                <Link
-                  to="/baandaReception"
-                  className="btn btn-outline-info btn-block"
-                >
-                  <strong>CHAT</strong>
-                  <div className="float-right">
-                    <i className="fas fa-comments" />
+              <div className="textspaceTop" />
+              <div className="textspaceTop" />
+              {/* <div className="textspaceTop" /> */}
+              <div className="row">
+                <div className="col text-center">
+                  <div>
+                    <Link
+                      to="/baandaReception"
+                      className="btn btn-outline-info btn-block"
+                    >
+                      <strong>CHAT</strong>
+                      <div className="float-right">
+                        <i className="fas fa-comments" />
+                      </div>
+                    </Link>
                   </div>
-                </Link>
+                </div>
               </div>
-
-              <div className="demobuttons">
-                <button
-                  className="btn btn-dark btn-block mt-4"
-                  type="button"
-                  onClick={this.openAlertModal(ans)}
-                >
-                  Start Here
-                  <div className="float-right">
-                    <i className="far fa-play-circle" />
+              <div className="textspaceTop" />
+              <div className="row">
+                <div className="col text-center">
+                  {/* <div className="demobuttons"> */}
+                    <button
+                      className="btn btn-dark btn-block mt-4"
+                      type="button"
+                      onClick={this.openAlertModal(ans)}
+                    >
+                      Start Here
+                      <div className="float-right">
+                        <i className="far fa-play-circle" />
+                      </div>
+                    </button>
                   </div>
-                </button>
+                {/* </div> */}
               </div>
-              <div className="demobuttons">
-                <button
-                  className="btn btn-info btn-block mt-4"
-                  type="button"
-                  onClick={this.openAlertModal(ans)}
-                >
-                  Site Map
-                  <div className="float-right">
-                    <i className="fas fa-map" />
+              <div className="row">
+                <div className="col text-center">
+                  {/* <div className="demobuttons"> */}
+                    <button
+                      className="btn btn-info btn-block mt-4"
+                      type="button"
+                      onClick={this.openSitePlanModal(ans)}
+                    >
+                      Site Map
+                      <div className="float-right">
+                        <i className="fas fa-map" />
+                      </div>
+                    </button>
                   </div>
-                </button>
+                {/* </div> */}
               </div>
             </div>
 
@@ -133,7 +151,7 @@ class Lobby extends Component {
                       <div className="headertext text-center">
                         <ul className="list-inline">
                           <li className="list-inline-item">
-                            {' '}
+                            {" "}
                             <i className="fa fa-check" />
                             &nbsp; Persona
                           </li>
@@ -185,7 +203,7 @@ class Lobby extends Component {
                       <div className="headertext text-center">
                         <ul className="list-inline">
                           <li className="list-inline-item">
-                            {' '}
+                            {" "}
                             <i className="fa fa-check" />
                             &nbsp; Post
                           </li>
@@ -226,60 +244,61 @@ class Lobby extends Component {
 
             <div className="col-lg-2 col-md-4 col-sm-6">
               <div className="textspaceTop" />
-              <div className="text-center">
-                <div className="textspaceTop" />
-
-                <div>
-                  <Link
-                    to="/baandalibrary"
-                    className="btn btn-outline-primary btn-block"
-                  >
-                    <strong>Library </strong>
-                    <div className="float-right">
-                      <i className="fas fa-book-open" />
-                    </div>
-                  </Link>
+              <div className="textspaceTop" />
+              {/* <div className="textspaceTop" /> */}
+              <div className="row">
+                <div className="col text-center">
+                  <div>
+                    <Link
+                      to="/marketing"
+                      className="btn btn-outline-primary btn-block"
+                    >
+                      <strong>Marketspace</strong>
+                      <div className="float-right">
+                        <i className="fas fa-envelope" />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-                <div className="textspaceTop" />
-                <div>
-                  <Link
-                    to="/marketing"
-                    className="btn btn-outline-primary btn-block"
-                  >
-                    <strong>Bazzar</strong>
-                    <div className="float-right">
-                      <i className="fas fa-envelope" />
-                    </div>
-                  </Link>
+              </div>
+              <div className="textspaceTop" />
+              <div className="textspaceTop" />
+              <div className="row">
+                <div className="col text-center">
+                  <div>
+                    <Link
+                      to="/cooperation"
+                      className="btn btn-outline-primary btn-block"
+                    >
+                      <strong>Co-Living </strong>
+                      <div className="float-right">
+                        <i className="fas fa-home" />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-                <div className="textspaceTop" />
-                <div>
-                  <Link
-                    to="/cooperation"
-                    className="btn btn-outline-primary btn-block"
-                  >
-                    <strong>Co-Living </strong>
-                    <div className="float-right">
-                      <i className="fas fa-home" />
-                    </div>
-                  </Link>
-                </div>
-                <div className="textspaceTop" />
-                <div>
-                  <Link
-                    to="/blockchain"
-                    className="btn btn-outline-primary btn-block"
-                  >
-                    <strong>Agreement</strong>
-                    <div className="float-right">
-                      <i className="fas fa-link" />
-                    </div>
-                  </Link>
+              </div>
+              <div className="textspaceTop" />
+              <div className="textspaceTop" />
+              <div className="row">
+                <div className="col text-center">
+                  <div>
+                    <Link
+                      to="/blockchain"
+                      className="btn btn-outline-primary btn-block"
+                    >
+                      <strong>Agreement</strong>
+                      <div className="float-right">
+                        <i className="fas fa-link" />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/* </div> */}
         <ModalContainer />
         <div className="footerspace" />
       </div>
@@ -299,7 +318,7 @@ const mapDispatchToProps = dispatch => ({
   hideModal: () => dispatch(hideModal()),
   showModal: (modalProps, modalType) => {
     console.log(
-      'modalProps:' + JSON.stringify(modalProps) + '  |modalType:' + modalType
+      "modalProps:" + JSON.stringify(modalProps) + "  |modalType:" + modalType
     );
     dispatch(showModal({ modalProps, modalType }));
   }

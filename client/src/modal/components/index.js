@@ -3,6 +3,7 @@
 // import deleteModal from './DeleteModal';
 // import promptModal from './PromptModal';
 //import alertModalRcc from './AlertModalRCC';
+import siteplanModal from './displays/entrance/SiteMap';
 import alertModalRcc from './displays/entrance/StartHereModal';
 import carouselMan from './displays/nook/CarouselManual';
 import socialMessage from './displays/nook/SocialCircleMessage';
@@ -21,6 +22,7 @@ import sxProject from './displays/servicexchange/SXProjectModal';
 // };
 
 const modalTypes = {
+  siteplanModal,
   alertModalRcc,
   carouselMan,
   socialMessage,
