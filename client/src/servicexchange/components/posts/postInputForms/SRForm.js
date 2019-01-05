@@ -55,7 +55,7 @@ class SRForm extends Component {
       <div className="container">
         <h4>
           <p className="text-center text-primary font-weight-bold">
-            Service Request / Help Wanted
+            Service Request / Help Wanted / Find Workforce
           </p>
         </h4>
         <form onSubmit={this.onSubmit}>
@@ -67,8 +67,8 @@ class SRForm extends Component {
                 value={this.state.postName}
                 onChange={this.onChange}
                 error={errors.postName}
-                info="A name for you to dashboard Ref :: "
-                must="Must provide"
+                info="A name for your reference :: "
+                must="Mandatory"
               />
             </div>
             <div className="col-md-6">
@@ -78,8 +78,8 @@ class SRForm extends Component {
                 value={this.state.postCaption}
                 onChange={this.onChange}
                 error={errors.postCaption}
-                info="This would be visible to viewer :: "
-                must="Must provide"
+                info="This will be visible to viewer :: "
+                must="Mandatory"
               />
             </div>
           </div>
@@ -92,7 +92,7 @@ class SRForm extends Component {
                 onChange={this.onChange}
                 error={errors.address}
                 info="Enter your project-service location :: "
-                must="Must provide"
+                must="Mandatory"
               />
             </div>
             <div className="col-md-6">
@@ -103,21 +103,21 @@ class SRForm extends Component {
                 onChange={this.onChange}
                 error={errors.zipCode}
                 info="Please provide service location zip code :: "
-                must="Must provide"
+                must="Mandatory"
               />
             </div>
           </div>
           <div className="row">
             <div className="col-12">
               <TextAreaFieldGroup
-                placeholder="Describe your project or work type"
+                placeholder="Describe the project or type of work"
                 name="serviceDescription"
                 value={this.state.serviceDescription}
                 onChange={this.onChange}
                 error={errors.serviceDescription}
                 rows={5}
                 info="Describe your work for viewing ::"
-                must="Must Provide"
+                must="Mandatory"
               />
             </div>
           </div>
@@ -131,7 +131,7 @@ class SRForm extends Component {
                     id="inputGroupFile02"
                   />
                   <label className="custom-file-label">
-                    Picture please ...
+                    Upload a photo
                   </label>
                 </div>
                 <div className="input-group-append">
@@ -143,7 +143,7 @@ class SRForm extends Component {
             </div>
             <div className="col-md-6">
               <p>
-                <small>Please upload your project photo for you post.</small>
+                <small>Please upload a project photo for the posting.</small>
               </p>
             </div>
           </div>
@@ -155,12 +155,12 @@ class SRForm extends Component {
               <div className="selectWrapper form-control form-control-sm">
                 <select size="3" className="selectWidth">
                   <option value="animalCaretaker">Animal Caretaker</option>
-                  <option value="babyCaretaker">Baby Caretaker</option>
+                  <option value="babyCaretaker">Childcare</option>
                   <option value="caregiver">Caregiver</option>
                   <option value="construction">Construction</option>
                   <option value="gardening">Gardening</option>
                   <option value="handyman">Handyman</option>
-                  <option value="restaurant">Restaurants</option>
+                  <option value="restaurant">Restaurant</option>
                   <option value="security">Security</option>
                   <option value="teacher">Teacher</option>
                   <option value="carpentry">Carpentry</option>
@@ -241,7 +241,7 @@ class SRForm extends Component {
             <div className="col-12">
               <TextFieldGroup
                 name="skillList"
-                placeholder="Enter skills expected - comma (,) dellimited"
+                placeholder="Enter skills expected. Separate with a comma."
                 value={this.state.skillList}
                 onChange={this.onChange}
                 error={errors.skillList}
@@ -257,7 +257,7 @@ class SRForm extends Component {
                 value={this.state.training}
                 onChange={this.onChange}
                 error={errors.training}
-                info="Indicate is experience needed "
+                info="Indicate if experience needed "
               />
             </div>
             <div className="col-md-6">
@@ -267,7 +267,7 @@ class SRForm extends Component {
                 value={this.state.personality}
                 onChange={this.onChange}
                 error={errors.personality}
-                info="Indicate personality preferred (if needed)"
+                info="Indicate personality preferred (if desired)"
               />
             </div>
           </div>
@@ -351,7 +351,7 @@ class SRForm extends Component {
               </div>
             </div>
             <div className="col-md-6">
-              <strong>Need some license/permit:&nbsp;</strong>
+              <strong>Requires license/permit:&nbsp;</strong>
               <div className="form-check form-check-inline">
                 <label className="form-check-label">
                   <input

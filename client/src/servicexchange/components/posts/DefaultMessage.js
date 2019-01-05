@@ -12,23 +12,22 @@ class DefaultMessage extends Component {
               <div className="card card-body bg-dark text_white">
                 <h5 className="card-title">
                   <strong>
-                    <font color="red">Select Posting Type Please</font>
+                    <font color="white">Post </font>
                   </strong>
                 </h5>
                 <p className="card-test">
-                  Please select the posting type to render the right input-form
+                  Please select the posting type from the drop-down menu.
                 </p>
                 <p className="card-test">
-                  More information you provide, more likely is to provide a
-                  refined & right match by Baanda.
+                  The more information you provide, the more likely Baanda can provide you with a
+                  refined match.
                 </p>
                 <p className="card-test">
-                  <font color="red">**</font> Mandatory fields would be
-                  mentioned.
+                  <font color="lightblue">**</font> Mandatory fields are indicated as mandatory. 
                 </p>
                 <p className="card-test">
-                  <font color="lightblue">**</font> Some fields not visible to
-                  others; used by matching algorithms only; will be mentioned.
+                  <font color="lightblue">**</font> Some fields are not visible to
+                  anyone other than you. They are needed for matching algorithms only and will be indicated as such.
                 </p>
               </div>
             </div>

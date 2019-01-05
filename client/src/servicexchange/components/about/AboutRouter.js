@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import DefaultMessage from './DefaultAboutMessage';
 import SXOverview from './SXOverview';
+import SXPost from './SXPost';
+import SXDashboard from './SXDashboard';
+import SXBrowse from './SXBrowse';
 
 class AboutRouter extends Component {
   render() {
@@ -27,7 +30,7 @@ class AboutRouter extends Component {
     if (selectValue === 'postQuestions') {
       output = (
         <div>
-          Posting related questions
+          <SXPost />
         </div>
       );
     }
@@ -35,7 +38,7 @@ class AboutRouter extends Component {
     if (selectValue === 'dashboardQuestion') {
       output = (
         <div>
-          Dashboard Questions
+          <SXDashboard />
         </div>
       );
     }
@@ -43,7 +46,7 @@ class AboutRouter extends Component {
     if (selectValue === 'browseQuestion') {
       output = (
         <div>
-          How to browse
+          <SXBrowse />
         </div>
       );
     }

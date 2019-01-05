@@ -140,7 +140,7 @@ class CoopPost extends Component {
               value={this.state.workshopAddress}
               onChange={this.onChange}
               error={errors.workshopAddress}
-              info="If virtual, state overall geo-location (city,country)."
+              info="If virtual, state overall geolocation (city,country)."
               must="Mandatory"
             />
           </div>
@@ -196,7 +196,7 @@ class CoopPost extends Component {
       <div className="container">
         <h4>
           <p className="text-center text-primary font-weight-bold">
-            Cooperative Formation Initiative
+            Form a Cooperative
           </p>
         </h4>
         <form onSubmit={this.onSubmit}>
@@ -208,7 +208,7 @@ class CoopPost extends Component {
                 value={this.state.postName}
                 onChange={this.onChange}
                 error={errors.postName}
-                info="A name for you to dashboard Ref :: "
+                info="A name for your reference :: "
                 must="Mandatory"
               />
             </div>
@@ -217,7 +217,7 @@ class CoopPost extends Component {
                 className="btn btn-outline-info btn-xsm"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="This would be a name for you to refer in your dashboard."
+                title="This is the name it will be called in your dashboard."
               >
                 ?
               </button>
@@ -229,7 +229,7 @@ class CoopPost extends Component {
                 value={this.state.postCaption}
                 onChange={this.onChange}
                 error={errors.postCaption}
-                info="Visible to your the people who may join you:: "
+                info="Visible to the public :: "
                 must="Mandatory"
               />
             </div>
@@ -238,7 +238,7 @@ class CoopPost extends Component {
                 className="btn btn-outline-info btn-xsm"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Enter a catchy name for others to notice. This would be posted/published."
+                title="Enter a catchy name. This will be posted/published."
               >
                 ?
               </button>
@@ -266,13 +266,13 @@ class CoopPost extends Component {
           <div className="row">
             <div className="col-12">
               <TextAreaFieldGroup
-                placeholder="This would be somewhat elaborate to excite people to join in or for Baanda to feel the sentiment of the co-op."
+                placeholder="Tell people what you want to do and what you want to accomplish. Get people excited to join your co-op."
                 name="masterDescription"
                 value={this.state.masterDescription}
                 onChange={this.onChange}
                 error={errors.masterDescription}
                 rows={5}
-                info="Describe your vision of the co-operative ::"
+                info="Describe your vision for the co-operative ::"
                 must="Mandatory"
               />
             </div>
@@ -286,7 +286,7 @@ class CoopPost extends Component {
                 value={this.state.coopName}
                 onChange={this.onChange}
                 error={errors.coopName}
-                info="Enter a co-op name even as a placeholder : "
+                info="Give your co-op a name. You can change it later. : "
                 must="Mandatory"
               />
             </div>
@@ -302,7 +302,7 @@ class CoopPost extends Component {
                     onChange={this.handleSpecialTrainingCheck}
                   />{' '}
                   <font color="green">
-                    Check if any special trainings/expertise is required.
+                    Check if any special training or expertise is required to join.
                   </font>
                 </label>
               </div>
@@ -354,7 +354,7 @@ class CoopPost extends Component {
             </div>
             <div className="col-md-6">
               <p>
-                <small>Upload any document, brocure (if you have one).</small>
+                <small>Upload documents, brocure (if you have one).</small>
               </p>
             </div>
           </div>
@@ -368,7 +368,7 @@ class CoopPost extends Component {
               >
                 {' '}
                 <label>
-                  <h6>Require personal tool? &nbsp;&nbsp;</h6>
+                  <h6>Require personal tools? &nbsp;&nbsp;</h6>
                 </label>
                 <label>
                   <Radio value="yes" />
@@ -436,10 +436,9 @@ class CoopPost extends Component {
               <div className="col">
                 <font color="#1b7018">
                   <h6>
-                    Co-op is an endeavor of peers. You are not looking for
-                    people to work FOR you but to join you and/or work WITH you.
-                    If you want someone to work for pay (employee or freepancer)
-                    please post as 'service request / Help Wanted' section.
+                    Co-ops are groups of peers working together for a shared goal. 
+                    If you are looking for employment or freelance work, see the
+                    'service request / Help Wanted' section.
                   </h6>
                 </font>
               </div>

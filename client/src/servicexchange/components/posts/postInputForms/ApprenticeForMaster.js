@@ -166,7 +166,7 @@ class ApprenticeForMaster extends Component {
       <div className="container">
         <h4>
           <p className="text-center text-primary font-weight-bold">
-            Master Seeking Apprentice/Students
+            Apprentice / Student Seeking Master / Teacher
           </p>
         </h4>
         <form onSubmit={this.onSubmit}>
@@ -178,7 +178,7 @@ class ApprenticeForMaster extends Component {
                 value={this.state.postName}
                 onChange={this.onChange}
                 error={errors.postName}
-                info="A name for you to dashboard Ref :: "
+                info="A name for you to reference :: "
                 must="Mandatory"
               />
             </div>
@@ -187,7 +187,7 @@ class ApprenticeForMaster extends Component {
                 className="btn btn-outline-info btn-xsm"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="This would be a name for you to refer in your dashboard."
+                title="This will be the name for you to refer to in your dashboard."
               >
                 ?
               </button>
@@ -199,7 +199,7 @@ class ApprenticeForMaster extends Component {
                 value={this.state.postCaption}
                 onChange={this.onChange}
                 error={errors.postCaption}
-                info="Visible to your Masters / Teachers :: "
+                info="Visible to Masters / Teachers :: "
                 must="Mandatory"
               />
             </div>
@@ -208,7 +208,7 @@ class ApprenticeForMaster extends Component {
                 className="btn btn-outline-info btn-xsm"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Enter a catchy name for others to notice. This would be posted/published."
+                title="Enter a catchy name. This will be posted/published."
               >
                 ?
               </button>
@@ -225,8 +225,8 @@ class ApprenticeForMaster extends Component {
                 onChange={this.handleStartAddrChange}
               />{' '}
               <font color="green">
-                Would you want to go for your training from a different
-                location.
+                Would you travel to your training from a different
+                location (e.g. your school)?
               </font>
             </label>
           </div>
@@ -240,7 +240,7 @@ class ApprenticeForMaster extends Component {
                 value={this.state.studentDescription}
                 onChange={this.onChange}
                 error={errors.studentDescription}
-                info="Present yourself to your master in best possible summary ::"
+                info="Describe what you are looking for and what you would like to accomplish. ::"
                 must="Mandatory"
               />
             </div>
@@ -253,21 +253,20 @@ class ApprenticeForMaster extends Component {
               <div className="selectWrapper form-control form-control-sm">
                 <select size="3" className="selectWidth">
                   <option value="animalCaretaker">Animal Handling</option>
-                  <option value="autoMechanic">Auto Mechanic</option>
-                  <option value="carpenter">Carpenter</option>
-                  <option value="caregiver">Caregiver</option>
-                  <option value="cheff">Cheff-Cook</option>
-                  <option value="computerHardware">Computer Mechanic</option>
+                  <option value="autoMechanic">Auto Mechanics</option>
+                  <option value="carpenter">Carpentry</option>
+                  <option value="caregiver">Caregiving</option>
+                  <option value="cheff">Chef-Cook</option>
+                  <option value="computerHardware">Computer Mechanics</option>
                   <option value="construction">Construction</option>
-                  <option value="electrician">Electrician</option>
+                  <option value="electrician">Electrical</option>
                   <option value="gardening">Gardening</option>
-                  <option value="painter">Painter</option>
-                  <option value="plumber">Plumber</option>
-                  <option value="restaurant">Cheff</option>
+                  <option value="painter">Painting</option>
+                  <option value="plumber">Plumbing</option>
                   <option value="security">Security</option>
                   <option value="programming">Software Development</option>
-                  <option value="teacher">Teacher</option>
-                  <option value="webDesign">Web Designer</option>
+                  <option value="teacher">Teaching</option>
+                  <option value="webDesign">Web Design</option>
                   <option value="other">Other ...</option>
                 </select>
               </div>
@@ -377,7 +376,6 @@ class ApprenticeForMaster extends Component {
                 <select size="3" className="selectWidth">
                   <option value="tuition">Tuition Only</option>
                   <option value="workTuition">Work + Tuition</option>
-                  <option value="morning">Morning </option>
                   <option value="work">Work for Master</option>
                   <option value="workPromise">Work + Student Promise </option>
                   <option value="workPromise">

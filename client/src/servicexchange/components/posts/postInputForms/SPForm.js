@@ -109,7 +109,7 @@ class SPForm extends Component {
                 value={this.state.postName}
                 onChange={this.onChange}
                 error={errors.postName}
-                info="A name for you to dashboard Ref :: "
+                info="A name for your reference :: "
                 must="Mandatory"
               />
             </div>
@@ -120,7 +120,7 @@ class SPForm extends Component {
                 value={this.state.postCaption}
                 onChange={this.onChange}
                 error={errors.postCaption}
-                info="This would be visible to employer :: "
+                info="This will be visible to employer :: "
                 must="Mandatory"
               />
             </div>
@@ -136,7 +136,7 @@ class SPForm extends Component {
                 onChange={this.handleStartAddrChange}
               />{' '}
               <font color="green">
-                Check if you want to go to work from a different location.
+                Check if you will often travel to work from a different location (e.g. your school).
               </font>
             </label>
           </div>
@@ -145,7 +145,7 @@ class SPForm extends Component {
           <div className="row">
             <div className="col-12">
               <TextAreaFieldGroup
-                placeholder="Summary of what are looking for."
+                placeholder="Summary of what you are looking for."
                 name="serviceDescription"
                 value={this.state.serviceDescription}
                 onChange={this.onChange}
@@ -165,7 +165,7 @@ class SPForm extends Component {
                     id="inputGroupFile02"
                   />
                   <label className="custom-file-label">
-                    Resume or portfolio ...
+                    Upload resume or portfolio
                   </label>
                 </div>
                 <div className="input-group-append">
@@ -191,12 +191,12 @@ class SPForm extends Component {
               <div className="selectWrapper form-control form-control-sm">
                 <select size="3" className="selectWidth">
                   <option value="animalCaretaker">Animal Caretaker</option>
-                  <option value="babyCaretaker">Baby Caretaker</option>
+                  <option value="babyCaretaker">Childcare</option>
                   <option value="caregiver">Caregiver</option>
                   <option value="construction">Construction</option>
                   <option value="gardening">Gardening</option>
                   <option value="handyman">Handyman</option>
-                  <option value="restaurant">Restaurants</option>
+                  <option value="restaurant">Restaurant</option>
                   <option value="security">Security</option>
                   <option value="teacher">Teacher</option>
                   <option value="carpentry">Carpentry</option>
@@ -224,19 +224,19 @@ class SPForm extends Component {
             <div className="col-md-4">
               <div className="selectWrapper form-control form-control-sm">
                 <select size="3" className="selectWidth">
-                  <option value="enteringWorkLife">Entering Work-life</option>
+                  <option value="enteringWorkLife">Entry Level</option>
                   <option value="freelance">Freelance</option>
                   <option value="student">Student</option>
-                  <option value="employed">Fully Employed</option>
-                  <option value="partimer">Part-timer</option>
-                  <option value="homekeeper">Home Keeper</option>
+                  <option value="employed">Full-Time</option>
+                  <option value="partimer">Part-time</option>
+                  <option value="homekeeper">Work From Home</option>
                   <option value="inBetween">In Between</option>
                 </select>
               </div>
             </div>
             <div className="col-md-2">
               <label>
-                <strong>Time Slots</strong>
+                <strong>Availability</strong>
               </label>
             </div>
             <div className="col-md-4">
@@ -348,7 +348,7 @@ class SPForm extends Component {
                     id="budgetType1"
                     value="Hourley"
                   />{' '}
-                  hourly
+                  Hourly
                 </label>
               </div>
               <div className="form-check form-check-inline">

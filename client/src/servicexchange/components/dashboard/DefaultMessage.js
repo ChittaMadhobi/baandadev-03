@@ -12,27 +12,23 @@ class DefaultMessage extends Component {
               <div className="card card-body bg-dark text_white">
                 <h5 className="card-title">
                   <strong>
-                    <font color="lightgreen">
-                      Select the Type of Dashboard Activity
+                    <font color="white">
+                      Select 
                     </font>
                   </strong>
                 </h5>
                 <p className="card-test">
-                  SX Pursuits are about your postings of any kind. These are yet
-                  to be ... something you are pursuing.
+                  Pursuits refers to your current postings >> Who or what you are pursuing.
                 </p>
                 <p className="card-test">
-                  Manage your projects >> These are your active projects and/or
-                  endeavors.
+                  Manage your endeavors >> These are your active projects/jobs.
                 </p>
                 <p className="card-test">
-                  Historic are references to your projects. This is your SX
-                  memories recorded.
+                  Historic refers to past projects. 
                 </p>
                 <p className="card-test">
-                  <font color="powderblue">
-                    Personal SX reflection >> This is if you want to know your
-                    work life reflection from the world.
+                  <font color="white">
+                    Personal SX reflection >> Get work/life reflection from those around you.
                   </font>
                 </p>
               </div>

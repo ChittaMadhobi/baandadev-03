@@ -13,18 +13,18 @@ class AboutTypeSelection extends Component {
                 className="custom-select"
                 onChange={this.props.handleOnChange}
               >
-                <option value="none">Select your Curiosity Area Type</option>
+                <option value="none">Select</option>
                 <option value="overviewQuestions">
-                  Overview Questions on Service Xchange (Conceptual)
+                  Service Xchange Overview Questions  
                 </option>
                 <option value="postQuestions">
-                  Questions about Postings (Details, like a manual)
+                  How to Post in Service Xchange 
                 </option>
                 <option value="dashboardQuestion">
-                  Questions about Dashboard (Details, like a manual)
+                  How to use Service Xchange Dashboard 
                 </option>
                 <option value="browseQuestion">
-                  Questions about Browsing (Details, like a manual)
+                  How to Browse in Service Xchange 
                 </option>
               </select>
             </div>

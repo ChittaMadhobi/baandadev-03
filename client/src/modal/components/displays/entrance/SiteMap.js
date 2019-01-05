@@ -52,7 +52,8 @@ class SiteMap extends Component {
             <div className="modal-header">
               <h5>
                 Welcome{" "}
-                <font color="blue">{this.props.auth.user.name} ...</font>
+                {/* <font color="blue">{this.props.auth.user.name} ...</font> */}
+                <font color="blue">{user.name} ...</font>
                 &nbsp;Service Offerings
               </h5>
             </div>

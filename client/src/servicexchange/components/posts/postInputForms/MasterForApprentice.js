@@ -121,7 +121,7 @@ class MasterForApprentice extends Component {
       specialTool = (
         <div>
           <font color="green">
-            <b>Student do not need personal tools </b>
+            <b>Students are not required to have personal tools </b>
           </font>
         </div>
       );
@@ -194,7 +194,7 @@ class MasterForApprentice extends Component {
       <div className="container">
         <h4>
           <p className="text-center text-primary font-weight-bold">
-            Master Seeking Apprentice/Students
+            Master Seeking Apprentice / Students
           </p>
         </h4>
         <form onSubmit={this.onSubmit}>
@@ -206,7 +206,7 @@ class MasterForApprentice extends Component {
                 value={this.state.postName}
                 onChange={this.onChange}
                 error={errors.postName}
-                info="A name for you to dashboard Ref :: "
+                info="A name for your reference :: "
                 must="Mandatory"
               />
             </div>
@@ -215,7 +215,7 @@ class MasterForApprentice extends Component {
                 className="btn btn-outline-info btn-xsm"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="This would be a name for you to refer in your dashboard."
+                title="This is what it will be called in your dashboard."
               >
                 ?
               </button>
@@ -227,7 +227,7 @@ class MasterForApprentice extends Component {
                 value={this.state.postCaption}
                 onChange={this.onChange}
                 error={errors.postCaption}
-                info="Visible to your future Apprentice/Student :: "
+                info="Visible to Apprentice/Student :: "
                 must="Mandatory"
               />
             </div>
@@ -236,7 +236,7 @@ class MasterForApprentice extends Component {
                 className="btn btn-outline-info btn-xsm"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Enter a catchy name for others to notice. This would be posted/published."
+                title="Enter a catchy name. This will be posted/published."
               >
                 ?
               </button>
@@ -250,21 +250,20 @@ class MasterForApprentice extends Component {
               <div className="selectWrapper form-control form-control-sm">
                 <select size="3" className="selectWidth">
                   <option value="animalCaretaker">Animal Handling</option>
-                  <option value="autoMechanic">Auto Mechanic</option>
-                  <option value="carpenter">Carpenter</option>
-                  <option value="caregiver">Caregiver</option>
-                  <option value="cheff">Cheff-Cook</option>
-                  <option value="computerHardware">Computer Mechanic</option>
+                  <option value="autoMechanic">Auto Repair</option>
+                  <option value="carpenter">Carpentry</option>
+                  <option value="caregiver">Caregiving</option>
+                  <option value="computerHardware">Computer Repair</option>
                   <option value="construction">Construction</option>
-                  <option value="electrician">Electrician</option>
+                  <option value="electrician">Electrical</option>
                   <option value="gardening">Gardening</option>
-                  <option value="painter">Painter</option>
-                  <option value="plumber">Plumber</option>
-                  <option value="restaurant">Cheff</option>
+                  <option value="painter">Painting</option>
+                  <option value="plumber">Plumbing</option>
+                  <option value="restaurant">Cooking</option>
                   <option value="security">Security</option>
                   <option value="programming">Software Development</option>
-                  <option value="teacher">Teacher</option>
-                  <option value="webDesign">Web Designer</option>
+                  <option value="teacher">Teaching</option>
+                  <option value="webDesign">Web Design</option>
                   <option value="other">Other ...</option>
                 </select>
               </div>
@@ -307,7 +306,7 @@ class MasterForApprentice extends Component {
                 value={this.state.masterDescription}
                 onChange={this.onChange}
                 error={errors.masterDescription}
-                info="Describe your trade, speciality, and your mentoring style ::"
+                info="Describe your trade, specialty, and your mentoring style ::"
                 must="Mandatory"
               />
             </div>
@@ -337,7 +336,7 @@ class MasterForApprentice extends Component {
                     onChange={this.handleSpecialTrainingCheck}
                   />{' '}
                   <font color="green">
-                    Check if you have been thru special training.
+                    Check if you have special training.
                   </font>
                 </label>
               </div>
@@ -377,14 +376,14 @@ class MasterForApprentice extends Component {
                 <select size="3" className="selectWidth">
                   <option value="beginner">Beginner</option>
                   <option value="intermedite">Intermediate</option>
-                  <option value="advance">Advance</option>
+                  <option value="advance">Advanced</option>
                   <option value="all">All Levels</option>
                 </select>
               </div>
             </div>
             <div className="col-md-2">
               <label>
-                <strong>Engagement Types</strong>
+                <strong>Engagement Type</strong>
               </label>
             </div>
             <div className="col-md-4">
@@ -392,7 +391,6 @@ class MasterForApprentice extends Component {
                 <select size="3" className="selectWidth">
                   <option value="tuition">Tuition Only</option>
                   <option value="workTuition">Work + Tuition</option>
-                  <option value="morning">Morning </option>
                   <option value="work">Work for Master</option>
                   <option value="workPromise">Work + Student Promise </option>
                   <option value="workPromise">
@@ -414,7 +412,7 @@ class MasterForApprentice extends Component {
                     id="inputGroupFile02"
                   />
                   <label className="custom-file-label">
-                    Training Carriculum ...
+                    Training Curriculum ...
                   </label>
                 </div>
                 <div className="input-group-append">
@@ -440,7 +438,7 @@ class MasterForApprentice extends Component {
               >
                 {' '}
                 <label>
-                  <h6>Require personal tool? &nbsp;&nbsp;</h6>
+                  <h6>Require personal tools? &nbsp;&nbsp;</h6>
                 </label>
                 <label>
                   <Radio value="yes" />
