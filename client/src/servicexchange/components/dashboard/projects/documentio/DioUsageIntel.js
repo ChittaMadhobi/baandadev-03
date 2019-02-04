@@ -79,19 +79,20 @@ class DioUsageIntel extends Component {
             <div className="how-to-create-team">
               <font color="lightyellow">
                 <p>
-                  This provides intel on your publication. The first option is
-                  the combination of all publication. You could also select a
-                  particular publication name and find different kinds of
-                  response that is an average of peer's feedbacks.
+                  This module provides intel on your publications. You may view 
+                  all publications or you can select a
+                  particular publication. After that, you can find different kinds of
+                  responses and intel that average the feedback people gave for your
+                  publication.
                   <br />
                   <b>
                     <p>
-                      Select a name from the drop down and see the high-level
+                      Select a name from the drop down 
                     </p>
                   </b>
                 </p>
                 <p>
-                  The review logs would be visible after the graphical response
+                  The review logs will be visible after the graphical response
                   section.
                 </p>
               </font>

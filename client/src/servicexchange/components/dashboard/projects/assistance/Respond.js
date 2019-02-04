@@ -144,9 +144,9 @@ class Respond extends Component {
             <div className="howto-handle-inspection">
               <font color="lightyellow">
                 <p>
-                  The requestor has sent you a assistance-request. Please respond taking into considerations of your availability, or if you consider someone else would be more appropriate. If you are a PM, you may want the participant to get help from outside of the team.</p>
+                  The requestor has sent you an assistance-request. Please respond taking into consideration your availability. If you think someone else would be a more appropriate target, you may forward the request to other members on your team. If you are a project manager, you may want the requestor to get help from outside the team.</p>
                   <br />
-                  <p><i>Note: At this point, the external help inclusion has to be done separately. The other person or entity would need to be included in the team for direct notification. An agreement has to be done with the external entity before direct notifications.</i></p>
+                  <p><i>Note: At this point, the external help inclusion has to be done separately. The other person or entity must be a member of the team for direct notification. An agreement must be created with the external entity before direct notification can be made.</i></p>
                   <br />
               </font>
             </div>
@@ -288,7 +288,7 @@ class Respond extends Component {
             <div className="col">
               <div className="textarea-list-lines">
                 <TextAreaFieldGroup
-                  placeholder="Enter comments on your assistance "
+                  placeholder="Enter comments "
                   name="assistComment"
                   value={this.state.assistComment}
                   rows={4}
@@ -380,7 +380,7 @@ class Respond extends Component {
       output = (
         <div className="view-doc-list">
           <h5>
-            <u>List of Active Tasks</u>
+            <u>List of Active Requests</u>
           </h5>
           {responseListPanel}
         </div>
@@ -389,7 +389,7 @@ class Respond extends Component {
       output = (
         <div className="view-doc-list">
           <h5>
-            <u>Respond - Assists</u>
+            <u>Your Responses to Assistance Requests</u>
           </h5>
           {responseForm}
         </div>
@@ -400,7 +400,7 @@ class Respond extends Component {
       <div>
         <div className="form-panel-publish">
           <div className="text-center">
-            <h5>Respond to Assistance Requests</h5>
+            <h5>Your Responses to Assistance Requests</h5>
             <div className="row">
               <div className="col-md-3">
                 <div className="float-left">

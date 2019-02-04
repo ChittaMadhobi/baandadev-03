@@ -49,7 +49,7 @@ class ManageMessages extends Component {
       };
       this.popupFunction(id, select);
     } else {
-      alert("Select a target to send to.");
+      alert("Select a posting or a team to send to.");
     }
   };
 
@@ -126,7 +126,7 @@ class ManageMessages extends Component {
                   value={selectedOption}
                   onChange={this.handleChangeTarget}
                   options={options}
-                  placeholder="Selelct a target (no default) "
+                  placeholder="Select a target (no default) "
                 />
               </div>
             </div>
@@ -145,8 +145,8 @@ class ManageMessages extends Component {
               <div className="target-msg-font">
                 <font color="#358ddd">
                   <b>
-                    Select a target to send a message, if not responding to
-                    received list.
+                    Select a posting, an individual or a team to send a message to. 
+                    Or select a message below to respond to.
                   </b>
                 </font>
               </div>

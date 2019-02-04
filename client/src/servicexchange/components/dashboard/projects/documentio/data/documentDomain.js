@@ -16,12 +16,12 @@ export const documentDomain = [
   },
   {
     value: '104',
-    label: 'Directives HL- project hadling',
+    label: 'Directives HL- project handling',
     color: '#FF8B00'
   },
   {
     value: '105',
-    label: 'Project Plan detail- project hadling',
+    label: 'Project Plan detail- project handling',
     color: '#FF8B00'
   },
   {

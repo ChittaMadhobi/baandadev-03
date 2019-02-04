@@ -5,7 +5,7 @@ export const taskArtGallery = {
     label: 'None - No parent Tasks',
     color: '#FF8B00'
   },
-  description: "To implement an Art-Gallery for aspiring artists from the inception of ideas, fund-raise, manage and implement as a co-op in or around Sanata Monica in around three months.",
+  description: "To implement an Art Gallery for aspiring artists from the inception of ideas, fund-raise, manage and implement as a co-op in Santa Monica in three months.",
   assignedToTeam: {
     value: '0',
     label: 'Root ',
@@ -25,6 +25,6 @@ export const taskArtGallery = {
   ],
   startDate: '2019-01-01',
   endDate: '2019-03-31',
-  deliberable: "Art Gallery opened, exhibiting art-work of aspiring artists, enabling marketing, sales of artworks.",
+  deliberable: "Art Gallery opened, exhibiting art work, enabling marketing, sales of artworks.",
   acceptanceInspector: "Whole Team"
 }

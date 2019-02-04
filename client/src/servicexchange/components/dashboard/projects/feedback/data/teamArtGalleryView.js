@@ -1,7 +1,7 @@
 export const artGalleryFeed = {
   chart: {
     caption: "Art-Gallery Team Dynamics",
-    subcaption: "Duration of the project - till now",
+    subcaption: "Duration of the project - until now",
     xaxisname: "Team Dynamics Dimensions",
     yaxisname: "Feedback Statistical Scores",
     formatnumberscale: "1",

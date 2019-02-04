@@ -45,7 +45,7 @@ class ManageAgreements extends Component {
       });
     } else {
       alert(
-        'not allowed beyond 4 entries. To select another delete one from the selected or chosen list.'
+        'Not allowed beyond 4 entries. To select another delete one from the selected or chosen list.'
       );
     }
   };
@@ -75,7 +75,7 @@ class ManageAgreements extends Component {
         <div className="text-center">
           <h3>Manage Agreements</h3>
           <font color="green">
-            <p>(Help-requestor, Master, or Co-op lead can start this procee)</p>
+            <p>(You must be a Help-requestor, Master, or Co-op to start this process.)</p>
           </font>
         </div>
         <form onSubmit={this.onSubmit}>
@@ -93,7 +93,7 @@ class ManageAgreements extends Component {
             </div>
             <div className="col-6">
               <div className="d-flex align-items-start agreement-notes">
-                Select one of your posting to initiate / ammend an agreement.
+                Select one of your postings to initiate or ammend an agreement.
               </div>
             </div>
           </div>
@@ -112,9 +112,9 @@ class ManageAgreements extends Component {
             </div>
             <div className="col-6">
               <div className="d-flex align-items-start agreement-notes">
-                You can make agreement with someone (or entity) with mutual
-                interests already established (in the list) and both sides
-                interested in the next step. For co-op, you can multi-select or
+                You can make agreements with people or entities with mutual
+                interests already established (in the list). Both parties must be
+                interested in the next step. For a co-op, you can multi-select or
                 amend to include others.
               </div>
             </div>
@@ -133,7 +133,7 @@ class ManageAgreements extends Component {
             </div>
             <div className="col-6">
               <div className="d-flex align-items-start agreement-notes">
-                Enter a unique reference name for new agreement / contract
+                Enter a unique reference name for a new agreement / contract
                 creation.
               </div>
             </div>
@@ -157,8 +157,8 @@ class ManageAgreements extends Component {
             </div>
             <div className="col-6">
               <div className="d-flex align-items-start agreement-notes">
-                Select an existing contract if you want to amend, that includes,
-                inclusion of new members.
+                Select an existing contract that you want to amend. (Amendments include
+                addition of new members.)
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ class ManageAgreements extends Component {
                   onChange={this.onChange}
                   //error={errors.contractDescription}
                   rows={2}
-                  info="Describe your agreement intention in small statement / note for notification.:"
+                  info="Describe your agreement intention in a brief statement.:"
                   must="Must Provide"
                 />
               </div>
@@ -185,9 +185,9 @@ class ManageAgreements extends Component {
             <div className="col">
               <div className="agreement-notes">
                 <b>
-                  OnClick of 'Amend' or 'Create' buttons below, recipient will
-                  be notified. On acceptance, this will appear in your Agreement
-                  panel accessable from the Lobby.
+                  OnClick of 'Amend' or 'Create' buttons below, recipients will
+                  be notified. Upon acceptance, posts will appear in your Agreement
+                  panel accessible from the Lobby.
                 </b>
               </div>
             </div>

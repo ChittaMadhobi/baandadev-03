@@ -10,7 +10,7 @@ charts(fusioncharts);
 const dataSource = {
   chart: {
     dateformat: "mm/dd/yyyy",
-    caption: "Co-op Art-Gallery Creation and Opening Progress",
+    caption: "Co-op Art Gallery Creation and Opening Progress",
     subcaption: "",
     theme: "fusion",
     canvasborderalpha: "40",
@@ -114,10 +114,10 @@ const dataSource = {
     align: "left",
     process: [
       {
-        label: " Finalize Art-gallery Mission"
+        label: " Finalize Art Gallery Mission"
       },
       {
-        label: " Develop Art-gallery plan"
+        label: " Develop Art Gallery Plan"
       },
       {
         label: " Analyze Potential Audience"
@@ -129,10 +129,10 @@ const dataSource = {
         label: " Develop Marketing Concept"
       },
       {
-        label: " Identify & Avail Gallery-Site"
+        label: " Identify & Lease Gallery Site"
       },
       {
-        label: " Gather Art Stuff & Pieces"
+        label: " Gather Art Work"
       },
       {
         label: " Prepare the Gallery"
@@ -144,7 +144,7 @@ const dataSource = {
         label: " Evaluate Product In-House"
       },
       {
-        label: " Opening party with Focused "
+        label: " Grand Opening Gala "
       },
       {
         label: " Begin Full Scale Marketing"

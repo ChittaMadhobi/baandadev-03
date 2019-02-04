@@ -133,6 +133,7 @@ router.post('/login', (req, res) => {
 // @desc    Register user
 // @access  Public
 router.post('/register', (req, res) => {
+  console.log('Got to registration req:' + JSON.stringify(req.body));
   const { errors, isValid } = validateRegisterInput(req.body);
   // Check validations
   if (!isValid) {
@@ -144,6 +145,7 @@ router.post('/register', (req, res) => {
       errors.email = 'Email already exists';
       return res.status(400).json(errors);
     } else {
+      console.log('new user ... in registration path 1');
       const avatargen = gravatar.url(req.body.email, {
         s: '200', //size
         r: 'pg', // Rating ..

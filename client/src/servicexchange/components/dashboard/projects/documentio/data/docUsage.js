@@ -41,7 +41,7 @@ export const docUsage = [
       },
       {
         seq: 1,
-        reviewBy: 'Sapho De Lesbos',
+        reviewBy: 'Sappho De Lesbos',
         review: ' Integer iaculis mauris nibh, id viverra enim tempus vel. Ut non est viverra, faucibus sem ut, vulputate nisl. Nulla imperdiet ac eros bibendum feugiat. Praesent aliquet mattis mauris. Pellentesque non turpis ac lorem mollis convallis. Praesent eget imperdiet purus, a hendrerit sem.'
       },
     ]

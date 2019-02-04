@@ -86,28 +86,28 @@ class Dicovery extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              Discovery process goes hand-in-hand with Ideation process for a
-              project. Discovery process is thus associated with an Ideation
+              The discovery process goes hand-in-hand with the Ideation process for a
+              project. The discovery process is thus associated with an Ideation
               name.:
               <br />
               <ul>
                 <li>Select an ideation name from the drop down.</li>
                 <li>
                   Select a discovery domain you would like to log about. If you
-                  select 'other' then please state a distinct hyphenated
+                  select 'other', please state a distinct hyphenated
                   domain-name.
                 </li>
                 <li>
-                  Enter discovery question, R&D you have performed. Include all
-                  kinds of information, including reference to documents, URL
+                  Enter discovery questions and R&D you have performed. Include all
+                  information, including reference to documents, URLs
                   etc. If you want to attach a document, return to Ideation and
-                  upload a document, picture, and so on.
+                  upload a document, picture, etc.
                 </li>
               </ul>
-              Discovery panel is to assist the team in sysematic discovery
-              around solidiying an idea leading to a project. Theis would assist
-              the team in forming a well informed Baseline traits of the project
-              to enable cost-time-risk budgeting.
+              The Discovery panel assists the team in systematic discovery
+              solidifying an idea leading to a project. This will assist
+              the team in forming well-informed Baseline traits of the project
+              and enabling cost-time-risk budgeting.
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ class Dicovery extends Component {
           <div className="space-between-rows" />
           <div className="col-md-6">
             <font color="#f2d9b8">
-              Select an idea to do your discovery logging
+              Select an idea to log discovery.
             </font>
           </div>
         </div>
@@ -151,7 +151,7 @@ class Dicovery extends Component {
           <div className="space-outside-buttons" />
           <div className="row">
             <div className="col">
-              You would be seeing all the information, chronologically reveresed
+              You will see all the information in chronologically reversed
               order (last in first, with all the log entries.)
             </div>
           </div>
@@ -199,7 +199,7 @@ class Dicovery extends Component {
               value={this.state.otherDomainName}
               onChange={this.onChange}
               //error={errors.newName}
-              info="Enter the new domain for other ..."
+              info="Enter the new domain for other"
             />
           </div>
         </div>
@@ -268,8 +268,8 @@ class Dicovery extends Component {
           <div className="text-center how-to-create-team">
             <font color="">
               You have been inducted in the team by the manager. Since you are
-              joining as barrista (time-based) and not the manager, you do not
-              get to build teams.
+              joining as a barista (time-based) and not the manager, you do not
+              have access to team building.
             </font>
           </div>
         </div>
@@ -288,7 +288,7 @@ class Dicovery extends Component {
                       this.gotoDiscoveryProcess("discoverySteps");
                     }}
                   >
-                    Discvory Process
+                    Discovery Process
                     <div className="float-right">
                       <i className="fas fa-toggle-off" />
                     </div>

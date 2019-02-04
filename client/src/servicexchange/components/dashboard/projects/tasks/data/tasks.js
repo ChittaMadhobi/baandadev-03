@@ -11,7 +11,7 @@ export const tasks = [
   },
   {
     value: '102',
-    label: 'Create a core-team',
+    label: 'Create a core team',
     color: '#FFC400'
   },
   {

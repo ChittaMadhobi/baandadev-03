@@ -226,12 +226,12 @@ class Intel extends Component {
             </div>
             <div className="col-3"> &nbsp;</div>
           </div>
-          <p>Select a chart-type for viewing summary intel </p>
+          <p>Select a chart type for viewing summary intel </p>
           <hr />
           <p className="time-based-msg-intel">
-            Note: These are sample summary-chart types that is configured now
+            Note: These are sample summary-chart types that are configured 
             for this experience. Per user's request, various different types can
-            be displayed based on endeavor types and the corresponding needs.
+            be displayed based on the project and the corresponding needs.
           </p>
         </div>
       );
@@ -261,7 +261,7 @@ class Intel extends Component {
                   placeholder="Find by a task Category"
                 />
               </font>
-              <p>Find by a Project Component Context </p>
+              <p>Find by Project Component Context </p>
             </div>
             <div className="col-md-5 text-left-select">
               <font color="blue">
@@ -278,7 +278,7 @@ class Intel extends Component {
                   placeholder="Select Task Status"
                 />
               </font>
-              <p>Find by document domain ...</p>
+              <p>Find by document domain</p>
             </div>
             <div className="col-1"> &nbsp;</div>
           </div>
@@ -513,9 +513,9 @@ class Intel extends Component {
           <div className="space-outside-buttons" />
           <p className="time-based-msg">
             <font color="orange">
-              You have not been allocated with any projectized tasks with
+              You have not been allocated with any project tasks with
               deliverables or received any inspection requests. Your allocation
-              is time-based set of services as barista.
+              is a time-based set of services as barista.
             </font>
           </p>
         </div>
@@ -525,13 +525,13 @@ class Intel extends Component {
         output = (
           <div className="view-doc-list">
             <h5>
-              <u>Filter your log-viewing</u>
+              <u>Filter your log viewing</u>
             </h5>
             {showLocate}
             <p className="time-based-msg-intel">
               <font color="brown" size="3">
                 Note: The filters are inactive and indicative of how it will
-                work when the system is hooked to database. Right now, it goes
+                work when the system is hooked to the database. Right now, it goes
                 against data-file showing 'All' or 'no filter' scenario.
               </font>
             </p>
@@ -591,7 +591,7 @@ class Intel extends Component {
     return (
       <div className="form-panel-create-team">
         <font color="lightblue">
-          <h5>This Project Tasks Log & Intel</h5>
+          <h5>Project Tasks Log & Intel</h5>
         </font>
         <div className="row">
           <div className="col-md-3">

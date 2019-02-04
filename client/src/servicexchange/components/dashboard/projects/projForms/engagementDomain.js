@@ -1,7 +1,7 @@
 export const engagementDomains = [
     {
         value: '100',
-        label: 'Art - Painting, Music, Sculptor, Dance etc.',
+        label: 'Art - Painting, Music, Sculpture, Dance etc.',
         color: '#FF8B00'
     },
     {

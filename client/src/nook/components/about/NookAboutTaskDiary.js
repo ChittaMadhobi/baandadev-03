@@ -28,9 +28,9 @@ class NookAboutTaskDiary extends Component {
     let aboutAns2 = null;
     let aboutAns3 = null;
     let aboutAns4 = null;
-    let aboutAns5 = null;
-    let aboutAns6 = null;
-    let aboutAns7 = null;
+    // let aboutAns5 = null;
+    // let aboutAns6 = null;
+    // let aboutAns7 = null;
     let aboutAns8 = null;
     if (btnClickNo === '1') {
       aboutAns1 = (
@@ -86,38 +86,38 @@ class NookAboutTaskDiary extends Component {
         </div>
       );
     }
-    if (btnClickNo === '5') {
-      aboutAns5 = (
-        <div>
-          <font color="blue">Ans 5: </font> This is the answer 5
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '6') {
-      aboutAns6 = (
-        <div>
-          <font color="blue">Ans 6: </font> This is the answer 6
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '7') {
-      aboutAns7 = (
-        <div>
-          <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '8') {
-      aboutAns8 = (
-        <div>
-          <font color="blue">Ans 8: </font> This is the answer 8
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
+    // if (btnClickNo === '5') {
+    //   aboutAns5 = (
+    //     <div>
+    //       <font color="blue">Ans 5: </font> This is the answer 5
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '6') {
+    //   aboutAns6 = (
+    //     <div>
+    //       <font color="blue">Ans 6: </font> This is the answer 6
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '7') {
+    //   aboutAns7 = (
+    //     <div>
+    //       <font color="blue">Ans 7: </font> This is the answer 7
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '8') {
+    //   aboutAns8 = (
+    //     <div>
+    //       <font color="blue">Ans 8: </font> This is the answer 8
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
 
     return (
       <div>
@@ -156,7 +156,7 @@ class NookAboutTaskDiary extends Component {
               4. What is the evolution path of this Tasks and Diary section?
             </button>
             {aboutAns4}
-            <button
+            {/* <button
               id="5"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
@@ -186,7 +186,7 @@ class NookAboutTaskDiary extends Component {
               onClick={this.handlePostClick}
             >
               8. More Tasks and diary questions ...?
-            </button>
+            </button> */}
             {aboutAns8}
           </div>
         </div>

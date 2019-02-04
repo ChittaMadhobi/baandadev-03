@@ -13,6 +13,8 @@ import sxPursuits from './displays/servicexchange/SXPursuitModal';
 import sxMessage from './displays/servicexchange/SXMessageModal';
 import sxProject from './displays/servicexchange/SXProjectModal';
 
+import cfIntel from './displays/marketing/CFIntelModal';
+
 // const modalTypes = {
 //   alertModal,
 //   confirmModal,
@@ -30,7 +32,8 @@ const modalTypes = {
   financialMirror,
   sxPursuits,
   sxMessage,
-  sxProject
+  sxProject,
+  cfIntel
 };
 
 export default modalTypes;

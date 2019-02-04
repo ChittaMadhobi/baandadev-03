@@ -24,7 +24,7 @@ export const tobeReleased = [
     endDate: '02/07/2019',
     lastState: 100,  // Percentage complete 
     assignTeam: 'None',  // If it has been assigned to the whole team
-    assignMembers: 'Jane Austin, Angelo',  
+    assignMembers: 'Jane Austen, Angelo',  
     deliverable: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo augue, posuere non turpis sit amet, semper consequat massa.',
     lastUpdatedBy: 'Jane',
     request: 'pay-release'
@@ -39,9 +39,9 @@ export const tobeReleased = [
     endDate: '02/14/2019',
     lastState: 95,  // Percentage complete 
     assignTeam: 'None',  // If it has been assigned to the whole team
-    assignMembers: 'Mercus Orilius, Angelo',  
+    assignMembers: 'Marcus Aurelius, Angelo',  
     deliverable: 'Sed euismod neque vel risus pretium convallis sit amet sed felis. Etiam quis egestas lacus, id tempor augue. Fusce sodales erat eget nisl lobortis, non pretium ex rhoncus.',
-    lastUpdatedBy: 'Mercus',
+    lastUpdatedBy: 'Marcus',
     request: 'inspect'
   },
   {

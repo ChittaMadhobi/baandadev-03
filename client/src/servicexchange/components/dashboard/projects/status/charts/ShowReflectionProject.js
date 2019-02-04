@@ -9,7 +9,7 @@ charts(fusioncharts);
 
 const dataSource = {
   chart: {
-    caption: 'Co-op Art-Gallery Reflection',
+    caption: 'Co-op Art Gallery Reflection',
     subcaption: 'Reflection of Team vs. Self-Perception',
     theme: 'fusion',
     numbersuffix: 'Pts.',
@@ -28,13 +28,13 @@ const dataSource = {
           label: 'Team Player'
         },
         {
-          label: 'Immaginative'
+          label: 'Imaginative'
         },
         {
           label: 'Meet Milestones'
         },
         {
-          label: 'Punctulaity'
+          label: 'Punctuality'
         }
       ]
     }

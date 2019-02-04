@@ -145,7 +145,7 @@ class MasterForApprentice extends Component {
           <div className="col-md-6">
             <TextFieldGroup
               name="workshopZipCode"
-              placeholder="Enter location zipcode ..."
+              placeholder="Enter location zip code"
               value={this.state.workshopZipCode}
               onChange={this.onChange}
               error={errors.workshopZipCode}
@@ -194,7 +194,7 @@ class MasterForApprentice extends Component {
       <div className="container">
         <h4>
           <p className="text-center text-primary font-weight-bold">
-            Master Seeking Apprentice / Students
+            Master Seeking Apprentice / Student(s)
           </p>
         </h4>
         <form onSubmit={this.onSubmit}>

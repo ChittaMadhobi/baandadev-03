@@ -1,7 +1,7 @@
 export const artGalleryMembers = [
   {
     value: '100',
-    label: 'Mercus Orilius',
+    label: 'Marcus Aurelius',
     color: '#FF8B00'
   },
   {
@@ -11,12 +11,12 @@ export const artGalleryMembers = [
   },
   {
     value: '102',
-    label: 'Sapho De Lesbos',
+    label: 'Sappho De Lesbos',
     color: '#FF8B00'
   },
   {
     value: '103',
-    label: 'Leonardo De Vinci',
+    label: 'Leonardo Da Vinci',
     color: '#FFC400'
   },
   {
@@ -36,7 +36,7 @@ export const artGalleryMembers = [
   },
   {
     value: '107',
-    label: 'Jane Austine',
+    label: 'Jane Austin',
     color: '#FFC400'
   },
   {

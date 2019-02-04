@@ -32,8 +32,8 @@ class AudioMessage extends Component {
 
   handleSendClick() {
     alert(
-      'This is an UX or usability experience. At this point in production (by your click on Send button), your message would apear in ' +
-        "the receipient's message box. The quality of the audio-mesage will depend on your microphone, driers and the browser."
+      'This is a UX or usability experience. At this point in production (by your click on Send button), your message will apear in ' +
+        "the receipient's message box. The quality of the audio-mesage will depend on your microphone, drivers and browser."
     );
   }
 
@@ -171,7 +171,7 @@ class AudioMessage extends Component {
             )}
           </div>
           <div>
-            <b>Rcording:</b>
+            <b>Recording:</b>
             &nbsp;&nbsp;
             {recording ? (
               <font color="lightgreen">
@@ -234,7 +234,7 @@ class AudioMessage extends Component {
           <div className="col-1">&nbsp;</div>
           <div className="col-10 ">
             <div className="text-center vedio-msg">
-              Click <b>Start</b> then <b>Done</b>. &nbsp; Repeat till OK then{' '}
+              Click <b>Start</b> then <b>Done</b>. &nbsp; Repeat until OK then{' '}
               <b>Send</b>.
             </div>
           </div>

@@ -183,6 +183,11 @@ p.top-padding {
   padding-top: 50px;
 }
 
+div.top-padding {
+  border: none;
+  padding-top: 50px;
+}
+
 .loginRightTopPadding {
   border: none;
   padding-top: 100px;

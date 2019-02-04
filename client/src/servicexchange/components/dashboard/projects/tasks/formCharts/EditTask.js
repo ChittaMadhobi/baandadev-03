@@ -128,7 +128,7 @@ class EditTask extends Component {
           <div className="text-center how-to-create-team">
             <font color="white">
               You have been inducted in the team by the manager. Since you are
-              joining as barrista (time-based) and not the manager of project or
+              joining as a barista (time-based) and not the manager of the project or
               co-op, you do not get to assign and/or edit tasks.
             </font>
           </div>
@@ -175,7 +175,7 @@ class EditTask extends Component {
                   maxMenuHeight={150}
                 />
               </font>
-              <div className="float-left">The selected parent task ...</div>
+              <div className="float-left">The selected parent task</div>
             </div>
           </div>
           <div className="space-between-rows" />
@@ -188,7 +188,7 @@ class EditTask extends Component {
                 onChange={this.onChange}
                 rows={2}
                 error={errors.description}
-                info="Provide a short description for a quick references .."
+                info="Provide a short description for quick reference"
                 must="Mandatory"
               />
             </div>
@@ -202,10 +202,10 @@ class EditTask extends Component {
                   //isMulti
                   options={teams}
                   //className="basic-multi-select"
-                  classNamePrefix="select a team for the task ..."
+                  classNamePrefix="select a team for the task"
                   onChange={this.handleAssignTeam}
                   maxMenuHeight={150}
-                  placeholder="Select parent task (if any)..."
+                  placeholder="Select parent task"
                 />
               </font>
             </div>
@@ -217,7 +217,7 @@ class EditTask extends Component {
                   isMulti
                   options={members}
                   //className="basic-multi-select"
-                  classNamePrefix="Assign members to the task ..."
+                  classNamePrefix="Assign members to the task"
                   onChange={this.handleAssignMembers}
                   maxMenuHeight={150}
                   placeholder="Assign members ..."
@@ -275,13 +275,13 @@ class EditTask extends Component {
           <div className="row">
             <div className="col">
               <TextAreaFieldGroup
-                placeholder="A short description of deliberable "
-                name="deliberable"
+                placeholder="A short description of deliverable "
+                name="deliverable"
                 value={this.state.deliberable}
                 onChange={this.onChange}
                 rows={2}
                 error={errors.deliberable}
-                info="Describe the outcome, or success condition, for the task ..."
+                info="Describe the outcome, or success condition for the task ..."
                 must="Mandatory"
               />
             </div>

@@ -23,7 +23,7 @@ class TaskView extends Component {
           <div className="text-center how-to-create-team">
             <font color="white">
               You have been inducted in the team by the manager. Since you are
-              joining as barrista (time-based) and not a project or co-op etc. you have nothing to view. </font> 
+              joining as a barista (time-based) and not a project manager, you have nothing to view. </font> 
           </div>
         </div>
       )

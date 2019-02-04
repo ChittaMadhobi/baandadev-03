@@ -63,12 +63,12 @@ class newProject extends Component {
                 selectedServiceRecipiant: '',
                 engagementDomain: {
                     value: '100',
-                    label: 'Art - Painting, Music, Sculptor, Dance etc.',
+                    label: 'Art - Painting, Music, Sculpture, Dance etc.',
                     color: '#FF8B00'
                 },
                 otherDomainName: '',
                 parentContract: '',
-                projMessage: 'Message: As PM, you can edit this. If you change project-level and recipient, project updates have to wait till they accept that.'
+                projMessage: 'Message: As Project Manager, you can edit this. If you change project-level and recipient, project updates have to wait till other team members accept them.'
             })
         }
     }
@@ -82,10 +82,10 @@ class newProject extends Component {
     handleSaveClick() {
         let err = '';
         if (this.state.engagementName === '' || this.state.description === '') {
-            err = "ERROR: Please fill out your project initiation properly. Mandatory fields needs to be filled out.";
+            err = "ERROR: Please fill out your project initiation properly. Mandatory fields must be filled out.";
         }
         alert(
-            'Eventually -- When you click this, your work will be saved in database. Right now, a symbolic data-iota would be saved in local storage to simulate UX. However, if you return to this new project again, the process will start all over. In real life, it will open saved data (if you are the PM)......' + err
+            'Eventually -- When you click this, your work will be saved in the database. Right now, a symbolic data-iota would be saved in local storage to simulate UX. However, if you return to this new project again, the process will start all over. In real life, it will open saved data (if you are the PM)......' + err
         );
         let newproj = {
             name: this.state.engagementName,
@@ -162,7 +162,7 @@ class newProject extends Component {
                     options={projects}
                     maxMenuHeight={130}
                     isSearchable
-                    placeholder="Selelct a parent project for PM notification"
+                    placeholder="Select a parent project for PM notification"
                 />
             );
             parentContract = (
@@ -174,7 +174,7 @@ class newProject extends Component {
                             options={contracts}
                             maxMenuHeight={130}
                             isSearchable
-                            placeholder="Selelct a contract with parent contract"
+                            placeholder="Select a contract with parent contract"
                         />
                     </font>
                 </div>
@@ -187,7 +187,7 @@ class newProject extends Component {
                     options={serviceRequestor}
                     maxMenuHeight={130}
                     isSearchable
-                    placeholder="Selelct a Service Requestor for notification"
+                    placeholder="Select a Service Requestor for notification"
                 />
             );
             parentContract = null;
@@ -203,7 +203,7 @@ class newProject extends Component {
                 <div className="text-align-left">
                     <TextFieldGroup
                         name="otherDomainName"
-                        placeholder="Enter alternate domain name ..."
+                        placeholder="Enter alternate domain name"
                         value={this.state.otherDomainName}
                         onChange={this.onChange}
                         error={errors.otherDomainName}
@@ -261,7 +261,7 @@ class newProject extends Component {
                     value={this.state.engagementName}
                     onChange={this.onChange}
                     error={errors.engagementName}
-                    info="State a unique name; this would be in your proj. mgmt. dashboard.."
+                    info="Give it a unique name"
                     must="Mandatory"
                 />
             );
@@ -301,7 +301,7 @@ class newProject extends Component {
                     onChange={this.onChange}
                     rows={3}
                     error={errors.description}
-                    info="Provide a short description for a quick references .."
+                    info="Provide a short description for quick reference"
                     must="Mandatory"
                 />
             );
@@ -336,7 +336,7 @@ class newProject extends Component {
                         options={engagementDomains}
                         maxMenuHeight={130}
                         isSearchable
-                        placeholder="Selelct a high-level engagement domain."
+                        placeholder="Select a high-level engagement domain."
                     />
                 </font>
             );

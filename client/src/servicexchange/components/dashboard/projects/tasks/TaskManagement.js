@@ -73,10 +73,10 @@ class TaskManagement extends Component {
         <br />
         <div className="text-center">
           <font color="#ddd1a8">
-            For UX review and comments, system is not doing true authorization
+            For UX review and comments, the system is not doing true authorization,
             but assuming you are the PM so that you can experience other
-            project/co-op related actions and see statuses from pre-defined
-            intelligence. In real world, if you are not the authorized, your
+            project/co-op related actions and see status from pre-defined
+            intelligence. In production, if you are not the authorized manager, your
             access will be limited.
           </font>
         </div>
@@ -162,7 +162,7 @@ class TaskManagement extends Component {
             <div className="col-1">&nbsp;</div>
             <div className="col-10">
               <div className="text-center vedio-msg">
-                Click the option to work on a context.
+                Click an option above 
               </div>
             </div>
             <div className="col-1">&nbsp;</div>

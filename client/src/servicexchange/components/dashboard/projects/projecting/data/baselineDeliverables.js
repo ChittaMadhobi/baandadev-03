@@ -6,7 +6,7 @@ export const baselineDeliverables = [
   },
   {
     value: '101',
-    label: 'Fund Raise Plan (Lvl:1)',
+    label: 'Fund Raising Plan (Lvl:1)',
     color: '#FF8B00'
   },
   {

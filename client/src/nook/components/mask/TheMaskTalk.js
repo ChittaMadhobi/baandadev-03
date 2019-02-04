@@ -109,7 +109,7 @@ class TheMaskTalk extends Component {
                   <font color="blue">
                     Humanoid conversation UX (User Experience) cannot be
                     described in traditional HTML and/or wireframe. This is one
-                    of the pillars of Baanda platform. It will effect every
+                    of the pillars of the Baanda platform. It will affect every
                     story of Baanda and hence needs to be experienced.
                   </font>
                 </h6>
@@ -119,7 +119,7 @@ class TheMaskTalk extends Component {
             <div className="col-12">
               <ul className="float-left masktalk-text">
                 <li>
-                  <b>Carousel Manual Read</b> (button) talks about what-and-why
+                  <b>Carousel Manual Read</b> (button) explains what-and-why
                   with a hint of how. It includes implementation evolution with
                   a video at the end.
                 </li>
@@ -131,12 +131,12 @@ class TheMaskTalk extends Component {
               <div className="text-center masktalk-text-note">
                 <b>
                   Note: Baanda is not about holographic hardwire and/or devices.
-                  It will depend on devices to come commercially. Baanda is
-                  about the 'mind' as explained in here.
+                  We will depend on commercial devices that are to come. Baanda is
+                  about the 'mind' as explained here.
                 </b>
                 <p>
                   <font color="blue">
-                    Slider may not work in sx (mobile phone).
+                    Slider may not work in mobile phone.
                   </font>
                 </p>
               </div>

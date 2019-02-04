@@ -21,7 +21,7 @@ class SXPursuitBody extends Component {
 
   showDetailMsg = () => {
     alert(
-      'In production, this would lead to deeper level comparison of how you perceive yourself and how your circle perceived you.'
+      'In production, this will lead to deeper level comparison of how you perceive yourself and how your circle perceived you.'
     );
   };
 
@@ -57,7 +57,7 @@ class SXPursuitBody extends Component {
       sentimentout = (
         <div className="fixedsize-gauge text-center ">
           <h3>
-            <font color="#4f6277">Your Service Exchange Pursuits</font>
+            <font color="#4f6277">Your Service Xchange Pursuits</font>
           </h3>
           <strong>At: </strong>
           <font color="blue">{signDate}</font>

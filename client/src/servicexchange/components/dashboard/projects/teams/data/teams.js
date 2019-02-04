@@ -46,7 +46,7 @@ export const teams = [
   },
   {
     value: '107',
-    label: 'Warewolves',
+    label: 'Werewolves',
     color: '#FFC400'
   }
 ];

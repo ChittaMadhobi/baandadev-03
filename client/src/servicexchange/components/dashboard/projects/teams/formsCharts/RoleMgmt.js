@@ -82,7 +82,7 @@ class RoleMgmt extends Component {
             </div>
             <div className="col-md-6">
               <font color="#bfbd42">
-                Define distinct new role for reduced complexity.{" "}
+                Define distinct new role{" "}
               </font>
             </div>
           </div>
@@ -151,8 +151,8 @@ class RoleMgmt extends Component {
               <div className="col-md-6">
                 <div className="float-left">
                   <font color="#bfbd42">
-                    Default roles/objective for the endeavor as per Init.
-                    Include or define new for the project.
+                    Default roles/objectives for the endeavor as per Init.
+                    Include or define
                   </font>
                 </div>
               </div>
@@ -185,16 +185,16 @@ class RoleMgmt extends Component {
                   <li>Artist - sculptor</li>
                   <li>Logistics Manager</li>
                   <li>Gallery Designer</li>
-                  <li>Markeeteer Guru</li>
+                  <li>Marketing Guru</li>
                   <li>Web Site Designer </li>
-                  <li>Fund raiser master</li>
+                  <li>Fundraising Chief</li>
                   <li>Create Art-gallery</li>
                 </ul>
               </div>
             </div>
             <div className="col-md-6">
               <font color="#bfbd42">
-                Rates to be used for budgeting. However, individual contracts
+                Rates for budgeting. However, individual contracts
                 will override these rates for actual billing including
                 rates/delivery model.{" "}
               </font>

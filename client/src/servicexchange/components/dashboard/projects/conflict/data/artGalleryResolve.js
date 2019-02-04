@@ -3,7 +3,7 @@ export const artGalleryResolve = [
     value: '2000',
     label: 'Aliquam consectetur',
     name: 'Aliquam consectetur',
-    against: 'Leonardo De Vinci',
+    against: 'Leonardo Da Vinci',
     description: 'This is my grievence against you Angelo ... Praesent rutrum tortor eu volutpat lobortis. Donec nulla tellus, auctor ac diam eu, aliquam semper ligula. Vestibulum ullamcorper velit in odio dictum laoreet',
     sentiment: .45
   },
@@ -11,7 +11,7 @@ export const artGalleryResolve = [
     value: '2001',
     label: 'Maecenas non',
     name: 'Maecenas non',
-    against: 'Mercus Orilius',
+    against: 'Marcus Aurelius',
     description: 'Maecenas non massa porttitor, accumsan tortor eget, pretium risus. Ut tempor turpis quis turpis placerat convallis. Nulla dui ligula, suscipit et libero a, mattis eleifend ex. Nunc suscipit porta tellus nec efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae nulla magna.',
     sentiment: .53
   },

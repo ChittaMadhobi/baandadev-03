@@ -15,7 +15,7 @@ import HowToPic from "./img/IoTRequest.png";
 
 
 const requestDesc =
-  "(Example) We are requesting to place proximity sensors behind the artwork area that would advise audience not to come any closer towards the art-object (instead of rope-based barrier). The common EF (electric field) based IoT devices, that are used by ordinary robots to sense nearby entities, may be used. The sensor would generally act as barrier-advisor but would also trigger (activate) a small-tipped digital camera that would take facial photograph of the observer. The picture would sense repeat-observer, sentiment and emotional inclination that would enable art-gallery team to assess authenticity of a purchase-bid.";
+  "(Example) We are requesting to place proximity sensors behind the artwork area that would advise audience not to come any closer towards the art-object (instead of rope-based barriers). The common EF (electric field) based IoT devices, that are used by ordinary robots to sense nearby entities, may be used. The sensor would generally act as barrier-advisor, but would also trigger (activate) a small-tipped digital camera that would take a facial photograph of the observer. The picture would sense repeat-observer, sentiment and emotional inclination that would enable art gallery team to assess authenticity of a purchase-bid.";
 
 class Request extends Component {
   constructor(props) {
@@ -126,7 +126,7 @@ class Request extends Component {
               value={this.state.iotCaption}
               onChange={this.onChange}
               error={errors.iotCaption}
-              info="Enter a caption for Association-dropdown of iot service (max 50 chars)"
+              info="Enter a caption for Association drop-down of iot service (max 50 chars)"
             />
           </div>
         </div>
@@ -166,7 +166,7 @@ class Request extends Component {
                   placeholder="Select ops-type"
                 />
               </font>
-              <p>Select operations type ... </p>
+              <p>Select operations type </p>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@ class Request extends Component {
                   onChange={this.handleReqTargets}
                   maxMenuHeight={150}
                   isSearchable={true}
-                  placeholder="Select name request to be sent to."
+                  placeholder="Select person to request from."
                 />
               </font>
               <p>Select target names for the request</p>
@@ -217,7 +217,7 @@ class Request extends Component {
                   onChange={this.uploadFile}
                 />
                 <label className="custom-file-label">
-                  Additional documents ...
+                  Additional documents
                 </label>
               </div>
               <div className="input-group-append">
@@ -240,8 +240,7 @@ class Request extends Component {
           </div>
         </div>
         <p className="upload-msg">
-          Upload any reference document (digital assets) to elaborate the
-          request.
+          Upload reference documents (digital assets) 
         </p>
       </div>
     );
@@ -254,16 +253,16 @@ class Request extends Component {
           <p>The request process involves: </p>
           <ul>
             <li>
-              Determine what is that your team needs for the project from IoT POV
+              Determine what your team needs for the project from IoT.
             </li>
             <li>
-              Identify, what kinds of data you would require. For e.g. you may need air-quality on carbon oxides, require motion sensor, want to see your inventory is there in the place, track movement of your goods and so on.
+              Identify, what kinds of data you would require. For example. you may need air-quality sensors, motion sensors, inventory trackers, etc.
             </li>
             <li>
-              Make a request stating that; attach additional documents if you happen to have as design and/or pictures you have seen etc.
+              State your request and attach additional documents if you have a design and/or pictures you have, etc.
             </li>
             <li>
-              Let engineers setup the backend and report to you that it is done and ready for consumption. 
+              Let engineers set up the backend and report to you that it is done and ready for use. 
             </li>
           </ul>
         </div>
@@ -295,7 +294,7 @@ class Request extends Component {
         <div className="form-panel-iot">
         <div className="text-center">
           <font color="lightblue">
-            <h5>Request for IoT Backend Setup</h5>
+            <h5>Request IoT Backend Setup</h5>
           </font>
           <font color="green">
             <div className="row">

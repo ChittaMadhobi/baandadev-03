@@ -100,7 +100,7 @@ class ManagePursuits extends Component {
               </button>
             </div>
             <div className="float-right">
-              <i className="fas fa-search-plus">: Click for Intels & Details</i>{' '}
+              <i className="fas fa-search-plus">: Click for Intel & Details</i>{' '}
               &nbsp;&nbsp;
             </div>
           </nav>

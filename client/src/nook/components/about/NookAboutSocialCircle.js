@@ -30,7 +30,7 @@ class NookAboutSocialCircle extends Component {
     let aboutAns4 = null;
     let aboutAns5 = null;
     let aboutAns6 = null;
-    let aboutAns7 = null;
+    // let aboutAns7 = null;
     let aboutAns8 = null;
     if (btnClickNo === '1') {
       aboutAns1 = (
@@ -140,14 +140,14 @@ class NookAboutSocialCircle extends Component {
         </div>
       );
     }
-    if (btnClickNo === '7') {
-      aboutAns7 = (
-        <div>
-          <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
+    // if (btnClickNo === '7') {
+    //   aboutAns7 = (
+    //     <div>
+    //       <font color="blue">Ans 7: </font> This is the answer 7
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
     if (btnClickNo === '8') {
       aboutAns8 = (
         <div>
@@ -210,7 +210,7 @@ class NookAboutSocialCircle extends Component {
               6. Why is the Social Circle limited to 15 people?
             </button>
             {aboutAns6}
-            <button
+            {/* <button
               id="7"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
@@ -224,7 +224,7 @@ class NookAboutSocialCircle extends Component {
               onClick={this.handlePostClick}
             >
               8. More Tasks and social circle questions ...?
-            </button>
+            </button> */}
             {aboutAns8}
           </div>
         </div>

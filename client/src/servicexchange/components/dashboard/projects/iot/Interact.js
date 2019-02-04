@@ -53,20 +53,19 @@ class Interact extends Component {
         <div className="how-to-request-iot">
           <p>
             There are thousands of types of IoT sensors and actuators around the
-            world used for multitude of purpose. The purpose here is for the
-            project team to interact with the IoT devices for enabling the
-            project. In this example, all the contexts are art-gallery oriented.{" "}
+            world used for a multitude of purposes. The purpose here is for the
+            project team to interact with the IoT devices. In this example, all 
+            the contexts are art-gallery oriented.{" "}
           </p>
           <p>
-            There is no standard way to either access the IoT devices (similar
-            to accessing a web page) and/or receive standardized response or
-            interaction conduits. Baanda tech-team will increasingly work with
-            various IoT vendors and other tech-organization to include IoT
-            services that various kinds of projects to use them.{" "}
+            There is no standard way to access IoT devices nor to receive standardized responses or
+            interaction conduits. The Baanda tech team will increasingly work with
+            various IoT vendors and other tech organizations to include IoT
+            services for various kinds of projects.{" "}
           </p>
 
           <p>
-            At present, this presentation is for UX-experience and hence IoT
+            At present, this presentation is a UX-experience and hence the IoT
             interface is static.{" "}
           </p>
         </div>
@@ -117,7 +116,7 @@ class Interact extends Component {
         output = (
           <div>
             <font color="lightyellow" size="3">
-              Please select an service to interact
+              Please select a service to interact with
             </font>
           </div>
         );
@@ -129,7 +128,7 @@ class Interact extends Component {
         <div className="form-panel-iot">
           <div className="text-center">
             <font color="lightblue">
-              <h5>IoT-Project Interaction</h5>
+              <h5>IoT Project Interaction</h5>
             </font>
             <font color="green">
               <div className="row">

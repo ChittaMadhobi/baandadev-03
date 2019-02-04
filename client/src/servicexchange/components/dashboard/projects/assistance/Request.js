@@ -94,13 +94,13 @@ class Request extends Component {
           <div className="row">
             <div className="how-to-create-team">
               <p>
-                Requesting for assistance needs to be done via specifying a name
-                (For reference) and target audience.
+                To make a request for assistance on a project, specify a name
+                for the request (for reference) and a person(s) you want to target for help.
               </p>
               <p>
-                Include what-factor, why-factor and how factor (include how you
-                want to be assisted and if you want to fund the assistance in
-                points or other ways.
+                Include all the details regarding what you need, why you need it, when
+                you need it, etc. Include how you want to be assisted and if you want to 
+                fund the assistance in points or some other way.
               </p>
             </div>
           </div>
@@ -118,11 +118,11 @@ class Request extends Component {
           <div className="col-6 text-inputarea-md6">
             <TextFieldGroup
               name="requestName"
-              placeholder="One word conflict domain"
+              placeholder="Give this request a unique name"
               value={this.state.requestName}
               onChange={this.onChange}
               //error={errors.newName}
-              info="One word conflict domain if not in the list"
+              info="Give this request a name for later reference"
             />
           </div>
           <div className="col-6">
@@ -148,13 +148,13 @@ class Request extends Component {
         <div className="row">
           <div className="col text-inputarea-md12">
             <TextAreaFieldGroup
-              placeholder="Describe the what-factor fo your request"
+              placeholder="Describe what you need help with"
               name="whatFactorDesc"
               value={this.state.whatFactorDesc}
               rows={3}
               onChange={this.onChange}
               error={errors.whatFactorDesc}
-              info="Describe the what factor of the request. Include URL if required for elaboration."
+              info="Describe what you need help with. Include URL if you have one."
             />
           </div>
         </div>
@@ -162,13 +162,13 @@ class Request extends Component {
         <div className="row">
           <div className="col text-inputarea-md12">
             <TextAreaFieldGroup
-              placeholder="Describe the why-factor fo your request"
+              placeholder="Describe why you need help"
               name="whyFactorDesc"
               value={this.state.whyFactorDesc}
               rows={3}
               onChange={this.onChange}
               error={errors.whyFactorDesc}
-              info="Describe the why factor of the request. Say how it effects the engagement positively."
+              info="Describe why you are making this request."
             />
           </div>
         </div>
@@ -176,19 +176,19 @@ class Request extends Component {
         <div className="row">
           <div className="col text-inputarea-md12">
             <TextAreaFieldGroup
-              placeholder="Describe the how-factor fo your request for assistance."
+              placeholder="Describe how you would like to be assisted."
               name="howFactorDesc"
               value={this.state.howFactorDesc}
               rows={3}
               onChange={this.onChange}
               error={errors.howFactorDesc}
-              info="Describe the how-factor. Describe approaches and your fund share in points, $, from future etc."
+              info="Describe the approach you would like to take"
             />
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <font color="#e5c09c">Participate in expense: </font>&nbsp;&nbsp;
+            <font color="#e5c09c">Participate in expenses: </font>&nbsp;&nbsp;
             <div className="form-check-inline">
               <label className="form-check-label">
                 <input
@@ -247,7 +247,7 @@ class Request extends Component {
                   onChange={this.handleAssiatanceType}
                   maxMenuHeight={150}
                   isSearchable={true}
-                  placeholder="Select target of request"
+                  placeholder="Select reason for request"
                 />
               </font>
             </div>
@@ -274,7 +274,7 @@ class Request extends Component {
       <div>
         <div className="form-panel-create-team">
           <div className="text-center">
-            <h5>Request Assistance</h5>
+            <h5>Request Project Assistance</h5>
             <div className="row">
               <div className="col-md-4">
                 <div className="float-left">

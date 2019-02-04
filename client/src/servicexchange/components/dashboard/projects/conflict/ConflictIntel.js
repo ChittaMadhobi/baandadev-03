@@ -99,12 +99,11 @@ class ConflictIntel extends Component {
             <div className="how-to-read-intel">
               <p>Select a past conflict name from the drop down.</p>
               <p>
-                Click TrendFlux to check sentiment trends associated with
-                various events on that event.
+                Click TrendFlux to check sentiment trends associated with events.
               </p>
               <p>
-                Click View Log to see details of the events and you can
-                associated that with Sentiment Trends.
+                Click View Log to see details of events and you can
+                associate them with Sentiment Trends.
               </p>
             </div>
           </div>
@@ -119,8 +118,8 @@ class ConflictIntel extends Component {
         <div className="row">
           <div className="col">
             <div className="text-align-left-full">
-              Against: <font color="black">Mercus Orilius</font>&nbsp;&nbsp;
-              Witness: <font color="black">Sapho De Lesbos</font>
+              Against: <font color="black">Marcus Aurelius</font>&nbsp;&nbsp;
+              Witness: <font color="black">Sappho De Lesbos</font>
             </div>
           </div>
         </div>

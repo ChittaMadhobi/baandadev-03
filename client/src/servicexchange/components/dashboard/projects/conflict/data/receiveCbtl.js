@@ -16,7 +16,7 @@ export const receiveCbtl = [
     against: 'Oliver',
     description: 'Praesent rutrum tortor eu volutpat lobortis. Donec nulla tellus, auctor ac diam eu, aliquam semper ligula. Vestibulum ullamcorper velit in odio dictum laoreet',
     suggestion: 'Ut volutpat venenatis magna sit amet suscipit. Donec porttitor magna id diam vestibulum, sed sodales risus semper. Cras volutpat tristique consequat.',
-    witness: 'Steve Job',
+    witness: 'Steve Jobs',
     sentiment: .2
   },
 ]

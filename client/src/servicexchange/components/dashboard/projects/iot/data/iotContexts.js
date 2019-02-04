@@ -13,7 +13,7 @@ export const iotContexts = [
   },
   {
     value: '2004',
-    label: 'Inventory with IoT Taggings'
+    label: 'Inventory with IoT Tags'
   },
   {
     value: '2005',

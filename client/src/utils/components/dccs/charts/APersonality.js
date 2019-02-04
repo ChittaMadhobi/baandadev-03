@@ -23,16 +23,16 @@ const dataSource = {
           label: 'Openness'
         },
         {
-          label: 'Conscientious'
+          label: 'Conscientiousness'
         },
         {
-          label: 'Extro-introvert'
+          label: 'Extro/Introvert'
         },
         {
-          label: 'Agreeable'
+          label: 'Agreeableness'
         },
         {
-          label: 'Neorotic'
+          label: 'Neuroticism'
         }
       ]
     }

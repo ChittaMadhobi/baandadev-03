@@ -10,11 +10,11 @@ export const teamSummary = [
         type: "M (Proj. Mgr.)"
       },
       {
-        name: "Leonardo De Vinci",
+        name: "Leonardo Da Vinci",
         type: "M (Construction)"
       },
       {
-        name: "Sapho De Lesbos",
+        name: "Sappho De Lesbos",
         type: "M (Marketing)"
       },
       {
@@ -41,7 +41,7 @@ export const teamSummary = [
                 _collapsed: true,
                 children: [
                   {
-                    name: "Mercus Orilius",
+                    name: "Marcus Aurelius",
                     type: "M (Security)"
                   },
                   {
@@ -53,7 +53,7 @@ export const teamSummary = [
             ]
           },
           {
-            name: "Jane Austin",
+            name: "Jane Austen",
             type: "M (Artist)"
           }
         ]
@@ -68,7 +68,7 @@ export const teamSummary = [
         _collapsed: true,
         children: [
           {
-            name: "Mercus Orilius",
+            name: "Marcus Aurelius",
             type: "M (Security)"
           },
           {

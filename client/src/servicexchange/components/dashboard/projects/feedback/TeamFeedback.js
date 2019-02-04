@@ -249,11 +249,12 @@ class TeamFeedback extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              Select a team for which you would like to provide your feedback. <br />
-              Slide rules to select a score for each of the dynamics of the team as you feel now. <br />
-              By default all values are at point 5. If you leave it at this, it indicates you are not participating in stating the dynamics of this dimension at this point of time or you are indicating it is just about average.
+              Select a team for which you would like to provide feedback. <br /><br />
+              Move the sliders to select a score for each of the team dynamics that reflect your current feelings. <br />
+              <br /> 
+              By default, all values are at point 5. If you leave it at this, it indicates you are not participating in scoring the dynamics of this dimension at this point of time or you are indicating that it is just about average.
               <br /><br />
-              When you clieck 'Save', your selections would be stored and reflected in the team based view charts post time-series adjustments.  
+              When you click 'Save', your selections will be stored and reflected in the team-based view charts.  
             </div>
           </div>
         </div>
@@ -298,7 +299,7 @@ class TeamFeedback extends Component {
     } else if (this.state.viewTeamState) {
       output = teamViewBody;
     } else {
-      output = <div><font color="white">Click on operation or learn from How-to-steps</font></div>;
+      output = <div><font color="white">Click on operation or learn from How-To Steps</font></div>;
     }
 
     return (
@@ -316,7 +317,7 @@ class TeamFeedback extends Component {
                       this.gotoFeedbackProcess("feedbackSteps");
                     }}
                   >
-                    How-to-steps
+                    How-To Steps
                     <div className="float-right">
                       <i className="fas fa-toggle-off" />
                     </div>
@@ -336,7 +337,7 @@ class TeamFeedback extends Component {
                       onChange={this.handleChangeTarget}
                       maxMenuHeight={150}
                       isSearchable={true}
-                      placeholder="Select the team "
+                      placeholder="Select team "
                     />
                   </font>
                 </div>

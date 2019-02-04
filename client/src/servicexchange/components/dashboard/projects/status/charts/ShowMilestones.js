@@ -29,7 +29,7 @@ const dataSource = {
             label: "Hippos"
           },
           {
-            label: "Dolphines"
+            label: "Dolphins"
           },
           {
             label: "Monkeys"
@@ -60,7 +60,7 @@ const dataSource = {
         taskid: "4",
         color: "#F2726F",
         shape: "star",
-        tooltext: "Site Preperation Done"
+        tooltext: "Site Preparation Done"
       },
       {
         date: "3/11/2018",
@@ -81,7 +81,7 @@ const dataSource = {
         taskid: "9",
         color: "#F2726F",
         shape: "star",
-        tooltext: "Open Gallery with a party"
+        tooltext: "Grand Opening Gala"
       }
     ]
   },
@@ -162,7 +162,7 @@ const dataSource = {
         label: "Id & Prep Site"
       },
       {
-        label: "Gather Art-stuff"
+        label: "Gather Works of Art"
       },
       {
         label: "Advertise & Market"
@@ -174,7 +174,7 @@ const dataSource = {
         label: "Rehearse Opening"
       },
       {
-        label: "Open with a party"
+        label: "Grand Opening Gala"
       }
     ]
   },

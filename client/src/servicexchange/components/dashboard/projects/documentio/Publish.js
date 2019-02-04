@@ -137,11 +137,11 @@ class Publish extends Component {
           <div className="col-md-6">
             <TextFieldGroup
               name="pubName"
-              placeholder="Enter a pub name ..."
+              placeholder="Give your document a name to reference"
               value={this.state.pubName}
               onChange={this.onChange}
               error={errors.pubName}
-              info="Enter a publishing Name for reference"
+              info="Enter a unique Name for your reference"
             />
           </div>
           <div className="col-md-6 text-left-select">
@@ -156,7 +156,7 @@ class Publish extends Component {
                 onChange={this.handlePubWIPName}
                 maxMenuHeight={150}
                 isSearchable={true}
-                placeholder="Select WIP publish-name"
+                placeholder="Select document name"
               />
             </font>
             <p>Select to edit (if continuing on WIP)</p>
@@ -178,7 +178,7 @@ class Publish extends Component {
                 placeholder="Select a Project Component Context"
               />
             </font>
-            <p>Select a project ops-context ... </p>
+            <p>Select a project ops-context </p>
           </div>
           <div className="col-md-6">
             <TextFieldGroup
@@ -187,7 +187,7 @@ class Publish extends Component {
               value={this.state.metaWords}
               onChange={this.onChange}
               error={errors.metaWords}
-              info="Enter search meta words (comma delimited)"
+              info="Enter meta keywords or tags (comma delimited)"
             />
           </div>
         </div>
@@ -204,7 +204,7 @@ class Publish extends Component {
                 onChange={this.handleDomainName}
                 maxMenuHeight={150}
                 isSearchable={true}
-                placeholder="Select a document domain ..."
+                placeholder="Select a document domain"
               />
             </font>
             <p>Select a document domain of the asset</p>
@@ -228,7 +228,7 @@ class Publish extends Component {
                 placeholder="Select consumption type"
               />
             </font>
-            <p>Select type of consumption pattern </p>
+            <p>Select type of consumption </p>
           </div>
           <div className="col-md-6 text-left-select">
             <font color="blue">
@@ -242,10 +242,10 @@ class Publish extends Component {
                 onChange={this.handlePubNotify}
                 maxMenuHeight={150}
                 isSearchable={true}
-                placeholder="Notify to targets"
+                placeholder="Notify targets"
               />
             </font>
-            <p>Select targets to be notified</p>
+            <p>Select people to be notified</p>
           </div>
         </div>
         <div className="textspaceTop" />
@@ -258,7 +258,7 @@ class Publish extends Component {
               rows={4}
               onChange={this.onChange}
               error={errors.abstract}
-              info="Summary description, or abstract, of the asset you are about to publish."
+              info="Summary description or abstract of the document or asset you are about to publish."
             />
           </div>
         </div>
@@ -365,31 +365,31 @@ class Publish extends Component {
             <div className="how-to-create-team">
               <font color="#c48346">
                 <p>
-                  The restrictions on what you can publish is based on the
-                  project. Please refer (Consume button) to the guideline for
-                  publishing. If you violate that trust, the consequence may
+                  The restrictions on what you can publish are determined by the
+                  project. Please refer to the guidelines (see Consume) for
+                  publishing. If you violate the project trust, the consequence may
                   range from 'not being published', 'retracted', 'asked to
                   redact' to 'termination of your engagement per project policy
                   (by manager or peers)'.{" "}
                 </p>
                 </font>
-                <p>Please enter the following fields to upload digital assets you would like to share per following guidelines:</p>
+                <p>Please enter the following fields to upload digital assets you would like to share per the following guidelines:</p>
              
               <ul>
                 <li>Enter a name (unique to the project) for reference</li>
-                <font color="lightyellow" size="2">* Select a name from the WIP drop down if you want to continue publishing process.</font>
-              <li>Select a context from the Context drop down. This will enable reader to focus / locate for some operation associated with the project.</li>
+                <font color="lightyellow" size="2">* Select a name from the WIP (work in progress) drop-down if you want to continue the publishing process.</font>
+              <li>Select a context from the Context drop-down. This will enable the reader to focus on an operation associated with the project.</li>
               <li>
-                Select a domain for the asset. If it is not there, select 'other' and type in the other domain name.
+                Select a domain for the asset. If not in the list, select 'other' and type in the name.
               </li>
               <li>Request the consumption type (from general read/write/view to peer-review</li>
               <li>Notify specific targets if needed, particularly for peer-review.</li>
               <li>Describe your asset at the high-level for the reader. 
-                <p><font color="lightblue">You would be able to load audio/video and in little ahead in future, hologram based presentation instead of or addendum to text abstract.</font></p>
+                <p><font color="lightblue">You will be able to load audio/video and in the future, hologram based presentations.</font></p>
 
               </li>
               </ul>
-              <font color="white"><p>Note: You could save as WIP to continue working at a later point of time. Once you publish, it will no longer be available for edit.</p></font>
+              <font color="white"><p>Note: You can save a work in progress (WIP) to continue working on it at a later point of time. Once published, it will no longer be available to edit.</p></font>
             </div>
           </div>
         </div>

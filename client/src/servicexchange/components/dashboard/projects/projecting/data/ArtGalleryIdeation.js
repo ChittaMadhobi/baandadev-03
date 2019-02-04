@@ -1,5 +1,5 @@
 export const artGalleryIdeation = {
-  IdeaName: "Art Gallery Cooperation",
+  IdeaName: "Art Gallery Co-op",
   ideaType: {
     value: '103',
     label: 'Revolutionary',
@@ -13,7 +13,7 @@ export const artGalleryIdeation = {
     },
     {
       value: '102',
-      label: 'Sapho De Lesbos ',
+      label: 'Sappho De Lesbos ',
       color: '#FF8B00'
     }
   ]

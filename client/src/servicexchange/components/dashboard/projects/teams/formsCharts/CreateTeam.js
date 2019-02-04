@@ -31,7 +31,7 @@ class CreateTeam extends Component {
 
   handleSaveClick() {
     alert(
-      'Eventually -- When you click this, your work will be saved in database. This will instantly be notified as message to the recipient. Once he/she accepts, the contract will appear in your "Agreement" office/button at the Lobby. You will also be notified of recipients actions.'
+      'Eventually -- When you click this, your work will be saved in the database. This will instantly be notified as message to the recipient. Once he/she accepts, the contract will appear in your "Agreement" office/button at the Lobby. You will also be notified of recipients actions.'
     );
   }
   onChange(e) {
@@ -108,29 +108,28 @@ class CreateTeam extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              To find someone in the dropdown to annex him/her to your team you
+              To find someone in the drop down and add him/her to your team you
               must have:
               <ul>
                 <li>
-                  Created a POST with Service Request for project, co-op etc.
+                  Created a POST within Service Request for project, co-op etc.
                 </li>
                 <li>
-                  You have shown mutual interst in working with each other.
+                  Shown mutual interest in working with each other
                 </li>
                 <li>
-                  You have come to a baseline team-agreement to work together
+                  Have come to a baseline team-agreement to work together
                 </li>
               </ul>
               There may be additional agreements for a specific task for
-              involvement with the project. The specific agreement will override
-              the general one for the context (e.g. rate, travel-required etc.)
-              may be specific.
+              involvement in the project. The specific agreement will override
+              the general one for the context (e.g. rate, travel-required etc.).
               <ul>
                 <li>Define a unique name for the team you are creating</li>
                 <li>Select members from the drop down to be a part of the team</li>
-                <li>Select a set of sub-teams (if required/needed)</li>
+                <li>Select a set of sub-teams (if needed)</li>
                 <li>
-                  Associate teams objective (mission)
+                  Associate team objective (mission)
                 </li>
                 <li>
                   Attach team-level agreement or request one as a task.
@@ -156,7 +155,7 @@ class CreateTeam extends Component {
           <div className="text-center how-to-create-team">
             <font color="">
               You have been inducted in the team by the manager. Since you are
-              joining as barrista (time-based) and not the manager, you do not
+              joining as a barista (time-based) and not the manager, you do not
               get to build teams.
             </font>
           </div>
@@ -245,14 +244,14 @@ class CreateTeam extends Component {
                     classNamePrefix="select roles/objectives"
                     onChange={this.handleMemberToRole}
                     maxMenuHeight={150}
-                    placeholder="Select one or more roles..."
+                    placeholder="Select one or more roles"
                   />
                 </font>
               </div>
               <div className="col-md-6">
                 <font color="#e0c38d">
                   <div className="float-left">
-                    Associate roles and/or objective of the team.
+                    Associate roles and/or objectives of the team.
                   </div>
                 </font>
               </div>

@@ -42,13 +42,13 @@ class ApprenticeForMaster extends Component {
 
   handlePostClick() {
     alert(
-      'Eventually -- When you click this, your work will be saved in database and posted at the same time and visible to others. This would be available in your dashboard for you to ask intelligence, connect etc.'
+      'Eventually -- When you click this, your work will be saved in the database and posted at the same time and visible to others. This would be available in your dashboard for you to ask intelligence, connect etc.'
     );
   }
 
   handleSaveClick() {
     alert(
-      'Eventually -- When you click this, your work will be saved in database. This post will appear in your dashboard as not-posted. You can post it from there. Your account will not be charged till you post.'
+      'Eventually -- When you click this, your work will be saved in the database. This post will appear in your dashboard as not-posted. You can post it from there. Your account will not be charged till you post.'
     );
   }
 
@@ -116,7 +116,7 @@ class ApprenticeForMaster extends Component {
           </div>
           <div className="col-md-6">
             <TextFieldGroup
-              name="zipCode"
+              name="ZipCode"
               placeholder="Enter location zipcode ..."
               value={this.state.zipCode}
               onChange={this.onChange}
@@ -149,7 +149,7 @@ class ApprenticeForMaster extends Component {
           <div className="col-md-6">
             <TextFieldGroup
               name="specialTrainingArea2"
-              placeholder="Secondary special training in ..."
+              placeholder="Secondary special training in "
               value={this.state.specialTrainingArea2}
               onChange={this.onChange}
               error={errors.specialTrainingArea2}
@@ -225,7 +225,7 @@ class ApprenticeForMaster extends Component {
                 onChange={this.handleStartAddrChange}
               />{' '}
               <font color="green">
-                Would you travel to your training from a different
+                Will you travel to your training from a different
                 location (e.g. your school)?
               </font>
             </label>
@@ -256,7 +256,7 @@ class ApprenticeForMaster extends Component {
                   <option value="autoMechanic">Auto Mechanics</option>
                   <option value="carpenter">Carpentry</option>
                   <option value="caregiver">Caregiving</option>
-                  <option value="cheff">Chef-Cook</option>
+                  <option value="cheff">Cooking</option>
                   <option value="computerHardware">Computer Mechanics</option>
                   <option value="construction">Construction</option>
                   <option value="electrician">Electrical</option>
@@ -332,7 +332,7 @@ class ApprenticeForMaster extends Component {
             <div className="col-md-6">
               <div className="float-left slider-text-paddig">
                 <h5>
-                  Slide to years in the interest-area :
+                  Slide to years in the interest/area :
                   <font color="blue">
                     <strong> {this.state.interestVolume}</strong>
                   </font>
@@ -361,7 +361,7 @@ class ApprenticeForMaster extends Component {
                 <select size="3" className="selectWidth">
                   <option value="beginner">Beginner</option>
                   <option value="intermedite">Intermediate</option>
-                  <option value="advance">Advance</option>
+                  <option value="advance">Advanced</option>
                   <option value="all">All Levels</option>
                 </select>
               </div>

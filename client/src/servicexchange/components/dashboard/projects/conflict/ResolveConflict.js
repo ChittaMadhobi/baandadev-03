@@ -184,59 +184,54 @@ class ResolveConflict extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              Resolution of conflict, that is reported and peer involvement is
-              requested has three main components.
+              The Conflict Resolution section has three main components.
               <br />
               <p>
                 <u>Suggest Button:</u>{" "}
               </p>
               <p>
-                Your peers may have some conflict scenarios where he/she may
-                request your advise or involvement. In this case, you start by
-                (if anyone did request):
+                An individual may request your advice or involvement in a conflict scenario. 
+                The person requesting advice will share the following information.
               </p>
               <ul>
-                <li>Who is requestor having conflict with ...</li>
+                <li>Who he/she is having a conflict with.</li>
                 <li>Name of the conflict (for reference).</li>
                 <li>Description of the conflict </li>
-                <li>AList of witnesses (if any)</li>
+                <li>A list of witnesses (if any)</li>
                 <li>
-                  Shows the sentiment score. In the begining, the sentiment
-                  would be of the reporter. However, this sentiment will
-                  eventually show the average of all the members who would be
+                  Shows the sentiment score. In the beginning, the sentiment score
+                  will be of the reporter. However, this score will
+                  eventually show the average of all the members who are 
                   involved in the conflict.
                 </li>
               </ul>
               <p>
                 {" "}
-                Then you are supposed to enter your advise. You can also request
-                a in-person talk and then write your advice. Also provide your
-                sentiment at this point of time.{" "}
+                Then, there is a box to enter your advice. You may request
+                a face-to-face talk and then write your advice. You will provide your
+                sentiment at this point of time as well.{" "}
               </p>
               <hr />
               <p>
                 <u>Receive Button:</u>{" "}
               </p>
               <p>
-                This is where you receive suggestions you have asked to be
-                involved.
+                This is where you receive requested advice and suggestions.
               </p>
               <ul>
                 <li>
-                  Select a name you asked suggestion from. On select, you will
-                  be presented with information on the conflict. It will also
+                  Select the individual you asked for advice from. On select, you will
+                  be presented with information about the conflict. It will also
                   provide the team sentiment at the time you are checking.
                 </li>
                 <li>
-                  You would be asked to enter your comments (if you want to). If
+                  You will be asked to enter your comments (if you want to). If
                   you do, you may continue to resolve the conflict if you are
-                  not satisfied. Add your sentiment to the situation.{" "}
+                  not satisfied. Then, move the slider to indicate your current sentiment about the situation.{" "}
                 </li>
                 <li>
                   {" "}
-                  Check if you want DO NOT want to conclude and continue. In
-                  that case, you have to select names for asking their
-                  involvement.
+                  Check the box if you want to continue the resolution process. 
                 </li>
               </ul>
               <hr />
@@ -245,15 +240,14 @@ class ResolveConflict extends Component {
               </p>
               <p>
                 You see the conflict name in the drop down if and only if you
-                have elected that as 'resolve' while in Resolve section. You
-                will be presented with the latest scenario and sentiment. You
-                could chose to enter a concluding comment and sentiment for
-                postarity.
+                have marked it as resolved. You
+                will be presented with the latest comments and sentiment scores. You
+                may choose to enter a concluding comment and sentiment.
               </p>
               <p>
-                After you click Save-Notify, all involved party would be
-                notified that the conflict has been resolved. This name would
-                then appear in 'Intel' button for sentiment trends and logs.
+                After you click Save-Notify, all involved parties will be
+                notified that the conflict has been resolved. This conflict will
+                then appear under the 'Intel' button for sentiment trends and logs.
               </p>
             </div>
           </div>
@@ -276,7 +270,7 @@ class ResolveConflict extends Component {
               classNamePrefix="select"
               onChange={this.handleNotifyTo}
               maxMenuHeight={150}
-              placeholder="Invite members for advice"
+              placeholder="Request advice from"
             />
           </font>
         </div>
@@ -388,7 +382,7 @@ class ResolveConflict extends Component {
                   {this.state.resolvedName.against},{" "}
                 </font>{" "}
                 (as described below) is being closed per the resolution process
-                all related parties went through.
+                all related parties agreed upon.
               </div>
             </div>
             <div className="space-between-buttons" />
@@ -421,7 +415,7 @@ class ResolveConflict extends Component {
                   rows={4}
                   onChange={this.onChange}
                   error={errors.yourComment}
-                  info="Please enter a closing comment for Baanda to inernalize your state."
+                  info="Please enter a closing comment."
                 />
               </div>
             </div>
@@ -718,7 +712,7 @@ class ResolveConflict extends Component {
               <div className="col">
                 <div className="message-suggest">
                   <font color="lightyellow" size="2">
-                    At this point, this experinece handles one-conflict at a
+                    At this point, this UX experience handles one-conflict at a
                     time.
                     {/* Multiple concurrent conflicts handling is for future releases. */}
                   </font>
@@ -759,7 +753,7 @@ class ResolveConflict extends Component {
             </div>
             <div className="space-between-buttons" />
             <div className="row">
-              <div className="col-3">Witnesse (if any):</div>
+              <div className="col-3">Witnesses (if any):</div>
               <div className="col-9 text-align-left">
                 <font color="lightyellow">
                   {this.state.requestedBy.witnesses}
@@ -774,13 +768,13 @@ class ResolveConflict extends Component {
             <div className="row">
               <div className="col-12">
                 <TextAreaFieldGroup
-                  placeholder="Share your verbose comment on your feedback."
+                  placeholder="Share a comment on your feedback."
                   name="yourSuggestion"
                   value={this.state.yourSuggestion}
                   rows={4}
                   onChange={this.onChange}
                   error={errors.yourSuggestion}
-                  info="Provide your advice ir suggestion towards resolution ..."
+                  info="Provide advice or suggestion."
                 />
               </div>
             </div>
@@ -856,7 +850,7 @@ class ResolveConflict extends Component {
       output = (
         <div>
           <font color="lightblue" fontSize="3">
-            Please click on an operation on top to procees
+            Please click an option above to proceed
           </font>
         </div>
       );

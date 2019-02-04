@@ -11,7 +11,7 @@ export const scheduleAngelo = [
     taskDate: '01-03-2019',
     startTime: '04:00 PM',
     endTime: '10:00 PM',
-    description: 'You will assist William in closing the Cafe.'
+    description: 'Assist William in closing'
   },
   {
     seqNo: 2,
@@ -32,7 +32,7 @@ export const scheduleAngelo = [
     taskDate: '01-06-2019',
     startTime: '04:00 PM',
     endTime: '10:00 PM',
-    description: 'You will assist William in closing the Cafe.'
+    description: 'Assist William in closing'
   },
   {
     seqNo: 5,

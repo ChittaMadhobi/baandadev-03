@@ -12,15 +12,15 @@ class TaskJournal extends Component {
 
   handleUpdateDiary() {
     alert(
-      'This click, in production, will save your state of tasks and diary in database. If you save multiple times, systen will readjust your task-states in DB.' +
-        ' However, diary will be augmented to your previous writes. Diary is like your memory and for you only. Your diary is not editable - like the real diary, once saved.'
+      'This click, in production, will save the state of your tasks and diary in the database. If you save multiple times, the systen will readjust your task-states in the DB.' +
+        ' However, the wiki will be augmented to your previous writes. Wiki is like your memory and for you only. Your wiki is not editable - like the real wiki, once saved.'
     );
   }
 
   handleSpeechToText() {
     alert(
-      'This would enable speech to text in production. It will be activated  only if your browser/device is capable of the speech recognition.' +
-        ' You would be able to edit and decorate before your save reducing your typing efforts.'
+      'This will enable speech to text in production. It will be activated only if your browser/device is capable of the speech recognition.' +
+        ' You will be able to edit your entry before you save reducing your typing efforts.'
     );
   }
 

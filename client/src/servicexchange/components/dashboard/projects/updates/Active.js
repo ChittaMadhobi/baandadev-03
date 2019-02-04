@@ -191,18 +191,18 @@ class Active extends Component {
             <div className="howto-handle-inspection">
               <font color="lightyellow">
                 <p>
-                  The active status updates lists you all the tasks on your
-                  plate. Each task (depending on your authorization) will have
+                  The active status update lists all your current tasks. 
+                  Each task (depending on your authorization) will have
                   up to three operations (update status, cancel the task or
-                  transfer the task)
+                  transfer the task).
                   <br />
                   <br />
                   <b>
                     <p>
-                      NOTE: In future, you would be allowed to filter by
-                      category to have a subset of tasks that would be easier to
+                      NOTE: In the future, you will be allowed to filter by
+                      category to have a subset of tasks that will be easier to
                       handle for large projects. Other filters may also be
-                      provided progressively on other fields and/or date-ranges.
+                      provided progressively in other fields and/or date-ranges.
                     </p>
                   </b>
                 </p>
@@ -542,7 +542,7 @@ class Active extends Component {
             <div className="col-6">
               <div className="text-align-left-full">
                 Please select targets to be notified about this task
-                calcellation.
+                cancellation.
               </div>
             </div>
           </div>
@@ -582,7 +582,7 @@ class Active extends Component {
                   rows={4}
                   onChange={this.onChange}
                   error={errors.transferComment}
-                  info="Enter your reasoning for transfering the task ... "
+                  info="Enter your reasoning for transferring the task "
                 />
               </div>
             </div>
@@ -626,8 +626,8 @@ class Active extends Component {
           <div className="space-outside-buttons" />
           <p className="time-based-msg">
             <font color="orange">
-              You have not been allocated with any projectized tasks with
-              deliverables. Your allocation is time-based set of services as
+              You have not been allocated any project tasks with
+              deliverables. Your allocation is a time-based set of services as
               barista.
             </font>
           </p>
@@ -705,7 +705,7 @@ class Active extends Component {
                       this.gotoUpdateProcess("listTasks");
                     }}
                   >
-                    ListTasks
+                    List Tasks
                     <div className="float-right">
                       <i className="fas fa-chalkboard-teacher" />
                     </div>

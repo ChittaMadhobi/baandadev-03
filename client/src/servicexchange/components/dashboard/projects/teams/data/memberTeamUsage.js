@@ -9,7 +9,7 @@ export const memberTeamUsage = [
   },
   {
     _id: 1,
-    name: "Leonardo De Vinci",
+    name: "Leonardo Da Vinci",
     team: "Root: Art-Gallery",
     role: "Construction",
     expectedUse: 70,
@@ -17,7 +17,7 @@ export const memberTeamUsage = [
   },
   {
     _id: 2,
-    name: "Sapho De Lesbos",
+    name: "Sappho De Lesbos",
     team: "Root: Art-Gallery",
     role: "Marketing",
     expectedUse: 55,
@@ -41,7 +41,7 @@ export const memberTeamUsage = [
   },
   {
     _id: 5,
-    name: "Jane Austin",
+    name: "Jane Austen",
     team: "Sub: Elephant",
     role: "Artist",
     expectedUse: 80,
@@ -49,7 +49,7 @@ export const memberTeamUsage = [
   },
   {
     _id: 6,
-    name: "Mercus Orilius",
+    name: "Marcus Aurelius",
     team: "Sub: Wolves",
     role: "Security",
     expectedUse: 70,
@@ -81,7 +81,7 @@ export const memberTeamUsage = [
   },
   {
     _id: 10,
-    name: "Mercus Orilius",
+    name: "Marcus Aurelius",
     team: "Sub: Hippos",
     role: "Security",
     expectedUse: 35,

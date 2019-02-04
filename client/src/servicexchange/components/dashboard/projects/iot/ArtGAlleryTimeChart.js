@@ -22,11 +22,11 @@ const dataSource = {
       value: "120"
     },
     {
-      label: "De Vinci",
+      label: "Da Vinci",
       value: "89"
     },
     {
-      label: "Sapho",
+      label: "Sappho",
       value: "100"
     },
     {
@@ -38,7 +38,7 @@ const dataSource = {
       value: "76"
     },
     {
-      label: "Mercus",
+      label: "Marcus",
       value: "125"
     },
     {

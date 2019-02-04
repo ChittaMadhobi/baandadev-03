@@ -149,12 +149,12 @@ class Scheduling extends Component {
         <div className="text-center how-to-create-team">
           <font color="white">
             You have been inducted in the team by the manager. You can access
-            this schedule-planning for UX experience only. In production, you
-            would be able to view schedules only unless you are managing the
+            schedule planning for UX experience only. In production, you
+            will be able to view schedules only if you manage the
             operations (in this case CBLT ops-manager).
             <br />
             <br />
-            For viewing in this UX review, only your (Angelo's) data has been
+            For viewing in this UX review, only your data (Angelo's data) has been
             assigned. All presentation data are in local JSONs.
           </font>
         </div>
@@ -226,12 +226,12 @@ class Scheduling extends Component {
           <div className="col">
             <TextAreaFieldGroup
               name="description"
-              placeholder="A short description of the task (if any - optional)"
+              placeholder="A short description of the task (optional)"
               value={this.state.description}
               onChange={this.onChange}
               rows={2}
               error={errors.description}
-              info="Provide a short note, describe task, or leave special direction (if needed).."
+              info="Provide a short note, description, or leave special instructions (if needed)"
             />
           </div>
         </div>
@@ -295,8 +295,8 @@ class Scheduling extends Component {
         <div>
           <br /><br /><br />
           <h3><font color="red">
-          Please select Angelo to see his schedule (You are Angelo for this exemplification). <br />
-          Only Angelo's manufactured schedule data is available for user-experience (UX) only.</font></h3>
+          Please select Angelo to see his schedule (You are Angelo for this UX). <br />
+          Only Angelo's manufactured schedule data is available for user-experience (UX).</font></h3>
         </div>
       )
     }

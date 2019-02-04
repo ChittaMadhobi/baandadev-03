@@ -139,7 +139,7 @@ class EnableTasks extends Component {
               value={this.state.taskName}
               onChange={this.onChange}
               //error={errors.newName}
-              info="Enter a unique task name you are creating..."
+              info="Enter a unique task name"
             />
           </div>
           <div className="space-between-rows" />
@@ -150,10 +150,10 @@ class EnableTasks extends Component {
                 //isMulti
                 options={tasks}
                 //className="basic-multi-select"
-                classNamePrefix="select parent tasks ..."
+                classNamePrefix="Select parent task"
                 onChange={this.handleParentTask}
                 maxMenuHeight={150}
-                placeholder="Select parent task (if any)..."
+                placeholder="Select parent task (if any)"
               />
             </font>
           </div>
@@ -167,10 +167,10 @@ class EnableTasks extends Component {
                 //isMulti
                 options={taskCategories}
                 //className="basic-multi-select"
-                classNamePrefix="select task categories ..."
+                classNamePrefix="Select task category"
                 onChange={this.handleTaskCategory}
                 maxMenuHeight={150}
-                placeholder="Select a HL task category"
+                placeholder="Select a task category"
               />
             </font>
           </div>
@@ -182,13 +182,13 @@ class EnableTasks extends Component {
         <div className="row">
           <div className="col">
             <TextAreaFieldGroup
-              placeholder="A short description of the task."
+              placeholder="Give a short description of the task"
               name="description"
               value={this.state.description}
               onChange={this.onChange}
               rows={2}
               error={errors.description}
-              info="Provide a short description for a quick references .."
+              info="Provide a short description for quick reference"
               must="Mandatory"
             />
           </div>
@@ -202,10 +202,10 @@ class EnableTasks extends Component {
                 //isMulti
                 options={teams}
                 //className="basic-multi-select"
-                classNamePrefix="Assign a team for the task ..."
+                classNamePrefix="Assign a team for the task"
                 onChange={this.handleAssignTeam}
                 maxMenuHeight={150}
-                placeholder="Assign a team for the task (iff)"
+                placeholder="Assign a team for the task"
               />
             </font>
           </div>
@@ -217,10 +217,10 @@ class EnableTasks extends Component {
                 isMulti
                 options={members}
                 //className="basic-multi-select"
-                classNamePrefix="Assign members to the task ..."
+                classNamePrefix="Assign members to the task"
                 onChange={this.handleAssignMembers}
                 maxMenuHeight={150}
-                placeholder="Assign members ..."
+                placeholder="Assign members"
               />
             </font>
           </div>
@@ -275,13 +275,13 @@ class EnableTasks extends Component {
         <div className="row">
           <div className="col">
             <TextAreaFieldGroup
-              placeholder="A short description of deliberable "
-              name="deliberable"
+              placeholder="Give a short description of the deliverable "
+              name="deliverable"
               value={this.state.deliberable}
               onChange={this.onChange}
               rows={2}
               error={errors.deliberable}
-              info="Describe the outcome, or success condition, for the task ..."
+              info="Describe the outcome or success condition of the task"
               must="Mandatory"
             />
           </div>
@@ -302,7 +302,7 @@ class EnableTasks extends Component {
               />
             </font>
             <div className="float-left">
-              <font color="white">Assign an inspector for the task</font>
+              <font color="white">Assign an inspector to the task</font>
             </div>
           </div>
           <div className="space-between-rows" />
@@ -330,25 +330,25 @@ class EnableTasks extends Component {
           <div className="row">
             <div className="how-to-create-team">
               Take the following steps to create tasks. You can create tasks if
-              you are managing it:
+              you are a manager:
               <ul>
                 <li>Give a unique task name. </li>
                 <li>Provide a short description</li>
                 <li>
-                  Connect it to a parent task (If root - select none. There can
+                  Connect to a parent task (If root - select none. There can
                   be only one root per project)
                 </li>
                 <li>
-                  Assign team(s). You can assign teams only if it belongs to
+                  Assign team(s). You can assign teams only if they belong to the
                   parent-task.
                 </li>
                 <li>
-                  Assign Member(s) from the drop down list (members assigned to
+                  Assign member(s) from the drop down list (members assigned to
                   parent task)
                 </li>
                 <li>Specify Start-date (optional)</li>
                 <li>Specify to-be-completed-by date</li>
-                <li>Describe the deliverables including success condition.</li>
+                <li>Describe the deliverables including success conditions</li>
                 <li>
                   Select an inspector for the acceptance-of-completion of the
                   task.
@@ -369,7 +369,7 @@ class EnableTasks extends Component {
         <div className="text-center how-to-create-team">
           <font color="white">
             You have been inducted in the team by the manager. Since you are
-            joining as barrista (time-based) and not the manager of project or
+            joining as a barista (time-based) and not the manager of the project or
             co-op, you do not get to assign tasks.
           </font>
         </div>

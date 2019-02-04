@@ -11,7 +11,7 @@ export const teamWolves = {
   },
   data: [
     {
-      label: "Mercus Orilius",
+      label: "Marcus Aurelius",
       value: "70"
     },
     {

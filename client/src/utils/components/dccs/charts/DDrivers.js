@@ -8,8 +8,8 @@ charts(fusioncharts);
 
 const dataSource = {
   chart: {
-    caption: 'Your four SX-drivers per your Peers',
-    subcaption: 'Time-series Average based on feedbacks',
+    caption: 'Your four SX-Drivers per your Peers',
+    subcaption: 'Time-series Average based on feedback',
     enablesmartlabels: '1',
     showlabels: '1',
     numbersuffix: ' %effect',

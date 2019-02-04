@@ -391,8 +391,8 @@ class PersonalityTests extends Component {
           <p>
             <font color="blue">
               <b>
-                10 = Stronlgy-Agree &nbsp;&nbsp;&nbsp;AND &nbsp;&nbsp;&nbsp;0 =
-                Strongly-Disagree
+                10 = Strongly Agree &nbsp;&nbsp;&nbsp;AND &nbsp;&nbsp;&nbsp;0 =
+                Strongly Disagree
               </b>
             </font>
           </p>
@@ -405,7 +405,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              1. I am a worrior.&nbsp;>>Pt: &nbsp;
+              1. I am a worrier.&nbsp;>>Pt: &nbsp;
               <b>{this.state.q1}</b>
             </div>
           </div>
@@ -457,7 +457,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              3. I have vivid imagination &nbsp;>>Pt: &nbsp;
+              3. I have a vivid imagination &nbsp;>>Pt: &nbsp;
               <b>{this.state.q3}</b>
             </div>
           </div>
@@ -518,7 +518,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              6. I get angry esily.&nbsp;>>Pt: &nbsp;
+              6. I get angry easily.&nbsp;>>Pt: &nbsp;
               <b>{this.state.q6}</b>
             </div>
           </div>
@@ -664,7 +664,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              12. I like to take charge of situation and events &nbsp;>>Pt:
+              12. I like to take charge of situations and events &nbsp;>>Pt:
               &nbsp;
               <b>{this.state.q12}</b>
             </div>
@@ -685,7 +685,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              13. I experience deep and varid emotions. &nbsp;>>Pt: &nbsp;
+              13. I experience deep and varied emotions. &nbsp;>>Pt: &nbsp;
               <b>{this.state.q13}</b>
             </div>
           </div>
@@ -1028,7 +1028,7 @@ class PersonalityTests extends Component {
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
               28. I tend to support political candidates who favor progress and
-              reforms. &nbsp;>>Pt: &nbsp;
+              reform. &nbsp;>>Pt: &nbsp;
               <b>{this.state.q28}</b>
             </div>
           </div>
@@ -1048,7 +1048,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              29. I sympathise with the homeless. &nbsp;>>Pt: &nbsp;
+              29. I sympathize with the homeless. &nbsp;>>Pt: &nbsp;
               <b>{this.state.q29}</b>
             </div>
           </div>
@@ -1122,7 +1122,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              32. I feel comfortble around people. &nbsp;>>Pt: &nbsp;
+              32. I feel comfortable around people. &nbsp;>>Pt: &nbsp;
               <b>{this.state.q32}</b>
             </div>
           </div>
@@ -1204,7 +1204,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              36. I get irritated esaily. &nbsp;>>Pt: &nbsp;
+              36. I get irritated easily. &nbsp;>>Pt: &nbsp;
               <b>{this.state.q36}</b>
             </div>
           </div>
@@ -1416,14 +1416,11 @@ class PersonalityTests extends Component {
               <h5>
                 <font color="#4298f4">
                   There will be about 120+ questions. Through this test you are
-                  letting us know your approximate personality traits. Like when
-                  you meet someone the first time and he/she is of interest to
-                  you, you start the assessment with audio-visual-linguistic and
-                  feelings information. This is what Baanda is trying to do
-                  about you (not using the feeling as yet). Just a starting
-                  point. Knowing you is a never-ending process. The next section
-                  is about day-to-day audio-visual-linguistic interaction (The
-                  Mask). [Refer to the 'About' section for details]
+                  letting us know your approximate personality traits. Baanda is 
+                  getting to know you like when you meet someone for the first time 
+                  and you start gathering information. This is what Baanda is trying 
+                  to accomplish. Baanda doesn't have feelings so this is just a
+                  starting point. Knowing you is a never-ending process. 
                 </font>
               </h5>
             </div>

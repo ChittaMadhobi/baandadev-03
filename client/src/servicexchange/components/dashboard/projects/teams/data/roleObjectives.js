@@ -6,7 +6,7 @@ export const roleObjectives = [
   },
   {
     value: '102',
-    label: 'Markeetier - Communicator',
+    label: 'Marketing - Communications',
     color: '#FF8B00'
   },
   {
@@ -16,12 +16,12 @@ export const roleObjectives = [
   },
   {
     value: '104',
-    label: 'Constructions - site setup',
+    label: 'Construction - site setup',
     color: '#FF8B00'
   },
   {
     value: '105',
-    label: 'Eletrician - Art lighting',
+    label: 'Electrician - Art lighting',
     color: '#FFC400'
   },
   {

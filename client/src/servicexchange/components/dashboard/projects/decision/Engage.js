@@ -110,7 +110,7 @@ class Engage extends Component {
                       </div>
                       <div className="row">
                         <div className="col-md-6 text-align-left-sm-docket">
-                          Pro (Advantages) :{" "}
+                          Pros (Advantages) :{" "}
                           <font color="green">
                             <b>{obj.pros}</b>
                           </font>
@@ -179,7 +179,7 @@ class Engage extends Component {
                       </div>
                       <div className="row">
                         <div className="col-md-6 text-align-left-sm-docket">
-                          Pro (Advantages) :{" "}
+                          Pros (Advantages) :{" "}
                           <font color="green">
                             <b>{obj.pros}</b>
                           </font>
@@ -211,7 +211,7 @@ class Engage extends Component {
         showDocket = (
           <div>
             <font color="orange" size="3">
-              Please select a decsion name to engage in decisioning.
+              Please select a decision name to engage.
             </font>
           </div>
         );
@@ -226,7 +226,7 @@ class Engage extends Component {
         <div>
           <font color="orange" size="3">
             In CBTL, you have not been asked to participate in making any
-            decision.
+            decisions.
           </font>
         </div>
       );
@@ -238,31 +238,30 @@ class Engage extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              This is not a forum for solving an issue. This is a forum to take
-              a decision towards a solution, among solutions, that has
-              transpired. There are two ways of taking solution. They are:
+              This is not a forum for solving issues. This is a forum to make
+              collective decisions and come to a concensus solution.
+              There are two ways of making decisions in this system. They are:
               <ul>
-                <li>Yea or Ney towards a solution or decision</li>
+                <li>Vote Yay or Nay </li>
                 <li>
-                  Decide among few alternative options and decide which way to
-                  go.
+                  Choose among a few options 
                 </li>
               </ul>
               <p>
                 NOTE: In this UX-demo version, one can select any decision
-                paradigm. In production, this would be controlled by or
-                defaulted to per agreement setup during projectization. For
-                example, if the contract is that of peer-to-peer equivalency
-                based decision process then other options may not be visible.
-                If, in the contract, there are exceptions in equivalncy P-2-P
-                contract, then p-2-p equal may be available.
+                paradigm. In production, this will be controlled by the agreement 
+                setup during project setup. For
+                example, if the contract is that of peer-to-peer equivalency- based 
+                decision process then other options will not be visible.
+                If, in the contract, there are exceptions in equivalency P-2-P
+                contract, then p-2-p equal may be an available option.
               </p>
               <p>
-                ** You can also opt to not participate or vote if you are
-                either unsure or want to abstain for some reason. If you do not
-                respond at all, it may eventually effect your DCCS/Equivalency
-                score (e.g. like opening of lots of bank/CC accout adversely
-                effect one's credit score).
+                ** You can opt not to participate or vote if you are
+                either unsure or want to abstain. If you do not
+                respond at all, it may eventually affect your DCCS/Equivalency
+                score (e.g. like opening up lots of credit card accounts adversely
+                affect one's credit score).
               </p>
             </div>
           </div>
@@ -437,7 +436,7 @@ class Engage extends Component {
       <div>
         <div className="form-panel-conflict">
           <div className="text-center">
-            <h4>Engage in Decisioning</h4>
+            <h4>Engage in Deciding</h4>
             <font color="green">
               <div className="row">
                 <div className="col-md-4">

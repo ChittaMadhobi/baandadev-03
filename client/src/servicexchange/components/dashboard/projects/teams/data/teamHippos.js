@@ -11,7 +11,7 @@ export const teamHippos = {
   },
   data: [
     {
-      label: "Mercus Orilius",
+      label: "Marcus Aurelius",
       value: "35"
     },
     {

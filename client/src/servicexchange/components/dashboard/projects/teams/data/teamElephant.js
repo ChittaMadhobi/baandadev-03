@@ -15,7 +15,7 @@ export const teamElephant = {
       value: "60"
     },
     {
-      label: "Jane  Austine",
+      label: "Jane  Austen",
       value: "80"
     }
   ]

@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer');
 
 const confirmMail = (req, rand) => {
+  console.log('reached confirmMail');
   let toEmail = req.body.email;
   let link =
     req.protocol +

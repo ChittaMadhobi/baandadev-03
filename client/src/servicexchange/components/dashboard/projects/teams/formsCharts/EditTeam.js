@@ -38,19 +38,19 @@ class EditTeam extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              To Edt a team, select one of your teams you created from the drop-down:
+              To Edt a team, select one of your teams from the drop-down:
               <ul>
                 <li>
-                  You will get a summary of teams's taxonomy at this point of time.
+                  You will get a summary of teams's taxonomy.
                 </li>
                 <li>
                   You can annex or release members or sub-teams from this team.
                 </li>
                 <li>
-                  You can attach a new-agreement you requested or request for one.
+                  You can attach a new agreement you requested or request for one.
                 </li>
               </ul>
-              Note: If you release any member and/or the whole team, he/she/they would be notified. The notification will be in their message box.
+              Note: If you release a member and/or the whole team, he/she/they will be notified. The notification will be in their message box.
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ class EditTeam extends Component {
               </div>
               <div className="col-md-6">
                 <div className="float-left">
-                  <font color="#e0c38d">Select a team for editing.</font>
+                  <font color="#e0c38d">Select a team to edit</font>
                 </div>
               </div>
             </div>

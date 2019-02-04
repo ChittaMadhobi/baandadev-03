@@ -17,7 +17,7 @@ import TTSFunction from "../../../../../utils/components/TTSFunction";
 const timeBasedSuggestion =
   "Your peers are impressed with your know-how, punctuality, and communication. However, you may want to listen with your heart to some of your peers and customers to enhance being a team-player and issue solver.";
 const projectSuggestion =
-  "Your peers have high opinion of your knowledge and you meeting the milestones. However, you may think yourself to be more imaginative than your peers think you are. Possibly, you are not that imaginative. Also, you may want to use your heart to communicate, particularly in the realm of artistry. Your technical mind may be hindering heartful communication style needed in the art gallery.";
+  "Your peers have a high opinion of your knowledge and you meeting the milestones. However, you may think yourself to be more imaginative than your peers think you are. Possibly, you are not that imaginative. Also, you may want to use your heart to communicate, particularly in the realm of artistry. Your technical mind may be hindering heartful communication needed in an art gallery.";
 
 class EngagementStatus extends Component {
   constructor() {
@@ -107,15 +107,15 @@ class EngagementStatus extends Component {
             <br />
             <br />
             <font color="#ddd1a8">
-              Please get confirmations, define teams, tasks, budget etc. to
-              check further status. Buttons are disabled.
+              Please get confirmation, define teams, tasks, budget, etc. to
+              check status. Buttons are disabled.
             </font>
           </div>
         );
       } else {
         msg = (
           <p>
-            Define or refer a project, an engagement, or a co-op project to
+            Define or refer to a project, or a co-op project to
             check the status.
           </p>
         );
@@ -152,10 +152,10 @@ class EngagementStatus extends Component {
           <br />
           <div className="text-center">
             <font color="#ddd1a8">
-              For UX review and comments, system is not doing true authorization
+              For UX review and comments, the system is not doing true authorization,
               but assuming you are the PM so that you can experience other
-              project/co-op related actions and see statuses from pre-defined
-              intelligence. In real world, if you are not the authorized, your
+              project/co-op related actions and see status from pre-defined
+              intelligence. In production, if you are not authorized, your
               access will be limited.
             </font>
           </div>
@@ -416,7 +416,7 @@ class EngagementStatus extends Component {
           <div className="col-1">&nbsp;</div>
           <div className="col-10">
             <div className="text-center vedio-msg">
-              Click the option if active contextually.
+              Click an option above
             </div>
           </div>
           <div className="col-1">&nbsp;</div>

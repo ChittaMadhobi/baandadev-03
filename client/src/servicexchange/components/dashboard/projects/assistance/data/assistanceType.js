@@ -6,12 +6,12 @@ export const assistanceType = [
   },
   {
     value: '102',
-    label: 'Skill Enhancement Trainings',
+    label: 'Skill Enhancement Training',
     color: '#FF8B00'
   },
   {
     value: '103',
-    label: 'Conseling or Advisory',
+    label: 'Counseling or Advisory',
     color: '#FFC400'
   }
 ]

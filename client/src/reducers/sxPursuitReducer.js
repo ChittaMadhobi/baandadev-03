@@ -19,7 +19,7 @@ const INITIAL_DATA = [
     id: 1,
     Title: 'Mentor Artist',
     message:
-      'Looking to be an apprentice of a master-artist to learn tricks of oil-painting, canvas-preperation, and other crafts of the oil-painting dimension in exchange of serviecs & marginal fee (negotiable).',
+      'Looking to be an apprentice of a master-artist to learn tricks of oil-painting, canvas-preparation, and other crafts of the oil-painting dimension in exchange of services & marginal fee (negotiable).',
     from: 'Seeking Art Mentor:',
     type: 'apprentice',
     postName: 'Passion-AA',

@@ -28,7 +28,7 @@ class SCMirrorBody extends Component {
 
   showDetailMsg = () => {
     alert(
-      "In production, this would lead to deeper level comparison of how you perceive yourself and how your circle perceived you."
+      "In production, this will lead to deeper level comparison of how you perceive yourself and how your circle perceived you."
     );
   };
 
@@ -107,7 +107,7 @@ class SCMirrorBody extends Component {
                   className="btn btn-primary btn-sm shadow"
                   onClick={this.switchToComparitive}
                 >
-                  Show Comparitive Chart &nbsp;
+                  Show Comparative Chart &nbsp;
                   <i className="fa fa-check" />
                 </button>
               </div>

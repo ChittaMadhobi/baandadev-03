@@ -35,7 +35,7 @@ const dataSource = {
               value: '3.4'
             },
             {
-              label: 'flat-org',
+              label: 'Flat-org',
               color: '#f8bd19',
               value: '16.6'
             }
@@ -113,12 +113,12 @@ const dataSource = {
           value: '22',
           category: [
             {
-              label: 'Longterm',
+              label: 'Long term',
               color: '#c1a38f',
               value: '6'
             },
             {
-              label: 'Shortterm',
+              label: 'Short term',
               color: '#e2ab85',
               value: '16'
             }
@@ -135,7 +135,7 @@ const dataSource = {
               value: '15'
             },
             {
-              label: 'Restrain',
+              label: 'Restraint',
               color: '#a3c485',
               value: '15'
             },

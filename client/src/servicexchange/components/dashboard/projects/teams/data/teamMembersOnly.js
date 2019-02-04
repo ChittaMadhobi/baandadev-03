@@ -15,11 +15,11 @@ export const teamMembersOnly = {
       value: "50"
     },
     {
-      label: "Leonardo De Vinci",
+      label: "Leonardo Da Vinci",
       value: "70"
     },
     {
-      label: "Sapho De Lesbos",
+      label: "Sappho De Lesbos",
       value: "55"
     },
     {
@@ -31,11 +31,11 @@ export const teamMembersOnly = {
       value: "60"
     },
     {
-      label: "Jane Austine",
+      label: "Jane Austen",
       value: "80"
     },
     {
-      label: "Mercus Orilius",
+      label: "Marcus Aurelius",
       value: "105"
     },
     {

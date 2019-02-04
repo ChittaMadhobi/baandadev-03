@@ -2,7 +2,7 @@ export const deliverableList = [
   {
     seqNo: 0,
     deliName: 'Art Gallery',
-    description: 'Ideate and implement an art gallery in west LA area for aspiring artists',
+    description: 'Ideate and implement an art gallery in West LA area for aspiring artists',
     level: 0,
     talent: '',
     resource: '',
@@ -11,11 +11,11 @@ export const deliverableList = [
   {
     seqNo: 1,
     deliName: 'Form Core Team',
-    description: 'Identify and form core team for a collaborative and cooperation based  endeavor',
+    description: 'Identify and form core team for a collaborative and cooperation based endeavor',
     level: 1,
     talent: 'Artist, Entrepreneur, Organizer',
     resource: 'Internet, College Campus, word-of-mouth, FB',
-    risks: 'Need gritt'
+    risks: 'Need grit'
   },  
   {
     seqNo: 2,
@@ -47,7 +47,7 @@ export const deliverableList = [
   {
     seqNo: 5,
     deliName: 'Site Locations',
-    description: 'Scoute, discover and a make a list of probable site locations',
+    description: 'Scout, discover and a make a list of probable site locations',
     level: 2,
     talent: 'Planner, Analysts, Financier',
     resource: '',
@@ -83,7 +83,7 @@ export const deliverableList = [
   {
     seqNo: 9,
     deliName: 'Create Theme',
-    description: 'Develop a theme, working with artists and aspiration, of type of initial exhibition',
+    description: 'Develop a theme, work with artists to plan initial exhibition',
     level: 2,
     talent: 'Innovator, Dreamer',
     resource: '',
@@ -92,7 +92,7 @@ export const deliverableList = [
   {
     seqNo: 10,
     deliName: 'Identify Artworks',
-    description: 'Identify various kinds of  artwork based on the theme',
+    description: 'Identify various kinds of artwork based on the theme',
     level: 2,
     talent: '',
     resource: '',
@@ -118,8 +118,8 @@ export const deliverableList = [
   },
   {
     seqNo: 13,
-    deliName: 'Sculptors',
-    description: 'Identify and gather sculptors for the exhibition',
+    deliName: 'Sculpture',
+    description: 'Identify and gather sculptures for the exhibition',
     level: 3,
     talent: 'Planner, Sculptor',
     resource: 'Statues etc.',
@@ -128,9 +128,9 @@ export const deliverableList = [
   {
     seqNo: 14,
     deliName: 'Marketing Art Gallery',
-    description: 'Market art gallery, concept, openeing party etc.',
+    description: 'Market art gallery, concept, opening party etc.',
     level: 1,
-    talent: 'Planner, entrepreneure, fiancier, digital marketier',
+    talent: 'Planner, entrepreneur, fiancier, digital marketer',
     resource: 'Marketing products, web site etc.',
     risks: ''
   },

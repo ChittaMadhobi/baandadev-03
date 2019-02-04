@@ -252,12 +252,12 @@ class Baseline extends Component {
         <div className="row">
           <div className="col-12">
             <TextAreaFieldGroup
-              placeholder="Describe types of talents needed for the deliverables "
+              placeholder="Describe types of talent needed for the deliverables "
               name="talentsNeeded"
               value={this.state.talentsNeeded}
               onChange={this.onChange}
               error={errors.talentsNeeded}
-              info="Describe types of talents needed for the deliverables ."
+              info="Describe types of talent needed for the deliverables ."
               must="Mandatory"
             />
           </div>
@@ -301,7 +301,7 @@ class Baseline extends Component {
                   id="inputGroupFile02"
                 />
                 <label className="custom-file-label">
-                  Picture, ref-docs please ...
+                  Picture, ref-docs please 
                 </label>
               </div>
               <div className="input-group-append">
@@ -386,7 +386,7 @@ class Baseline extends Component {
               value={this.state.deliverableName}
               onChange={this.onChange}
               //error={errors.newName}
-              info="Enter a deliverable Name ..."
+              info="Enter a deliverable Name"
             />
           </div>
           <div className="col-md-2">
@@ -427,15 +427,15 @@ class Baseline extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              Baseline of a project is to{" "}
-              <b>define deliverables & timelines (DTT)</b> to construct a
+              The purpose of a Baseline is to{" "}
+              <b>define deliverables & timelines (DTT)</b> in order to construct a
               project around it. That is, through Ideation and Discovery, you
               have come to a stage where you are ready to start working on
-              estimating effort (project cost, time, risk, efforts) for the
+              estimatiations (project cost, time, risk, effort) for the
               implementation.
               <br /> <br />
-              To form the baseline, create groups or hierarchy of deliverables,
-              and/or composition deliverable with sub-deliverables that would
+              To form the baseline, create groups or hierarchies of deliverables,
+              and/or composition deliverables with sub-deliverables that will
               lead to projecting a project.
               <ul>
                 <li>An index or a name of deliverable.</li>
@@ -447,35 +447,35 @@ class Baseline extends Component {
                 <li>
                   State the level of the deliverable.{" "}
                   <font color="lightgreen">0 (zero)</font> is the project itself
-                  and there would be only one zero level. All level 1 is child
+                  and there will be only one zero level. All level 1 deliverables are child
                   to zero-level. If the level is greater than 1 (2,3, ...0 then
-                  select a parent from the drop down (a parent deliverable you
-                  have defined before that is composed of the sub-level
-                  delverable).
+                  select a parent from the drop down (a parent deliverable that you
+                  have defined before is composed of sub-level
+                  deliverables).
                 </li>
               </ul>
-              If the deliverable is a leaf (that is, the deliverable do not have
+              If the deliverable is a leaf (that is, the deliverable does not have
               a child deliverable then log the following:)
               <ul>
                 <li>
-                  Define any restrictions that needs to be considered for the
+                  Define restrictions that must be considered for the
                   delivery.
                 </li>
                 <li>
-                  State a comma dellimited set of talents needed for the
+                  State a comma delimited set of talents needed for the
                   delivery{" "}
                 </li>
                 <li>
-                  Define any risk that may be associated with this deliverable.
+                  Define any risks that may be associated with this deliverable.
                 </li>
                 <li>Specify risks, if any, associated with the delivery</li>
                 <li>
-                  For delivery, who takes the risk (from drop down) - Requestor,
-                  Responder, Undecided, self-delivery
+                  For delivery, who takes the risk (from drop down) - requestor,
+                  responder, undecided, self-delivery.
                 </li>
                 <li>
-                  Delivery Risk Mitigation (from dropdown like Escrow, Retainer,
-                  Promise etc.)
+                  Delivery Risk Mitigation (from drop down like escrow, retainer,
+                  promise, etc.)
                 </li>
               </ul>
               <br />
@@ -508,9 +508,9 @@ class Baseline extends Component {
           <div className="space-outside-buttons" />
           <div className="text-center how-to-create-team">
             <font color="">
-              You have been inducted in the team by the manager. Since you are
-              joining as barrista (time-based) and not the manager, you do not
-              get to build teams.
+              You have been inducted into the team by the manager. Since you are
+              joining as a barista (time-based) and not the manager, you do not
+              have access to build teams.
             </font>
           </div>
         </div>

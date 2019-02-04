@@ -11,7 +11,7 @@ export const contracts = [
     },
     {
       value: '103',
-      label: 'Physical Art-gallery Setup Agreement',
+      label: 'Physical Art Gallery Setup Agreement',
       color: '#4441f4'
     }
   ];

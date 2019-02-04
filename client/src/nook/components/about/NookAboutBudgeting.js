@@ -28,10 +28,10 @@ class NookAboutBudgeting extends Component {
     let aboutAns2 = null;
     let aboutAns3 = null;
     let aboutAns4 = null;
-    let aboutAns5 = null;
-    let aboutAns6 = null;
-    let aboutAns7 = null;
-    let aboutAns8 = null;
+    // let aboutAns5 = null;
+    // let aboutAns6 = null;
+    // let aboutAns7 = null;
+    // let aboutAns8 = null;
     if (btnClickNo === '1') {
       aboutAns1 = (
         <div>
@@ -94,38 +94,38 @@ class NookAboutBudgeting extends Component {
         </div>
       );
     }
-    if (btnClickNo === '5') {
-      aboutAns5 = (
-        <div>
-          <font color="blue">Ans 5: </font> This is the answer 5
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '6') {
-      aboutAns6 = (
-        <div>
-          <font color="blue">Ans 6: </font> This is the answer 6
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '7') {
-      aboutAns7 = (
-        <div>
-          <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '8') {
-      aboutAns8 = (
-        <div>
-          <font color="blue">Ans 8: </font> This is the answer 8
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
+    // if (btnClickNo === '5') {
+    //   aboutAns5 = (
+    //     <div>
+    //       <font color="blue">Ans 5: </font> This is the answer 5
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '6') {
+    //   aboutAns6 = (
+    //     <div>
+    //       <font color="blue">Ans 6: </font> This is the answer 6
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '7') {
+    //   aboutAns7 = (
+    //     <div>
+    //       <font color="blue">Ans 7: </font> This is the answer 7
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '8') {
+    //   aboutAns8 = (
+    //     <div>
+    //       <font color="blue">Ans 8: </font> This is the answer 8
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
 
     return (
       <div>
@@ -164,38 +164,38 @@ class NookAboutBudgeting extends Component {
               me a break down. Why do it again?
             </button>
             {aboutAns4}
-            <button
+            {/* <button
               id="5"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
             >
               5. More Tasks and budgeting questions ...?
-            </button>
-            {aboutAns5}
-            <button
+            </button> 
+            {aboutAns5} */}
+            {/* <button
               id="6"
               className="btn btn-outline-info btn-sm btn-block text-left"
-              onClick={this.handlePostClick}
+              onClick={this.handlePostClick} 
             >
               6. More Tasks and budgeting questions ...?
             </button>
-            {aboutAns6}
-            <button
+            {aboutAns6} */}
+            {/* <button
               id="7"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
             >
               7. More Tasks and budgeting questions ...?
             </button>
-            {aboutAns7}
-            <button
+            {aboutAns7} */}
+            {/* <button
               id="8"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
-            >
-              8. More Tasks and budgeting questions ...?
-            </button>
-            {aboutAns8}
+            > 
+            8. More Tasks and budgeting questions ...?
+            </button> 
+            {aboutAns8} */}
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export const conflictDomains = [
   },
   {
     value: '102',
-    label: 'Pertiality / Cronyism'
+    label: 'Partiality / Cronyism'
   },
   {
     value: '103',
@@ -17,19 +17,19 @@ export const conflictDomains = [
   },
   {
     value: '104',
-    label: 'Covering for Others / peer performance'
+    label: 'Covering for Others / Peer performance'
   },
   {
     value: '105',
-    label: 'Bullying (in any form)'
+    label: 'Bullying'
   },
   {
     value: '106',
-    label: 'Minority Disrespect'
+    label: 'Disrespect'
   },
   {
     value: '107',
-    label: 'Wrkstyle Difference'
+    label: 'Workstyle Difference'
   },
   {
     value: '108',

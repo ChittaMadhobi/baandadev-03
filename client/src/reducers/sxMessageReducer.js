@@ -31,26 +31,26 @@
 const INITIAL_DATA = [
   {
     id: 0,
-    senderPostCaptionName: 'CBTL Barrister Wanted',
+    senderPostCaptionName: 'CBTL Barista Wanted',
     readState: false,
     yourRefPostName: 'survival-10',
     description:
-      'Looking for junior barrister in CBTL. Willing to work with students around school times.',
+      'Looking for junior barista in CBTL. Willing to work with students around school times.',
     senderAddress: '829 Wilshire Blvd, Santa Monica, CA 90401',
     skillList: 'Friendly personality, hard-working, responsible',
     workLocationType: 'in-location', // or remote or combination
-    workType: 'hourly-work', // project, hourly-work, employment
+    workType: 'hourly', // project, hourly-work, employment
     datePosted: '2018/11/14', // string for now
     contactType: false, // new or interest ... true=post interest exchange
     messageType: 'text' // audio, video, text
   },
   {
     id: 1,
-    senderPostCaptionName: 'Seek Art Prodigy',
+    senderPostCaptionName: 'Seeking Art Prodigy',
     readState: false,
     yourRefPostName: 'Passion-AA',
     description:
-      'I am an painter, mostly oil. I have a small gallery in downtown LA. Will mentor in exchange of work.',
+      'I am an painter, mostly oil. I have a small gallery in downtown LA. Will mentor in exchange for work.',
     senderAddress: '743 S. Santee St. Unit B, Los Angeles, CA 90014',
     skillList: 'drawing, painting, imagination',
     workLocationType: 'in-location', // remote (false) or in-location (true)
@@ -69,10 +69,10 @@ const INITIAL_DATA = [
     senderAddress: '11531 Santa Monica Blvd, Los Angeles, CA 90025',
     skillList: 'understanding of art, painting, friendly, cooperative',
     workLocationType: 'in-location', // remote (false) or in-location (true)
-    workType: 'hourly-work', // project, hourly-work, employment
+    workType: 'hourly', // project, hourly-work, employment
     datePosted: '2018/10/29', // string for now
     contactType: false, // new or interest ... true=post interest exchange
-    messageType: 'vedio' // audio, video, text
+    messageType: 'video' // audio, video, text
   },
   {
     id: 3,
@@ -80,7 +80,7 @@ const INITIAL_DATA = [
     readState: true,
     yourRefPostName: 'passion-AA',
     description:
-      'We are looking artist interested in co-exhibiting. If you have a scientific mind, it is awesome.',
+      'We are looking artists interested in co-exhibiting. If you have a scientific mind, it is awesome.',
     senderAddress: '2515 Hawks Next Trail. Topanga, ca 90290',
     skillList: 'Color with details, painting, friendly, imaginative',
     workLocationType: 'combo', // remote (false) or in-location (true)
@@ -98,6 +98,21 @@ const INITIAL_DATA = [
       'We are looking for forward thinking and innovation oriented programmer, particularly with some fullstack MERN background.',
     senderAddress: '2515 Hawks Next Trail. Topanga, ca 90290',
     skillList: 'Programming, React, MongoDB, Javascript etc.',
+    workLocationType: 'combo', // remote (false) or in-location (true)
+    workType: 'project', // project, hourly-work, employment
+    datePosted: '2018/10/28', // string for now
+    contactType: false, // new or interest ... true=post interest exchange
+    messageType: 'dccsResp' // audio, video, text
+  },
+  {
+    id: 5,
+    senderPostCaptionName: 'Art Gallery Co-op Team',
+    readState: true,
+    yourRefPostName: 'passion-AA',
+    description:
+      'Hi everyone! Please come to the meeting at Angelos apartment on Monday night to brainstorm the fundraising pitch.',
+    senderAddress: '2515 Hawks Next Trail. Topanga, ca 90290',
+    skillList: 'x',
     workLocationType: 'combo', // remote (false) or in-location (true)
     workType: 'project', // project, hourly-work, employment
     datePosted: '2018/10/28', // string for now

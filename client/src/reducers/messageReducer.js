@@ -7,7 +7,7 @@ const INITIAL_DATA = [
     id: 0,
     Title: 'Inviting you in my inner circle',
     message:
-      'Hey Babs, I would love to have you in my inner circle of life. I would like you to be one of my mirrors of life.',
+      'Hey Babe, I would love to have you in my inner circle. I would like you to be one of my mirrors of life.',
     from: 'Amudujin',
     startDate: moment(),
     invite: true
@@ -16,16 +16,16 @@ const INITIAL_DATA = [
     id: 1,
     Title: 'How are things in life',
     message:
-      'Hey Babs, Did not hear from you for a while. I am getting a kick out of this Baanda thingy. Thanks for roping me in.',
-    from: 'Mercus Orilius',
+      'Hey Babe, Did not hear from you for a while. I am getting a kick out of this Baanda thingy. Thanks for roping me in.',
+    from: 'Marcus Aurelius',
     startDate: moment(),
     invite: false
   },
   {
     id: 2,
-    Title: 'Values of human bonding and time',
+    Title: 'Value of human bonding and time',
     message:
-      'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. Now ... I wrote that then but I will not now. Would a single woman with good fortune marry? What do you think?',
+      'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. Now ... I wrote that then, but I will not now. Would a single woman with good fortune marry? What do you think?',
     from: 'Jane Austen',
     startDate: moment(),
     invite: false
@@ -35,7 +35,7 @@ const INITIAL_DATA = [
     Title: 'Three kinds of humans',
     message:
       'There are three classes of people: those who can see, those who can see when they are shown, and those who do not see. Where do you belong?',
-    from: 'Leonardo de Vinci',
+    from: 'Leonardo da Vinci',
     startDate: moment(),
     invite: false
   },

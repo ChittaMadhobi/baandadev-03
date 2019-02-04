@@ -139,12 +139,12 @@ class Consume extends Component {
       });
     } else if (btnType === "download") {
       alert(
-        "In production, you would be enabled to download the asset with publish Name: " +
+        "In production, you will be able to download the asset with publish Name: " +
           docName
       );
     } else {
       alert(
-        "In production, you would be able to view, listen, or read the document named " +
+        "In production, you will be able to view, listen, or read the document named " +
           docName +
           "."
       );
@@ -207,7 +207,7 @@ class Consume extends Component {
             />
           </div>
         </div>
-        <p>Please follow guidelines in 'how-to' for the scaling below (0: very-bad to 10: very good) </p>
+        <p>Please follow guidelines in 'how-to' for rating below (0: very-bad to 10: very good) </p>
         <div className="row">
           <div className="col-md-4">
             <div className="float-left slider-text-paddig">
@@ -398,21 +398,21 @@ class Consume extends Component {
               <font color="lightyellow">
                 <p>
                   Consumption process is based on publishing style. If you have
-                  been notified and/or you are here, you may have documents for
-                  you to read, see, hear, and you may be asked for comments,
+                  been notified and/or you are here, there may be documents for
+                  you to read, see, hear and you may be asked for comments,
                   review, or collaboration.
                   <br />
                   <b>
                     <p>
                       NOTE: All the digital assets to be consumed are with
-                      respect to this project(this SX endeavor) only.
+                      respect to this project only.
                     </p>
                   </b>
                 </p>
                 <p>
                   Only the documents or digital assets that you have been asked
                   to read, see, hear or comment / review, for this project, will
-                  be located.
+                  be available.
                 </p>
                 <ul>
                   <li>Dropdowns are searchable</li>
@@ -467,7 +467,7 @@ class Consume extends Component {
                 placeholder="Select a document domain ..."
               />
             </font>
-            <p>Find by document domain ...</p>
+            <p>Find by document domain</p>
           </div>
         </div>
         <div className="row">

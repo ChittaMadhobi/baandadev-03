@@ -6,7 +6,7 @@ export const cancelTargets = [
   },
   {
     value: '100',
-    label: 'Mercus Orilius ',
+    label: 'Marcus Aurelius ',
     color: '#FF8B00'
   },
   {
@@ -16,12 +16,12 @@ export const cancelTargets = [
   },
   {
     value: '102',
-    label: 'Sapho De Lesbos ',
+    label: 'Sappho De Lesbos ',
     color: '#FF8B00'
   },
   {
     value: '103',
-    label: 'Leonardo De Vinci ',
+    label: 'Leonardo Da Vinci ',
     color: '#FFC400'
   },
   {
@@ -41,7 +41,7 @@ export const cancelTargets = [
   },
   {
     value: '107',
-    label: 'Jane Austine',
+    label: 'Jane Austen',
     color: '#FFC400'
   },
   {

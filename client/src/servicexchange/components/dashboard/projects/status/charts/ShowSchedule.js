@@ -159,7 +159,7 @@ const dataSource = {
   chart: {
     dateformat: "dd/mm/yyyy",
     outputdateformat: "hh12:mn ampm",
-    caption: "Daily Schedule for this-month",
+    caption: "Daily Schedule for current month",
     subcaption: "Customer Success Team<br>CBTL Santa Monica",
     ganttpaneduration: "22",
     ganttpanedurationunit: "h",

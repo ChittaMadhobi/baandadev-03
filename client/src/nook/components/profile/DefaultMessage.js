@@ -22,7 +22,7 @@ class DefaultMessage extends Component {
                   A basic profile must be completed before using Baanda.
                 </p>
                 <p className="card-test">
-                  Please provide as much information as possible. The more your provide,
+                  Please provide as much information as possible. The more you provide,
                   the more Baanda AI has to work with.
                 </p>
                 <p className="card-test">

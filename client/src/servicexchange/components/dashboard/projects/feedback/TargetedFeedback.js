@@ -140,11 +140,11 @@ class TargetedFeedback extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              Targeted feedback, as it implies, if directly asking your teammate for some specific feedback. This enables one-on-one request-response. This is the only place where you would know who wants to say what to you and also, in the same way, you can provide personalized feedback for an individual.
+              Targeted feedback means directly asking your teammate for feedback. This enables one-on-one request/response. This is the only place where you will know who says what to you and also, in the same way, you can provide personalized feedback for an individual.
               <br /><br />
-              Logs shows all the conversation you had with your team mates as in asking each other for feedbacks. You can filter for a particular person or, by default, you see interactions with the whole team.
+              The logs show all the feedback conversations you had with your teammates. You can filter for a particular person, or you can see interactions with the whole team.
               <br />
-              Sentimant score is mined/calculated from the verbose request and response. At this point of time Baanda uses external API but intends to use its own engine once Causal Inference engine is build.
+              Sentiment scores are derived and calculated from the comments. At this point of time, Baanda uses external API but we intend to use our own engine once our Causal Inference engine is built.
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ class TargetedFeedback extends Component {
                   onChange={this.handleChangeTarget}
                   maxMenuHeight={150}
                   isSearchable={true}
-                  placeholder="Select the person to request ..."
+                  placeholder="Select individual"
                 />
               </font>
             </div>
@@ -187,7 +187,7 @@ class TargetedFeedback extends Component {
               rows={4}
               onChange={this.onChange}
               error={errors.feedbackreq}
-              info="Request specific feedback from a specific person contextually. This would be one-on-one."
+              info="Request one-on-one feedback from a specific person."
             />
           </div>
         </div>
@@ -214,7 +214,7 @@ class TargetedFeedback extends Component {
          <div className="row">
           <div className="col-12">
             <div className="response-feedback-placement">
-              From: Leonardo De Vinci <br />
+              From: Leonardo Da Vinci <br />
               Aenean non consectetur justo, a rutrum neque. Nulla commodo enim justo, nec consequat risus bibendum ac. Aliquam erat volutpat. Proin quis nunc ut ligula lacinia congue mollis vel turpis. 
             </div>
           </div>
@@ -229,7 +229,7 @@ class TargetedFeedback extends Component {
               rows={4}
               onChange={this.onChange}
               error={errors.feedbackres}
-              info="Request specific feedback from a specific person contextually. This would be one-on-one."
+              info="Request one-on-one feedback from a specific person."
             />
           </div>
         </div>
@@ -264,12 +264,12 @@ class TargetedFeedback extends Component {
       if (this.state.logOf === "") {
         this.filterFeedbackView("all");
         if (localArr.length === 0) {
-          logReqEmpty = "You have no feedback exchange for this context so far";
+          logReqEmpty = "You have no feedback exchange.";
         }
       } else {
         this.filterFeedbackView(this.state.logOf.label);
         if (localArr.length === 0) {
-          logReqEmpty = "You have no feedback exchange for this context so far with " + this.state.logOf.label;
+          logReqEmpty = "You have no feedback exchange. " + this.state.logOf.label;
         }
       }
 
@@ -290,7 +290,7 @@ class TargetedFeedback extends Component {
                     onChange={this.handleChangeLogOf}
                     maxMenuHeight={150}
                     isSearchable={true}
-                    placeholder="Select the person to view ..."
+                    placeholder="Select individual"
                   />
                 </font>
               </div>

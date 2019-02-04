@@ -22,7 +22,7 @@ const dataSource = {
           label: 'Communication'
         },
         {
-          label: 'Work Knowhow'
+          label: 'Work Know-how'
         },
         {
           label: 'Team Player'

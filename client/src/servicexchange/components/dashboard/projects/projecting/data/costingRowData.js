@@ -90,7 +90,7 @@ export const costingRowData = [
   },
   {
     id: 12,
-    itemName: 'Operation & rent',
+    itemName: 'Operations & rent',
     price: 500.00,
     unit: 'month',
     quantity: 12,

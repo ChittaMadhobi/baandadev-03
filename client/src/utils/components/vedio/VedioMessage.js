@@ -30,8 +30,8 @@ class VedioMessage extends Component {
 
   handleSendClick() {
     alert(
-      "This is an UX or usability experience. At this point (by your click on Send button), your message would apear in " +
-        "the receipient's message box. The quality of the video-mesage will depend on your camera, microphone, driers and browsers."
+      "This is a UX or usability experience. At this point (by your click on Send button), your message will apear in " +
+        "the recipient's message box. The quality of the video-mesage will depend on your camera, microphone, drivers and browser."
     );
   }
 
@@ -117,7 +117,7 @@ class VedioMessage extends Component {
         <div className="recording-msg text-center">
           <div className="space-at-top" />
           <font color="lightgreen">
-            <h4>Please look at the camera white recording</h4>
+            <h4>Please look at the camera while recording</h4>
           </font>
           <div className="recording-msg-space" />
           <font color="lightyellow" size="3">
@@ -125,14 +125,11 @@ class VedioMessage extends Component {
           </font>
           <font color="white" size="2">
             <p>
-              You need to look at the camera so the receipient experience that
-              you are looking at his/her eyes when receiveing your message. If
+              Hint: Look at the camera while recording so the recipient feels that
+              you are looking at his/her eyes when viewing your message. If
               you saw your own video while recording then, per our tendency, we
-              would look at our video-eyes. Receipient will then see your video
-              as looking downwards and will have an awkward experienece because
-              we like to look at each others eyes while conversing. Imagine,
-              Baanda (someone) is recording you that you will send to the
-              target.
+              would look at our video-eyes. The recipient will then see your video
+              as looking downwards and will have an awkward experience. 
             </p>
           </font>
         </div>

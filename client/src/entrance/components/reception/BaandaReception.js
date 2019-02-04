@@ -156,7 +156,7 @@ class BaandaReception extends Component {
 
     return (
       <div className="baandalibrary">
-        <p className="top-padding" />
+        <div className="top-padding" />
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">

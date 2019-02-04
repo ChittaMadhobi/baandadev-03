@@ -162,14 +162,14 @@ class Release extends Component {
             <div className="howto-handle-inspection">
               <font color="lightyellow">
                 <p>
-                  The inspection and pay-release of tasks lists you all the tasks on your
-                  plate that has one of the two requests; Inspect or Pay-release. If you inspect and clear it, the task would be ready for pay release.  </p>
-                  <p>The difference between Reject Payment and Hold-Payment is the hold is temporary and will be resolved. Mostly, it is financial technicalities. Reject-payment is based on the initial agreement (it may be a part of a bigger task and will be paid on totla completion or ... other criteria). In either way, the reason must be clearly stated so the requestor knows that. </p>
+                  The inspection and pay-release of task list shows you all the tasks on your
+                  plate that have one of the two requests: Inspect or Pay-release. If you inspect and clear it, the task will be ready for pay release.  </p>
+                  <p>The difference between Reject Payment and Hold-Payment is the hold is temporary and will be resolved. Mostly, it is financial technicalities. Reject-payment is based on the initial agreement (it may be a part of a bigger task and will be paid on total completion or ... other criteria). Either way, the reason must be clearly stated so the requestor knows that. </p>
                   <br />
                   <br />
                   <b>
                     <p>
-                      NOTE: In future, you would be able to filter by either of the two kinds of requests. Further, for large projects, you would be able to filter via category and other factors.
+                      NOTE: In the future, you will be able to filter by two kinds of requests. Further, for large projects, you will be able to filter via category and other factors.
                     </p>
                   </b>
                
@@ -494,9 +494,9 @@ class Release extends Component {
           <div className="space-outside-buttons" />
           <p className="time-based-msg">
             <font color="orange">
-              You have not been allocated with any projectized tasks with
+              You have not been allocated with any project tasks with
               deliverables or received any inspection requests. Your allocation
-              is time-based set of services as barista.
+              is a time-based set of services as barista.
             </font>
           </p>
         </div>
@@ -567,7 +567,7 @@ class Release extends Component {
                       this.gotoReleaseOps("listTasks");
                     }}
                   >
-                    ListTasks
+                    List Tasks
                     <div className="float-right">
                       <i className="fas fa-chalkboard-teacher" />
                     </div>

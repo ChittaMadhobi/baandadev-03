@@ -16,7 +16,7 @@ class TeamAllocation extends Component {
 
   handleSaveClick() {
     alert(
-      "Eventually -- When you click this, your work will be saved in database. The allocations here are estimates. This would be carried forward as starting point of budgeting. In time, these values would provide intelligence between actual and exstimates. The equvalency vote here is based purely on time-allocation with reference to context of work. The actual equivalency is much more complex with many more parameters, anticipated and found-out via pattern recognition over law of large numbers (LLN)."
+      "Eventually -- When you click this, your work will be saved in the database. The allocations here are estimates. This would be carried forward as starting point of budgeting. In time, these values would provide intelligence between actual and exstimates. The equvalency vote here is based purely on time-allocation with reference to context of work. The actual equivalency is much more complex with many more parameters, anticipated and found-out via pattern recognition over law of large numbers (LLN)."
     );
   }
 
@@ -62,7 +62,7 @@ class TeamAllocation extends Component {
           <div className="text-center how-to-create-team">
             <font color="white">
               You have been inducted in the team by the manager. Since you are
-              joining as barrista (time-based) and not the manager of project or co-op, you do not
+              joining as a barista (time-based) and not the manager of the project or co-op, you do not
               get to build teams or do allocations. That is, based on your role and authorization, various operations will be enabled, disabled, or contextually modified.
             </font>
           </div>

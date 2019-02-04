@@ -70,7 +70,7 @@ class TempDCCSRespMsg extends Component {
           <DDriverComp />
           <div>
             <font color="blue">
-              Drivers: Hands-on-skill, theoretical knowledge, inteligence,
+              Drivers: Hands-on-skill, theoretical knowledge, intelligence,
               imagination
             </font>
           </div>

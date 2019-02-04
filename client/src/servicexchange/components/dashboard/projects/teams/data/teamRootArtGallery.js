@@ -15,11 +15,11 @@ export const teamRootArtGallery = {
       value: "50"
     },
     {
-      label: "Leonardo De Vinci",
+      label: "Leonardo Da Vinci",
       value: "70"
     },
     {
-      label: "Sapho De Lesbos",
+      label: "Sappho De Lesbos",
       value: "55"
     },
     {

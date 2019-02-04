@@ -59,7 +59,7 @@ class SocialCircleMessage extends Component {
             <div className="modal-header">
               <h4>
                 <font color="#0e5b2e">
-                  <b>Details of Message and Invites </b>
+                  <b>Details of Messages and Invitations </b>
                 </font>
               </h4>
             </div>

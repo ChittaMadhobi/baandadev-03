@@ -11,7 +11,7 @@ export const mediaTypeEtc = [
   },
   {
     value: '102',
-    label: 'Video (auio-visual)',
+    label: 'Video (audio-visual)',
     color: '#FF8B00'
   },
   {

@@ -14,7 +14,8 @@ const MODAL_TYPES = {
   financialMirror: modalTypes.financialMirror,
   sxPursuits: modalTypes.sxPursuits,
   sxMessage: modalTypes.sxMessage,
-  sxProject: modalTypes.sxProject
+  sxProject: modalTypes.sxProject,
+  cfIntel: modalTypes.cfIntel
 };
 
 const mapStateToProps = state => ({

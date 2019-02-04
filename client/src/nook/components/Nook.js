@@ -12,6 +12,8 @@ import SocialCircle from './socialCircle/SocialCircleContainer';
 
 import Budgeting from './budget/BudgetContainer';
 
+import './utils/nook.css';
+
 class Nook extends Component {
   constructor() {
     super();
@@ -65,7 +67,7 @@ class Nook extends Component {
 
     if (this.state.ChoresJournalsLifestuff) {
       nookMainFunctionalPanel = (
-        <div className="fixedsize">
+        <div className="tasksNjournals">
           <NookTasks />
         </div>
       );
@@ -89,7 +91,7 @@ class Nook extends Component {
 
     if (this.state.theMask) {
       nookMainFunctionalPanel = (
-        <div className="fixedsize">
+        <div className="tasksNjournals">
           <TheMask />
         </div>
       );

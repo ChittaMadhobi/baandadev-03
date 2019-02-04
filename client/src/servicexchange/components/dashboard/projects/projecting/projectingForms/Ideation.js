@@ -120,30 +120,27 @@ class Ideation extends Component {
             <div className="how-to-create-team">
               <font color="yellow" size="3">
                 <p>
-                  A project, in any governance construct, is an individual’s or
-                  collective set of work to achieve a goal or an objective. It
-                  would be fantastic if the perfect ‘what-why-&-how’ of the
-                  objective, along with all the variable (who-when-&-where) of
-                  the process and future be known. In reality, a project starts
-                  with an IDEA. The evolution process from original IDEA into
-                  ‘what-why-how-who-when-&-where’ factors for manifesting the
-                  morphed-idea into reality become an integral part of the
-                  overall endeavor.
+                  A project is 
+                  a set of tasks to achieve a goal or an objective. It could be for an individual or a team. 
+                  A project starts
+                  with an idea. The evolution of turning the idea into an actionable plan is part of the 
+                  process.
                 </p>
                 <p>
-                Endeavor Projection enable Baandas to take a hazy idea into reality through iterative steps of Ideation, discover, baselines, with effort estimations.     
+                Project Projection enables Baandas (users) to take a hazy idea and turn it into a solid plan
+                through the iterative steps of ideation, 
+                discovery, baselines and effort estimations.     
                 </p>
               </font>
-              <p>Ideation is a recurring & collaborative process to fine-tune it via iterative evolution:</p>
+              <p>Ideation is a recurring & collaborative process to fine-tune an idea via iterative evolution.</p>
               
-              <p>Enter a name of idea/project OR select one from drop-down to work
-              on it again later.</p>
+              <p>Give your project/idea a name OR select one from drop-down.</p>
        
-              Select the type of project ideation you are doing. Baanda will
-              eventually guide you with domain specific intelligences.
+              Select the type of project ideation. Baanda will
+              guide you with domain specific intelligence.
               <ul>
                 <li>
-                  Problem-Solving (In response to an identified problem in some
+                  Problem-Solving (Respond to an identified problem in some
                   area).
                 </li>
                 <li>Derivative (You intend to better an existing idea).</li>
@@ -154,45 +151,42 @@ class Ideation extends Component {
                 </li>
                 <li>
                   Serendipitious (Came across by chance - e.g. discovery of
-                  Penecillin)
+                  Penicillin)
                 </li>
                 <li>
-                  Artistic (Something that is artistic but new and needs a
+                  Artistic (Something that is artistic, but new and needs a
                   project to implement)
                 </li>
-                <li>Other (Specify in a word or hypheneted word)</li>
+                <li>Other (Specify in a word or hyphenated word)</li>
               </ul>
-              Invite others in the ideation. To be mindful, people you are
-              inviting needs to be in Baanda System and responded to your post
-              and have drawn basic agreements.
+              Invite others to ideate. Remember, people you 
+              invite need to have a Baanda login..
               <br />
-              You can click group-view checkbox if you want to see the
+              You can click the group-view checkbox if you want to see the
               participants of the group.
               <br />
               <ul>
                 <li>
-                  Define or refine the what-factor. The definition of your idea.
+                  Define or refine the definition of your idea.
                 </li>
                 <li>
-                  Associate a why-factor of your idea. This may include problem
-                  you are solving, empathy, market etc.
+                  Why are you doing this project? What's the problem you are trying to solve?
                 </li>
                 <li>
-                  Optionally, if you have an how-factor idea, include it for
-                  future references. This may be applicable if you are returning
-                  to ideation post-Discovery phases (next button on control
-                  panel)
+                  Optionally, if you have a plan for how you plan to implement your idea, include it for
+                  future reference. This may be applicable if you are returning
+                  to ideation Post-Discovery phase.
                 </li>
               </ul>
               You can provide a generalized description and/or URL's for
-              references, including work in Discovery phases.
+              reference, including work in Discovery phase.
               <br />
-              You can optionally upload a document (document, audio, video). You
-              can view them from the Document button on the dashboard.
+              You can optionally upload a document (document, audio, video) and
+              view them from the Document button on the dashboard.
               <br />
               You can review past ideations with the most recent ideation at the
               top. You can propose, from the drop down, a next-step short
-              proposal with a description. This would be sent to the rest of the
+              proposal with a description. This will be sent to the rest of the
               group as your proposal in their message box.
             </div>
           </div>
@@ -203,7 +197,7 @@ class Ideation extends Component {
     let ideaTypeOther = (
       <TextFieldGroup
         name="ideaTypeOther"
-        placeholder="Enter a different idea Type"
+        placeholder="Enter a different idea type"
         value={this.state.ideaTypeOther}
         onChange={this.onChange}
         //error={errors.newName}
@@ -218,11 +212,11 @@ class Ideation extends Component {
           <div className="col-md-6">
             <TextFieldGroup
               name="newIdeaName"
-              placeholder="Enter a idea name"
+              placeholder="Enter an idea name"
               value={this.state.newIdeaName}
               onChange={this.onChange}
               //error={errors.newName}
-              info="Enter a unique idea name to explore..."
+              info="Enter a unique idea name"
             />
           </div>
           <div className="space-between-rows" />
@@ -278,18 +272,18 @@ class Ideation extends Component {
               />
             </font>
           </div>
-          <div className="col-md-6">Show names if present team (if any)</div>
+          <div className="col-md-6">Show names of team members</div>
         </div>
         <div className="space-between-rows" />
         <div className="row">
           <div className="col-12">
             <TextAreaFieldGroup
-              placeholder="Enetr the core-idea today ... the What-factor"
+              placeholder="Describe the core idea"
               name="ideaWhatFactor"
               value={this.state.ideaWhatFactor}
               onChange={this.onChange}
               error={errors.ideaWhatFactor}
-              info="Define the idea, or idea state (noun based). What is the idea now."
+              info="Define the idea, or idea state. What is the idea now."
               must="Mandatory"
             />
           </div>
@@ -303,7 +297,7 @@ class Ideation extends Component {
               value={this.state.ideaWhyFactor}
               onChange={this.onChange}
               error={errors.ideaWhyFactor}
-              info="State the reason behind the idea (intent, market, empathy etc.)"
+              info="State the reason behind the idea"
               must="Mandatory"
             />
           </div>
@@ -317,7 +311,7 @@ class Ideation extends Component {
               value={this.state.ideaHowFactor}
               onChange={this.onChange}
               error={errors.ideaHowFactor}
-              info="Describe at high-level how you intend to do what you wan to chieve (optional)"
+              info="Describe at high-level how you intend to do what you want to achieve (optional)"
               must="Mandatory"
             />
           </div>
@@ -326,13 +320,13 @@ class Ideation extends Component {
         <div className="row">
           <div className="col-12">
             <TextAreaFieldGroup
-              placeholder="Enter general notes, discussion minutes, points-to-ponder, R&D/discovery, doc-upload names etc."
+              placeholder="Enter notes, minutes, points-to-ponder, R&D/discovery, doc-upload names etc."
               name="generalNotes"
               value={this.state.generalNotes}
               onChange={this.onChange}
               error={errors.generalNotes}
               rows={3}
-              info="Enter general notes, discussion minutes, points-to-ponder, R&D/discovery, proposal, reference URL for reference etc."
+              info="Enter notes, minutes, points-to-ponder, R&D/discovery, proposal, reference URL for reference etc."
               must="Mandatory"
             />
           </div>
@@ -360,7 +354,7 @@ class Ideation extends Component {
           </div>
           <div className="col-md-6">
             <p>
-              <small>Please upload ideation references (if you want)</small>
+              <small>Please upload ideation references</small>
             </p>
           </div>
         </div>
@@ -401,7 +395,7 @@ class Ideation extends Component {
           <div className="space-outside-buttons" />
           <div className="row">
             <div className="col">
-              You would be seeing all the information, chronologically reveresed
+              You will be seeing all the information in chronologically reversed
               order (last in first, with all the log entries.)
             </div>
           </div>

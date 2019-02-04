@@ -26,19 +26,19 @@ export const taskView = {
             label: "Albert Einstein"
           },
           {
-            label: "Mercus Orilius"
+            label: "Marcus Aurelius"
           },
           {
-            label: "Sapho De Lesbos"
+            label: "Sappho De Lesbos"
           },
           {
             label: "Steve Jobs"
           },
           {
-            label: "Leonardo De Vinci"
+            label: "Leonardo Da Vinci"
           },
           {
-            label: "Neli Armstrong"
+            label: "Neil Armstrong"
           }
         ]
       }
@@ -100,7 +100,7 @@ export const taskView = {
     headeralign: "left",
     process: [
       {
-        label: "Art-Gallery Impl."
+        label: "Art Gallery Impl."
       },
       {
         label: "Fund Raising"
@@ -109,7 +109,7 @@ export const taskView = {
         label: "Site Plan Mgmt."
       },
       {
-        label: "Finance & Account"
+        label: "Finance & Accounting"
       },
       {
         label: "Security & Safety"
@@ -124,7 +124,7 @@ export const taskView = {
         label: "Construction"
       },
       {
-        label: "Opening Party"
+        label: "Opening Gala"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const taskView = {
         {
           start: "1/1/2019",
           end: "4/1/2019",
-          label: "Art-Gallery Opening Q1-2019"
+          label: "Art Gallery Opening Q1-2019"
         }
       ]
     },

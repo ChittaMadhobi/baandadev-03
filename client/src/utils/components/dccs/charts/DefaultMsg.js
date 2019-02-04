@@ -7,7 +7,7 @@ class DefalutMsg extends Component {
         <div className="row">
           <div className="col">
             <div className="chart-size text-center">
-              <h3>Please select the operation of your choice.</h3>
+              <h3>Please select an option</h3>
             </div>
           </div>
         </div>

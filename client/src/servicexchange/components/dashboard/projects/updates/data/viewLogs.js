@@ -22,7 +22,7 @@ export const viewLogs = [
       },
       {
         seq: 2,
-        by: 'Sapho',
+        by: 'Sappho',
         comment: 'Sed justo tortor, fermentum sed ipsum vitae, elementum convallis elit. Proin egestas lorem vel dui vestibulum, eget consectetur tellus interdum. Cras sapien nibh, scelerisque sit amet tellus at, porta accumsan lorem.'
       }
     ]
@@ -37,7 +37,7 @@ export const viewLogs = [
     endDate: '02/07/2019',
     lastState: 100,  // Percentage complete 
     assignTeam: '',  // If it has been assigned to the whole team
-    assignMembers: 'Jane Austin, Angelo',  
+    assignMembers: 'Jane Austen, Angelo',  
     deliverable: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo augue, posuere non turpis sit amet, semper consequat massa.',
     lastUpdatedBy: 'Jane',
     request: '',
@@ -60,15 +60,15 @@ export const viewLogs = [
     endDate: '02/14/2019',
     lastState: 95,  // Percentage complete 
     assignTeam: '',  // If it has been assigned to the whole team
-    assignMembers: 'Mercus Orilius, Angelo',  
+    assignMembers: 'Marcus Aurelius, Angelo',  
     deliverable: 'Sed euismod neque vel risus pretium convallis sit amet sed felis. Etiam quis egestas lacus, id tempor augue. Fusce sodales erat eget nisl lobortis, non pretium ex rhoncus.',
-    lastUpdatedBy: 'Mercus',
+    lastUpdatedBy: 'Marcus',
     request: 'Request for Inspection',
     status: 'Completed & Pending Inspection',
     comments : [
       {
         seq: 1,
-        by: 'Mercus',
+        by: 'Marcus',
         comment: 'Praesent pulvinar fermentum ligula. Ut tempor sem non lectus lobortis ornare. In libero enim, molestie vel est commodo, dictum malesuada libero.'
       },
       {
@@ -118,7 +118,7 @@ export const viewLogs = [
       },
       {
         seq: 2,
-        by: 'Sapho',
+        by: 'Sappho',
         comment: 'Sed justo tortor, fermentum sed ipsum vitae, elementum convallis elit. Proin egestas lorem vel dui vestibulum, eget consectetur tellus interdum. Cras sapien nibh, scelerisque sit amet tellus at, porta accumsan lorem.'
       },
       {

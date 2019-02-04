@@ -59,8 +59,8 @@ class SocialCircleImage extends Component {
   render() {
     //console.log("XXXX:" + JSON.stringify(this.state.clickLink));
     //console.log("YYYY:" + this.state.clickNode.name);
-    //let img = this.state.clickNode.img;
-    //console.log('img:' + img);
+    // let img = this.state.clickNode.img;
+    // console.log('img:' + img);
     let yy;
 
     if (this.state.showPopNode) {

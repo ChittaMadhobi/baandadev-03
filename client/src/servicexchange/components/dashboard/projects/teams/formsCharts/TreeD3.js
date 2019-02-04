@@ -52,7 +52,7 @@ const svgSquare = {
             <div className="header">
               <div>
                 {" "}
-                Drag the start-icon center; roll to size; expand/contract.
+                Drag the start icon to the center; roll to size; expand/contract.
               </div>
               <div>Legend: <b>M</b> = Team-member & <b>T</b> = "Sub-team"</div>
             </div>

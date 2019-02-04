@@ -8,8 +8,8 @@ charts(fusioncharts);
 
 const dataSource = {
   chart: {
-    caption: 'Management Stype Preference per your Peers',
-    subcaption: 'Time-series Average based on feedbacks',
+    caption: 'Management Style Preference per your Peers',
+    subcaption: 'Time-series Average based on feedback',
     enablesmartlabels: '1',
     showlabels: '1',
     numbersuffix: ' %effect',

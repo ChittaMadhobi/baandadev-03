@@ -9,8 +9,8 @@ charts(fusioncharts);
 
 const dataSource = {
   chart: {
-    caption: 'Peer Sentiments at the Work environments',
-    subcaption: 'A timeseries based average as of now',
+    caption: 'Peer Sentiment from Work environment',
+    subcaption: 'A time series based average as of now',
     yaxisname: 'Positive Feedback Average',
     decimals: '1',
     theme: 'fusion'

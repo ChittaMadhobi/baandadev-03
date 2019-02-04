@@ -7,13 +7,13 @@ const checkboxes = [
   },
   {
     name:
-      'Wearable - general health, dementia-alheimer etc. (e.g. Zanthion https://www.zanthion.com/)',
+      'Wearable - general health, dementia-alzheimers etc. (e.g. Zanthion https://www.zanthion.com/)',
     key: 'checkBox2',
     label: 'Wearable - general health'
   },
   {
     name:
-      'Manage asthema-COPD (e.g. Propeller - https://www.propellerhealth.com)',
+      'Manage asthma-COPD (e.g. Propeller - https://www.propellerhealth.com)',
     key: 'checkBox3',
     label: 'asthema-COPD'
   },
@@ -24,13 +24,13 @@ const checkboxes = [
   },
   {
     name:
-      'Sports health monitoring - swimming (e.g. Squeezline); concussion healmet (Shockbox) ',
+      'Sports health monitoring - swimming (e.g. Squeezline); concussion helmet (Shockbox) ',
     key: 'checkBox4',
     label: 'Sports health monitoring'
   },
   {
     name:
-      'Fitbit watches (Apple) for health (Soon: MDD (Major Depressive Disorder (Takeda))',
+      'Fitbit, Apple watch for health (Soon: MDD (Major Depressive Disorder (Takeda))',
     key: 'checkBox4',
     label: 'Sports health monitoring'
   }

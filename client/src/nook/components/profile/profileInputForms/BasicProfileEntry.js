@@ -88,8 +88,7 @@ class BasicProfileEntry extends Component {
             <div className="textspaceTop" />
             <p className="checkbox-font-iot">
               <strong>
-                <u>Select IOT devices to track</u> (Note: Some examples are
-                still in research state)
+                <u>Select IOT devices to track</u> 
               </strong>
             </p>
             <React.Fragment>
@@ -109,7 +108,7 @@ class BasicProfileEntry extends Component {
             </React.Fragment>
             <strong>
               Note: Most of the emerging IoT device connectivities and standards
-              are in R&D states. Baanda intends to detect demand patterns and
+              are in R&D state. Baanda intends to detect demand patterns and
               work/partner with respective IoT devices to enable real-time 
               monitoring as IA (Intelligence Augmentation).
             </strong>
@@ -407,7 +406,7 @@ class BasicProfileEntry extends Component {
                 onChange={this.handleTrackIOTChange}
               />{' '}
               <font color="green">
-                Do you want Baanda to monitor your bio-metric health via IoT{' '}
+                Do you want Baanda to monitor your biometric health via IoT{' '}
                 <strong>(Biometric Internet of Things)</strong>
                 &nbsp;devices?
               </font>

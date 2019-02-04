@@ -302,7 +302,7 @@ const dataSource = {
         id: "4"
       },
       {
-        label: "Gather Art-Stuff",
+        label: "Gather Works of Art",
         id: "5"
       },
       {
@@ -318,7 +318,7 @@ const dataSource = {
         id: "8"
       },
       {
-        label: "Open with a party",
+        label: "Grand Opening Gala",
         id: "9"
       }
     ]

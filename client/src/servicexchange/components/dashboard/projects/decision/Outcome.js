@@ -121,7 +121,7 @@ class Outcome extends Component {
       <div>
         <div className="row">
           <div className="col-md-3">
-            <div className="float-right">Perticipation % :</div>
+            <div className="float-right">Participation % :</div>
           </div>
           <div className="col-md-6">
             <div className="progress progbar-pad">
@@ -248,16 +248,16 @@ class Outcome extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              The outcome is delivered in two stage. :
+              The outcome is delivered in two stages. :
               <ul>
                 <li>
                   When the decisioning process is in progress, the only intel
                   you will get is that it is in progress and what percentage of
                   participants has already decided. No additional information is
-                  provided to keep decisioning process indpendent of each other.
+                  provided to keep the decisioning processes independent of each other.
                 </li>
                 <li>
-                  The other provides a log of all historic outcome that show the
+                  The other stage provides a log of all historic outcomes that show the
                   problem, the solution taken and the relative margin to
                   decision (if P-2-P).
                 </li>

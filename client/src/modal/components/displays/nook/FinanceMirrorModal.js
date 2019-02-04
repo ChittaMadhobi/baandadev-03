@@ -68,8 +68,8 @@ class FinanceMirrorModal extends Component {
                 &nbsp;&nbsp;{' '}
                 <b>
                   {' '}
-                  Financial pictures provides a glimpse of your transactional
-                  intelligene.
+                  Financial pictures provide a glimpse of your transactional
+                  intelligence.
                 </b>
               </div>
               <div className="col-md-4 col-sm-6">

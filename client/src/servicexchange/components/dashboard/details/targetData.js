@@ -9,13 +9,13 @@ export const options = [
     value: 'chocolate',
     id: '0',
     label1: 'Chocolate',
-    label: 'CBTL Barrister Wanted'
+    label: 'CBTL Barista Wanted'
   },
   {
     value: 'strawberry',
     id: '1',
     label1: 'Strawberry',
-    label: 'Seek Art Prodigy'
+    label: 'Seeking Art Prodigy'
   },
   {
     value: 'vanilla',
@@ -29,5 +29,5 @@ export const options = [
     label1: 'Vanilla',
     label: 'Artist with passion'
   },
-  { value: 'vanilla', id: '18', label1: 'Vanilla', label: 'Art Gallery Co-op' }
+  { value: 'vanilla', id: '18', label1: 'Vanilla', label: 'Art Gallery Co-op Team' }
 ];

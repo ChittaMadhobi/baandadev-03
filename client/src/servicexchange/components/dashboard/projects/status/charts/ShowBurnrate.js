@@ -81,7 +81,7 @@ const dataSource = {
       ]
     },
     {
-      seriesname: "Personal-Fund",
+      seriesname: "Personal-Funds",
       data: [
         {
           value: "20"

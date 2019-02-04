@@ -1,7 +1,7 @@
 export const existingContracts = [
   {
     value: '100',
-    label: 'Gallery Co-op',
+    label: 'Gallery Co-op Team',
     color: '#FF8B00'
   },
   {

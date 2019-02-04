@@ -153,12 +153,12 @@ class Lobby extends Component {
                           <li className="list-inline-item">
                             {" "}
                             <i className="fa fa-check" />
-                            &nbsp; Persona
+                            &nbsp; Profile
                           </li>
 
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
-                            &nbsp; Tasks Mgmt.
+                            &nbsp; Task Management
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
@@ -170,7 +170,7 @@ class Lobby extends Component {
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
-                            &nbsp; Reflections
+                            &nbsp; Reflection
                           </li>
                         </ul>
                       </div>
@@ -209,7 +209,7 @@ class Lobby extends Component {
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
-                            &nbsp; Get matched
+                            &nbsp; Get Matched
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
@@ -217,7 +217,7 @@ class Lobby extends Component {
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />
-                            &nbsp; Co-work
+                            &nbsp; Co-ops
                           </li>
                           <li className="list-inline-item">
                             <i className="fa fa-check" />

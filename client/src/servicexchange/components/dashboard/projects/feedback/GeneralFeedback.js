@@ -101,33 +101,30 @@ class GeneralFeedback extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              You are encouraged to provide feedback anytime and many times
-              through the life of the project. All sliders are from -5 to 5 with
-              default set to 0. If you leave somethign on 0 means you are not
-              commenting in that dimension now. :
+              You are encouraged to provide feedback at any point of time and as often as you like
+              throughout the life of the project. All sliders range from -5 to 5 with
+              default set to 0. If you leave a slider on 0, it means that you are not
+              commenting in that dimension right now. :
               <ul>
-                <li>Team Player: How good a team player is the target.</li>
+                <li>Team Player: How good a team player is he/she?</li>
                 <li>
-                  Domain Knowledge: Degree of domain Knowledge the target
-                  possess.
+                  Domain Knowledge: How much does he/she know about the work you're doing?
                 </li>
-                <li>Delivery Time: Do the target maintain delivery time?</li>
-                <li>Punctuality: Is the target puctual in his/her work?</li>
+                <li>Delivery Time: Does he/she get his/her work done on time?</li>
+                <li>Punctuality: Is he/she punctual?</li>
                 <li>
-                  Imaginative: Do you think the traget is imaginative for the
-                  context?
+                  Imaginative: Do you think he/she is a creative thinker in this field of work?
                 </li>
                 <li>
-                  Communiaction: How much do you approve of target's
-                  communication style?
+                  Communication: Do you think his/her communication style is effective?
                 </li>
                 <li>
                   Issue Solver: Faced with an issue, what is your perspective of
-                  targets's ability to solve it?
+                  his/her ability to solve it?
                 </li>
               </ul>
-              Additionally, please provide a small verbose comment including
-              your recommendation of improvement etc. if any.
+              Additionally, please provide a comment detailing
+              your recommendations for improvement etc. if any.
             </div>
           </div>
         </div>
@@ -316,13 +313,13 @@ class GeneralFeedback extends Component {
         <div className="row">
           <div className="col-12">
             <TextAreaFieldGroup
-              placeholder="Share your verbose comment on your feedback."
+              placeholder="Provide detailed comment."
               name="verboseFeedback"
               value={this.state.verboseFeedback}
               rows={4}
               onChange={this.onChange}
               error={errors.verboseFeedback}
-              info="Generalized verbose feedback ..."
+              info="Provide details to backup the scores you gave above."
             />
           </div>
         </div>
@@ -353,7 +350,7 @@ class GeneralFeedback extends Component {
                         this.gotoFeedbackProcess("feedbackSteps");
                       }}
                     >
-                      How-to-steps
+                      How-To Steps
                       <div className="float-right">
                         <i className="fas fa-toggle-off" />
                       </div>
@@ -372,7 +369,7 @@ class GeneralFeedback extends Component {
                       onChange={this.handleChangeTarget}
                       maxMenuHeight={150}
                       isSearchable={true}
-                      placeholder="Select the person for feedback"
+                      placeholder="Select individual"
                     />
                   </div>
                 </div>

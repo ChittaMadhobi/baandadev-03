@@ -107,7 +107,7 @@ class ReportConflict extends Component {
               />
             </font>
           </div>
-          <div className="col-md-6">Select names you want to be involved</div>
+          <div className="col-md-6">Select individuals involved</div>
         </div>
       );
     } else {
@@ -159,7 +159,7 @@ class ReportConflict extends Component {
               rows={4}
               onChange={this.onChange}
               error={errors.conflictDesc}
-              info="Describe the conflict situation and why you think this is a serious conflict situation."
+              info="Describe the conflict situation and why you think it is serious."
             />
           </div>
         </div>
@@ -173,7 +173,7 @@ class ReportConflict extends Component {
               rows={4}
               onChange={this.onChange}
               error={errors.conflictIncident}
-              info="Describe the incident(s) leading to the reporting. Include date-time etc."
+              info="Describe the incident(s) leading up to this report. Include dates and times."
             />
           </div>
         </div>
@@ -186,7 +186,7 @@ class ReportConflict extends Component {
                   className="custom-file-input"
                   id="inputGroupFile02"
                 />
-                <label className="custom-file-label">Proof ... video ???</label>
+                <label className="custom-file-label">Video/Audio/Written Proof</label>
               </div>
               <div className="input-group-append">
                 <span className="input-group-text" id="">
@@ -198,7 +198,7 @@ class ReportConflict extends Component {
           <div className="col-md-4">
             <p>
               <small>
-                Upload any picture, files, video you may want to log.
+                Upload documentation.
               </small>
             </p>
           </div>
@@ -233,7 +233,7 @@ class ReportConflict extends Component {
               onChange={this.handleConflictLogOnly}
             />{" "}
             <font color="lightblue">
-              Check if you just want to log this time for future & not notify.
+              Check if you want to log this incident & not notify anyone.
             </font>
           </label>
         </div>
@@ -263,18 +263,18 @@ class ReportConflict extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              There are two options of reporting conflict. One can just log in
-              case of future reference in case the conflict continues OR one can
-              report the conflict. Report could be directed to the target (for
-              mutual discussion), include other peers and/or reach out to
-              external councilor. :
+              There are two options for reporting conflict. You can just log it 
+              for future reference in case the conflict continues OR you can
+              report the conflict. Reports can be directed to the target (for
+              mutual discussion), include other peers and/or reach out to an
+              external mediator. :
               <ul>
-                <li>Provide a conflict name for future references</li>
+                <li>Provide a conflict name for future reference</li>
                 <li>Describe the complaint.</li>
-                <li>Describe incident(s) as an example for the conflict.</li>
-                <li>Upload any picture, audio, video file ... </li>
+                <li>Describe incident(s) in relation to the conflict.</li>
+                <li>Upload photos, audio, video files, etc. </li>
                 <li>Select the main conflict-domain</li>
-                <li>Indicate if this is just log and/or to include others</li>
+                <li>Indicate if this is a log and/or if you want to include others</li>
               </ul>
             </div>
           </div>
@@ -298,7 +298,7 @@ class ReportConflict extends Component {
                       this.gotoReportingProcess("reportingSteps");
                     }}
                   >
-                    How-to-steps
+                    How-To Steps
                     <div className="float-right">
                       <i className="fas fa-toggle-off" />
                     </div>

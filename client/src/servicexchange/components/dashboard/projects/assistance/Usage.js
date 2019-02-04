@@ -35,7 +35,7 @@ class Usage extends Component {
   }
 
   handleResponseSave() {
-    alert("At this point, your log will be saved and inlligence mined. ");
+    alert("At this point, your log will be saved and intelligence mined. ");
   }
 
   onChange(e) {
@@ -106,16 +106,16 @@ class Usage extends Component {
               <font color="lightyellow">
                 <p>
                   This is your assistance usage log that includes you as a
-                  requestor and as provider.
+                  requestor and as a provider.
                 </p>
                 <br />
                 <p>
                   <i>
                     Note: At this point, the external help inclusion has to be
-                    done separately. The other person or entity would need to be
-                    included in the team for direct notification. An agreement
-                    has to be done with the external entity before direct
-                    notifications.
+                    done separately. The other person or entity must be
+                    a member of the team for direct notification. An agreement
+                    must be created with the external entity before direct
+                    notification can be made.
                   </i>
                 </p>
                 <br />
@@ -245,13 +245,13 @@ class Usage extends Component {
             <div className="col">
               <div className="textarea-list-lines">
                 <TextAreaFieldGroup
-                  placeholder="Enter comments on the assistance process"
+                  placeholder="Enter comments"
                   name="assistLog"
                   value={this.state.assistLog}
                   rows={4}
                   onChange={this.onChange}
                   error={errors.assistLog}
-                  info="Enter log your point-of-view and other stuff you may want to remember."
+                  info="Enter comments or make note of points you want to remember."
                 />
               </div>
             </div>
@@ -283,7 +283,7 @@ class Usage extends Component {
       output = (
         <div className="view-doc-list">
           <h5>
-            <u>List of Active Tasks</u>
+            <u>List of Active Requests</u>
           </h5>
           {usageListPanel}
         </div>

@@ -87,7 +87,7 @@ class TempDCCSReqMsg extends Component {
                 />
                 &nbsp;
                 <b>B.</b>
-                &nbsp;&nbsp;Culture Culture (Power, Uncertainity, Sexisim,
+                &nbsp;&nbsp;Culture Culture (Power, Uncertainty, Sexism,
                 Individual, Strategy)
               </label>
             </div>
@@ -118,7 +118,7 @@ class TempDCCSReqMsg extends Component {
                 />
                 &nbsp;
                 <b>C.</b>
-                &nbsp;&nbsp;Cooperation Vs. Competion (Social Psychological
+                &nbsp;&nbsp;Cooperation Vs. Competition (Social Psychological
                 Reflection)
               </label>
             </div>
@@ -168,7 +168,7 @@ class TempDCCSReqMsg extends Component {
                 />
                 &nbsp;
                 <b>E.</b>
-                &nbsp;&nbsp; Mgmt. Style Distribution (Analytica, Driver,
+                &nbsp;&nbsp; Mgmt. Style Distribution (Analytical, Driver,
                 Amiable, Expressive)
               </label>
             </div>
@@ -188,7 +188,7 @@ class TempDCCSReqMsg extends Component {
                 />
                 &nbsp;
                 <b>F.</b>
-                &nbsp;&nbsp;Work Style Distribution (Analytica, Driver,
+                &nbsp;&nbsp;Work Style Distribution (Analytical, Driver,
                 Hands-on, Communicator)
               </label>
             </div>
@@ -219,7 +219,7 @@ class TempDCCSReqMsg extends Component {
                 />
                 &nbsp;
                 <b>G.</b>
-                &nbsp;&nbsp;Delivery Project-Work handling (In-time,
+                &nbsp;&nbsp;Delivery Project-Work handling (On-time,
                 Per-quality, Fiscal-responsibility)
               </label>
             </div>
@@ -271,7 +271,7 @@ class TempDCCSReqMsg extends Component {
                 &nbsp;
                 <b>H.</b>
                 &nbsp;&nbsp;Summary (Communication, Domain KB, Team player,
-                meet-deadlines, solvers, in-time)
+                meets-deadlines, solver, on-time)
               </label>
             </div>
           </div>

@@ -10,14 +10,14 @@ charts(fusioncharts);
 const dataSource = {
   chart: {
     caption: 'Delivery Traits Emphasis per Clients',
-    subcaption: 'A timeseries based average as of now',
+    subcaption: 'A time series based average as of now',
     yaxisname: 'Percentage Satisfaction',
     decimals: '1',
     theme: 'fusion'
   },
   data: [
     {
-      label: 'In-Time Delivery',
+      label: 'Punctual Delivery',
       value: '74'
     },
     {

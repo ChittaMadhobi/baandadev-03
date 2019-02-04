@@ -87,7 +87,7 @@ class SRForm extends Component {
             <div className="col-md-6">
               <TextFieldGroup
                 name="address"
-                placeholder="Enter street address of work-location"
+                placeholder="Enter street address of work location"
                 value={this.state.address}
                 onChange={this.onChange}
                 error={errors.address}
@@ -98,7 +98,7 @@ class SRForm extends Component {
             <div className="col-md-6">
               <TextFieldGroup
                 name="zipCode"
-                placeholder="Enter location zipcode ..."
+                placeholder="Enter location zip code ..."
                 value={this.state.zipCode}
                 onChange={this.onChange}
                 error={errors.zipCode}
@@ -293,7 +293,7 @@ class SRForm extends Component {
                     id="budgetType1"
                     value="Hourley"
                   />{' '}
-                  hourly
+                  Hourly
                 </label>
               </div>
               <div className="form-check form-check-inline">

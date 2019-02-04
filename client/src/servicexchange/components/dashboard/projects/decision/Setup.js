@@ -214,7 +214,7 @@ class Setup extends Component {
                 onChange={this.handleResolveName}
                 maxMenuHeight={150}
                 isSearchable={true}
-                placeholder="Select WIP decsion name"
+                placeholder="Select WIP decision name"
               />
             </font>
           </div>
@@ -246,7 +246,7 @@ class Setup extends Component {
           </div>
           <div className="col-md-6">
             <div className="text-align-left-sm">
-              Select a name to edit-change
+              Select a decision to edit
             </div>
           </div>
         </div>
@@ -309,7 +309,7 @@ class Setup extends Component {
                   onChange={this.handleDecisionDomain}
                   maxMenuHeight={150}
                   isSearchable={true}
-                  placeholder="Select a decision domain or Context"
+                  placeholder="Select a decision domain or context"
                 />
               </font>
             </div>
@@ -345,7 +345,7 @@ class Setup extends Component {
                     //onChange={this.handleDecisiontype}
                     onChange={this.onChange}
                   />{" "}
-                  Select one from few solutions
+                  Select one solution
                 </label>
               </div>
             </font>
@@ -360,7 +360,7 @@ class Setup extends Component {
           </div>
           <div className="col-md-6">
             <div className="text-align-left-sm">
-              Select participants for decision/opinion
+              Select participants for decision
             </div>
           </div>
         </div>
@@ -396,7 +396,7 @@ class Setup extends Component {
                   onChange={this.handleDecisionMakers}
                   maxMenuHeight={100}
                   isSearchable={true}
-                  placeholder="Select desiders/participants"
+                  placeholder="Select participants"
                 />
               </font>
             </div>
@@ -428,24 +428,22 @@ class Setup extends Component {
         <div>
           <div className="row">
             <div className="how-to-create-team">
-              This is not a forum for solving an issue. This is a forum to take
-              a decision towards a solution, among solutions, that has
-              transpired. There are two ways of taking solution. They are:
+              This is not a forum for solving issues. This is a forum to make 
+              collective decisions and come to a concensus solution. There are 
+              two ways of making decisions in this system. They are:
               <ul>
-                <li>Yea or Ney towards a solution or decision</li>
+                <li>Vote Yay or Nay.</li>
                 <li>
-                  Decide among few alternative options and decide which way to
-                  go.
+                  Choose among a few options.
                 </li>
               </ul>
               <p>
-                NOTE: In this UX-demo version, one can select any decision
-                paradigm. In production, this would be controlled by or
-                defaulted to per agreement setup during projectization. For
-                example, if the contract is that of peer-to-peer equivalency
-                based decision process then other options may not be visible.
-                If, in the contract, there are exceptions in equivalncy P-2-P
-                contract, then p-2-p equal may be available.
+              NOTE: In this UX-demo version, one can select any decision paradigm. 
+              In production, this will be controlled by the agreement setup during 
+              project setup. For example, if the contract is that of peer-to-peer 
+              equivalency- based decision process then other options will not be 
+              visible. If, in the contract, there are exceptions in equivalency 
+              P-2-P contract, then p-2-p equal may be an available option.
               </p>
             </div>
           </div>
@@ -494,7 +492,7 @@ class Setup extends Component {
               rows={4}
               onChange={this.onChange}
               error={errors.solution1Con}
-              info="State the disadvantage (cons) of the solution"
+              info="State the disadvantages (cons) of the solution"
             />
           </div>
         </div>
@@ -509,7 +507,7 @@ class Setup extends Component {
           <div className="col-6">
             Estimate days:{" "}
             <InputNumber
-              placeholder="Enter expected duration days"
+              placeholder="Enter expected duration in days"
               value={this.state.timeEstimate1}
               //onChange={e => this.handleChangeTimeEstimate1(e)}
               onChange={e => this.handleChangeTimeEstimate(e, 'timeEstimate1')}
@@ -556,7 +554,7 @@ class Setup extends Component {
               rows={4}
               onChange={this.onChange}
               error={errors.solution2Con}
-              info="State the disadvantage (cons) of the solution"
+              info="State the disadvantages (cons) of the solution"
             />
           </div>
         </div>
@@ -571,7 +569,7 @@ class Setup extends Component {
           <div className="col-6">
             Estimate days:{" "}
             <InputNumber
-              placeholder="Enter expected duration days"
+              placeholder="Enter expected duration in days"
               value={this.state.timeEstimate2}
               //onChange={e => this.handleChangeTimeEstimate2(e)}
               onChange={e => this.handleChangeTimeEstimate(e, 'timeEstimate2')}
@@ -665,7 +663,7 @@ class Setup extends Component {
       docketBody = (
         <div>
           <font color="orange" size="3">
-            You have not yet setup and selected decision type
+            You have not yet setup and selected a decision type
           </font>
         </div>
       );
@@ -751,7 +749,7 @@ class Setup extends Component {
       output = (
         <div>
           <font color="lightblue" fontSize="3">
-            Please click on an operation on top to procees
+            Please click an operation 
           </font>
         </div>
       );

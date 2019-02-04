@@ -102,7 +102,7 @@ class TeamUsage extends Component {
           <div className="col-md-6">
             <div className="float-left">
               <font color="#e0c38d">
-                Select a team for usage metric (default - Root)
+                Select a team for usage metrics (default - Root)
               </font>
             </div>
           </div>
@@ -118,10 +118,10 @@ class TeamUsage extends Component {
           <div className="text-center how-to-create-team">
             <font color="">
               You have been inducted in the team by the CBTL manager. Since you
-              are joining as barrista (time-based) and not the manager of
-              project or co-op, you do not get to build teams, do allocations pr
+              are joining as a barista (time-based) and not the manager of the
+              project or co-op, you do not get to build teams, do allocations or
               see usage. That is, based on your role and authorization, various
-              operations will be enabled, disabled, or contextually modified.
+              operations are enabled, disabled, or contextually modified.
             </font>
           </div>
         </div>
@@ -147,7 +147,7 @@ class TeamUsage extends Component {
             <div className="col-md-6">
               <div className="float-left">
                 <font color="#e0c38d">
-                  Select a team for usage metric (default - Root)
+                  Select a team for usage metrics (default - Root)
                 </font>
               </div>
             </div>

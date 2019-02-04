@@ -1,180 +1,166 @@
 import React, { Component } from 'react';
 
-//import SurveyNew from './reachout/SurveyNew';
-import ReachoutNew from './reachout/ReachoutNew';
+import MktAbout from './about/AboutContainer';
+import MktPosts from './post/PostContainer';
+import MktDashContainer from './dashboard/MktDashContainer';
+import MktBrowseContainer from './browse/MktBrowseContainer';
 
-import mktInfo from '../img/mktInfo.png';
-import mktConfig from '../img/mktConfig.png';
-import mktDashboard from '../img/mktDashboard.png';
-import mktInfluncer from '../img/mktInfluncer.png';
+import './mkt.css';
 
 class Marketing extends Component {
-  constructor() {
-    super();
-    this.state = {
-      mktInfo: true,
-      mktConfigure: false,
-      mktReachout: false,
-      mktDashboard: false,
-      mktInfluencer: false
-    };
-  }
+	constructor() {
+		super();
+		this.state = {
+			mktInfo: true,
+			mktPosts: false,
+			mktDashboard: false,
+			mktBrowse: false
+		};
+	}
 
-  render() {
-    let finContext;
+	render() {
+		let finContext;
 
-    if (this.state.mktInfo) {
-      finContext = (
-        <div className="fixedsize">
-          <div className="workarea-padding">
-            <div className="pictures">
-              <img src={mktInfo} width="100%" height="100%" alt="..." />
-            </div>
-          </div>
-        </div>
-      );
-    }
+		if (this.state.mktInfo) {
+			finContext = (
+				<div className="fixedsize-mktpost">
+					<div className="workarea-padding-mkt">
+						<MktAbout />
+					</div>
+				</div>
+			);
+		}
 
-    if (this.state.mktConfigure) {
-      finContext = (
-        <div className="fixedsize">
-          <div className="workarea-padding">
-            <div className="pictures">
-              <img src={mktConfig} width="100%" height="100%" alt="..." />
-            </div>
-          </div>
-        </div>
-      );
-    }
 
-    if (this.state.mktReachout) {
-      finContext = (
-        <div className="fixedsize">
-          <div className="workarea-padding">
-            <div className="pictures">
-              <ReachoutNew />
-            </div>
-          </div>
-        </div>
-      );
-    }
 
-    if (this.state.mktDashboard) {
-      finContext = (
-        <div className="fixedsize">
-          <div className="workarea-padding">
-            <div className="pictures">
-              <img src={mktDashboard} width="100%" height="100%" alt="..." />
-            </div>
-          </div>
-        </div>
-      );
-    }
+		if (this.state.mktPosts) {
+			finContext = (
+				<div className="fixedsize-mktpost">
+					<div className="workarea-padding-mkt">
+          <MktPosts />
+					</div>
+				</div>
+			);
+		}
 
-    if (this.state.mktInfluencer) {
-      finContext = (
-        <div className="fixedsize">
-          <div className="workarea-padding">
-            <div className="pictures">
-              <img src={mktInfluncer} width="100%" height="100%" alt="..." />
-            </div>
-          </div>
-        </div>
-      );
-    }
+		if (this.state.mktDashboard) {
+			finContext = (
+				<div className="fixedsize-mktpost">
+					<div className="workarea-padding-mkt">
+						<MktDashContainer />
+					</div>
+				</div>
+			);
+		}
 
-    return (
-      <div className="finance">
-        <p className="top-padding" />
-        <div className="container">
-          <p className="top-padding-workarea" />
-          <h5 className="display-5 text-primary font-weight-bold text-center">
-            Message Center
-          </h5>
-          <div className="row">
-            <div className="col-lg-2 col-md-4 col-sm-6">
-              <div className="demobuttons">
-                <button
-                  className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
-                  type="button"
-                  onClick={() => {
-                    this.setState(preState => ({
-                      mktInfo: true,
-                      mktConfigure: false,
-                      mktReachout: false,
-                      mktDashboard: false,
-                      mktInfluencer: false
-                    }));
-                  }}
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="Informs you about Baanda Financial Systems"
-                >
-                  About
-                </button>
-              </div>
+		if (this.state.mktBrowse) {
+			finContext = (
+				<div className="fixedsize-mktpost">
+					<div className="workarea-padding-mkt">
+					   <MktBrowseContainer  />
+					</div>
+				</div>
+			);
+		}
 
-              <div className="demobuttons">
-                <button
-                  className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
-                  type="button"
-                  onClick={() => {
-                    this.setState(preState => ({
-                      mktInfo: false,
-                      mktConfigure: false,
-                      mktReachout: true,
-                      mktDashboard: false,
-                      mktInfluencer: false
-                    }));
-                  }}
-                >
-                  Send Message
-                </button>
-              </div>
-              <div className="demobuttons">
-                <button
-                  className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
-                  type="button"
-                  onClick={() => {
-                    this.setState(preState => ({
-                      mktInfo: false,
-                      mktConfigure: true,
-                      mktReachout: false,
-                      mktDashboard: true,
-                      mktInfluencer: false
-                    }));
-                  }}
-                >
-                  Dashboard
-                </button>
-              </div>
+		return (
+			<div className="finance">
+				<div className="top-padding-mkt" />
+				<div className="container">
+					<div className="top-padding-workarea-mkt" />
+					<h5 className="display-5 text-primary font-weight-bold text-center">Baanda Market Space</h5>
+					<div className="row">
+						<div className="col-lg-2 col-md-4 col-sm-6">
+							<div className="demobuttons">
+								<button
+									className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
+									type="button"
+									onClick={() => {
+										this.setState((preState) => ({
+											mktInfo: true,
+											mktPosts: false,
+											mktDashboard: false,
+											mktBrowse: false
+										}));
+									}}
+									data-toggle="tooltip"
+									data-placement="right"
+									title="Informs you about Baanda Financial Systems"
+								>
+									About
+                  <div className="float-right">
+                    <i className="fas fa-book-open" />
+                  </div>
+								</button>
+							</div>
 
-              <div className="demobuttons">
-                <button
-                  className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
-                  type="button"
-                  onClick={() => {
-                    this.setState(preState => ({
-                      mktInfo: false,
-                      mktConfigure: true,
-                      mktReachout: false,
-                      mktDashboard: false,
-                      mktInfluencer: false
-                    }));
-                  }}
-                >
-                  Survey Setup
-                </button>
-              </div>
-            </div>
-            <div className="col-lg-10 col-md-8 col-sm-6">
-              <div className="fixedsize">{finContext}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+							<div className="demobuttons">
+								<button
+									className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
+									type="button"
+									onClick={() => {
+										this.setState((preState) => ({
+											mktInfo: false,
+											mktPosts: true,
+											mktDashboard: false,
+											mktBrowse: false
+										}));
+									}}
+								>
+									Posts
+                  <div className="float-right">
+                    <i className="fas fa-user-circle" />
+                  </div>
+								</button>
+							</div>
+							<div className="demobuttons">
+								<button
+									className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
+									type="button"
+									onClick={() => {
+										this.setState((preState) => ({
+											mktInfo: false,
+											mktPosts: false,
+											mktDashboard: true,
+											mktBrowse: false
+										}));
+									}}
+								>
+									Dashboard
+                  <div className="float-right">
+                    <i className="fas fa-pen-square" />
+                  </div>
+								</button>
+							</div>
+
+							<div className="demobuttons">
+								<button
+									className="btn btn-lg btn-outline-primary btn-block btn-sm mt-4"
+									type="button"
+									onClick={() => {
+										this.setState((preState) => ({
+											mktInfo: false,
+											mktBrowse: true,
+											mktPosts: false,
+											mktDashboard: false
+										}));
+									}}
+								>
+									Browse
+                  <div className="float-right">
+                    <i className="fas fa-users" />
+                  </div>
+								</button>
+							</div>
+						</div>
+						<div className="col-lg-10 col-md-8 col-sm-6">
+							<div className="fixedsize">{finContext}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default Marketing;

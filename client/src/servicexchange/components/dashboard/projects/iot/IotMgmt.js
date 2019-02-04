@@ -132,7 +132,7 @@ class IotMgmt extends Component {
             <div className="col-1">&nbsp;</div>
             <div className="col-10">
               <div className="text-center vedio-msg">
-                Click the option to work on a context.
+                Click an option above.
               </div>
             </div>
             <div className="col-1">&nbsp;</div>

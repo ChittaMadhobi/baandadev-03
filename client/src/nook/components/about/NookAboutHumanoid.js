@@ -30,9 +30,9 @@ class NookAboutHumanoid extends Component {
     let aboutAns4 = null;
     let aboutAns5 = null;
     let aboutAns6 = null;
-    let aboutAns7 = null;
-    let aboutAns8 = null;
-    let aboutAns9 = null;
+    // let aboutAns7 = null;
+    // let aboutAns8 = null;
+    // let aboutAns9 = null;
     let aboutAns10 = null;
     if (btnClickNo === '1') {
       aboutAns1 = (
@@ -115,30 +115,30 @@ class NookAboutHumanoid extends Component {
         </div>
       );
     }
-    if (btnClickNo === '7') {
-      aboutAns7 = (
-        <div>
-          <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '8') {
-      aboutAns8 = (
-        <div>
-          <font color="blue">Ans 8: </font> This is the answer 8
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '9') {
-      aboutAns9 = (
-        <div>
-          <font color="blue">Ans 9: </font> This is the answer 9
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
+    // if (btnClickNo === '7') {
+    //   aboutAns7 = (
+    //     <div>
+    //       <font color="blue">Ans 7: </font> This is the answer 7
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '8') {
+    //   aboutAns8 = (
+    //     <div>
+    //       <font color="blue">Ans 8: </font> This is the answer 8
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '9') {
+    //   aboutAns9 = (
+    //     <div>
+    //       <font color="blue">Ans 9: </font> This is the answer 9
+    //       <div className="textspaceTop" />
+    //     </div>
+    //   );
+    // }
     if (btnClickNo === '10') {
       aboutAns10 = (
         <div>
@@ -200,7 +200,7 @@ class NookAboutHumanoid extends Component {
               6. What role will IoT devices (sensors) play in Baanda humanoid conversation?
             </button>
             {aboutAns6}
-            <button
+            {/* <button
               id="7"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
@@ -230,7 +230,7 @@ class NookAboutHumanoid extends Component {
               onClick={this.handlePostClick}
             >
               10. ?
-            </button>
+            </button> */}
             {aboutAns10}
           </div>
         </div>

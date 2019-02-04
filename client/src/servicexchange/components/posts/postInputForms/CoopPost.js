@@ -49,13 +49,13 @@ class CoopPost extends Component {
 
   handlePostClick() {
     alert(
-      'Eventually -- When you click this, your work will be saved in database and posted at the same time and visible to others. This would be available in your dashboard for you to ask intelligence, connect etc.'
+      'Eventually -- When you click this, your work will be saved in the database and posted at the same time and visible to others. This would be available in your dashboard for you to ask intelligence, connect etc.'
     );
   }
 
   handleSaveClick() {
     alert(
-      'Eventually -- When you click this, your work will be saved in database. This post will appear in your dashboard as not-posted. You can post it from there. Your account will not be charged till you post.'
+      'Eventually -- When you click this, your work will be saved in the database. This post will appear in your dashboard as not-posted. You can post it from there. Your account will not be charged till you post.'
     );
   }
 
@@ -140,7 +140,7 @@ class CoopPost extends Component {
               value={this.state.workshopAddress}
               onChange={this.onChange}
               error={errors.workshopAddress}
-              info="If virtual, state overall geolocation (city,country)."
+              info="If virtual, state ganeral geolocation (city,country)."
               must="Mandatory"
             />
           </div>
@@ -282,7 +282,7 @@ class CoopPost extends Component {
             <div className="col-md-6">
               <TextFieldGroup
                 name="coopName"
-                placeholder="Enter your Co-op name ..."
+                placeholder="Enter your Co-op name"
                 value={this.state.coopName}
                 onChange={this.onChange}
                 error={errors.coopName}
@@ -438,7 +438,7 @@ class CoopPost extends Component {
                   <h6>
                     Co-ops are groups of peers working together for a shared goal. 
                     If you are looking for employment or freelance work, see the
-                    'service request / Help Wanted' section.
+                    'Service Request / Help Wanted' section.
                   </h6>
                 </font>
               </div>

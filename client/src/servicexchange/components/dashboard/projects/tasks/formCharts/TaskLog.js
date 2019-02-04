@@ -34,7 +34,7 @@ class TaskLog extends Component {
   }
 
   handleSaveLog() {
-    alert("In production, this would save (add/update) the log for this task.");
+    alert("In production, this will save (add/update) the log for this task.");
   }
 
   onChange(e) {
@@ -118,7 +118,7 @@ class TaskLog extends Component {
           <div className="text-center how-to-create-team">
             <font color="white">
               You have been inducted in the team by the manager. Since you are
-              joining as barrista (time-based) and not the manager of project or
+              joining as a barista (time-based) and not the manager of the project or
               co-op. You have no log to update or view.
             </font>
           </div>
@@ -133,13 +133,13 @@ class TaskLog extends Component {
         <div className="row">
           <div className="col">
             <TextAreaFieldGroup
-              placeholder="Log events and actions for the task ..."
+              placeholder="Log events and actions for the task"
               name="description"
               value={this.state.description}
               onChange={this.onChange}
               rows={3}
               error={errors.description}
-              info="Provide a short description to log. Date-time stamp would be current date-time."
+              info="Provide a short description. Date-time stamp will be current date-time."
               must="Mandatory"
             />
           </div>
@@ -196,7 +196,7 @@ class TaskLog extends Component {
         output = (
           <div>
             <font color="orange" size="3">
-              Please select a task to add log to.
+              Please select a task to log
             </font>
           </div>
         );
@@ -213,7 +213,7 @@ class TaskLog extends Component {
         output = (
           <div>
             <font color="orange" size="3">
-              Please select a task to see log of.
+              Please select a task to view log
             </font>
           </div>
         );
